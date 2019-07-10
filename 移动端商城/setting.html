@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>设置</title>
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="am-g public-head  color-fff am-padding-vertical-sm am-text-lg">
+			<div class="am-u-sm-2">
+				<a href="javascript:history.go(-1);" class="color-fff">
+					<i class="am-icon-angle-left am-icon-sm"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-8 am-text-center">设置</div>
+			<div class="am-u-sm-2"></div>
+		</div>
+
+		<!--<i class="am-icon-toggle-on am-text-success am-icon-lg"></i>-->
+		<!--<i class="am-icon-toggle-off"></i>-->
+		<div class="">
+			<p class="am-text-default color-666 am-padding-sm">消息推送</p>
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm jy-border-bottom">
+				<div class="am-u-sm-7 color-333 ">开启推送</div>
+				<div class="am-u-sm-5 am-text-right">
+					<i class="toggle am-icon-toggle-on am-icon-sm color-3bb31b"></i>
+				</div>
+			
+			</div>
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm ">
+				
+				<div class="am-u-sm-7 color-333">安静时段</div>
+				<div class="am-u-sm-5 am-text-right color-999">
+					9:00到18:00 
+					<i class="am-icon-angle-right am-icon-xs am-margin-left-xs"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="">
+			<p class="am-text-default color-666 am-padding-sm">消息推送
+				<span class="am-text-xs">(移动网络下图片质量)</span>
+			</p>
+			
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm jy-border-bottom">
+				<div class="am-u-sm-7 color-333 ">显示高清图片</div>
+				<div class="am-u-sm-5 am-text-right">
+					<i class="toggle am-icon-toggle-on am-icon-sm color-3bb31b"></i>
+				</div>
+			
+			</div>
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm jy-border-bottom">
+				<div class="am-u-sm-10 color-333 ">显示标清图片<span class="am-text-xs color-666">(节省约70%流量)</span></div>
+				<div class="am-u-sm-2 am-text-right">
+					<i class="toggle am-icon-toggle-off am-icon-sm color-999"></i>
+				</div>
+			
+			</div>
+			
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm ">
+				
+				<div class="am-u-sm-7 color-333">不显示图片</div>
+				<div class="am-u-sm-5 am-text-right color-999">
+					<i class="toggle am-icon-toggle-off am-icon-sm color-999"></i>
+				</div>
+			</div>
+		</div>
+		<div class="am-padding-top-sm">
+			
+			
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm jy-border-bottom">
+				<div class="am-u-sm-7 color-333 ">夜间模式</div>
+				<div class="am-u-sm-5 am-text-right">
+					<i class="toggle am-icon-toggle-off am-icon-sm color-999"></i>
+				</div>
+			
+			</div>
+		
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm ">
+				
+				<div class="am-u-sm-10 color-333">大字号<span class="am-text-xs color-666">(仅用于商品详情页面)</span></div>
+				<div class="am-u-sm-2 am-text-right color-999">
+					<i class="toggle am-icon-toggle-off am-icon-sm color-999"></i>
+				</div>
+			</div>
+		</div>
+		<div class="am-padding-top-sm am-padding-bottom-sm">
+			
+			<div class="am-g bg-color-fff am-padding-vertical-sm am-padding-left-sm clear-cache">
+				<div class="am-u-sm-7 color-333">清除缓存</div>
+				<div class="am-u-sm-5 am-text-right color-999 ">
+					
+					<span>24.5M</span>
+					<i class="am-icon-angle-right am-icon-xs am-margin-left-xs"></i>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".toggle").click(function () {
+					if($(this).hasClass("color-999")){
+						$(this).removeClass("color-999");
+						$(this).removeClass("am-icon-toggle-off");
+						$(this).addClass("color-3bb31b");
+						$(this).addClass("am-icon-toggle-on");
+					}else{
+						$(this).removeClass("color-3bb31b");
+						$(this).removeClass("am-icon-toggle-on");
+						$(this).addClass("color-999");
+						$(this).addClass("am-icon-toggle-off");
+					}
+				});
+				$(".clear-cache").click(function () {
+					$(this).find("span").text("0M");
+				});
+			});
+		</script>
+	</body>
+
+</html>

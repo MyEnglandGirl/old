@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/cart.css" />
+	<link rel="stylesheet" href="css/index-right.css">
+
+	<body>
+		<!-- 头部 -->
+		<div class="public-head">
+			<div class="container clearfix">
+				<dl class="go-home fl relative">
+					<img src="img/public/home.png" alt="" width="16" height="14" />
+					<a href="index.html">首页</a>
+					<i></i>
+				</dl>
+				<dl class="phone fl relative">
+					<b></b>
+					<span>贵宾专线:4000-000-000</span>
+				</dl>
+				<div class="header-right fr clearfix">
+					<dl class="login fl">
+						<a href="loginPage.html">登录</a>
+					</dl>
+					<dl class="register fl clearfix">
+						<b></b>
+						<a href="register.html">注册</a>
+					</dl>
+					<dl class="fl personal">
+						<a href="myorder.html">个人中心</a>
+					</dl>
+					<dl class="fl help">
+						<a href="">帮助中心</a>
+					</dl>
+					<dl class="fl">
+						<a href="">手机版下载</a>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="public-logo-con">
+			<div class="container clearfix relative">
+			<a href="index.html">
+				<div class="logo fl">
+				</div>
+			</a>
+				
+				<img src="img/public/yijian.jpg" alt="" width="142" height="80" class="fl" />
+				<div class="search-con fl">
+					<div class="search">
+						<input type="text" class="search-text" placeholder="雪地靴" />
+						<input type="button" class="search-btn" value="搜&nbsp;索" />
+					</div>
+					<ul class="clearfix">
+						<li>
+							<a href="">羽绒服</a>
+						</li>
+						<li>
+							<a href="list.html">围巾</a>
+						</li>
+						<li>
+							<a href="">箱包</a>
+						</li>
+						<li>
+							<a href="">腕表</a>
+						</li>
+						<li>
+							<a href="">YOOX旗舰店</a>
+						</li>
+					</ul>
+				</div>
+				<a href="cart.html"><div class="cartbox fr relative">
+					<img src="img/public/v30cart.png" />
+					<a href="cart.html">
+					<span>购物袋(<span class="red">0</span>)</span>
+						
+					</a>
+
+				</div></a>
+			</div>
+		</div>
+		<!-- 右侧边栏 -->
+		<div class="index-bazuo" style="height: 100%;">
+			<dl>
+				<dt>
+                <div class="index-mouyi">
+                    <ul>
+                        <li class="" id="index-men">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-tablog">
+                                </div>
+                                <!--<div class="index-chanzi">
+                                        <!--<div class="index-fang index-fangx">◆</div>-->
+                                <!--</div>-->
+                            </a>
+                            <div class="index-login">
+                            </div>
+                        </li>
+                        <li class="index-zichan" id="index-zic">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-zich"></div>
+                                <div class="index-chanzi">
+                                    我的资产
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                            <div class="index-meun"></div>
+                        </li>
+                        <li class="index-lisk" id="index-geet">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-logolisk"></div>
+                                <div class="index-chanzi">
+                                    我喜欢的商品
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                            <div class="index-meun"></div>
+                        </li>
+                        <li class="index-kefu" id="index-kef">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-kf"></div>
+                                <div class="index-chanzi">
+                                    联系客服
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="index-cart goods_add_popup" id="themenu_carts" style="display: none;">
+                    </div>
+                </div>
+                <div class="index-musan">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="index-tablogo index-erwei"></div>
+                                <div class="index-chanzi index-tipo">
+                                    <img src="img/public/about02.png" width="80px" height="80px" />
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fed-back.html">
+                                <div class="index-tablogo index-fankui" id="fankui_hover"></div>
+                                <div class="index-chanzi">
+                                    	意见反馈
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="question.html" target="_blank">
+                                <div class="index-tablogo index-women" id="line_hover"></div>
+                                <div class="index-chanzi">
+                                   	 联系我们
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="index-tablogo index-shangqu" id="returntop"></div>
+                                <div class="index-chanzi">
+                                 		   返回顶部
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </dt>
+				<dd>
+					<div class="index-fo">
+						<div class="assets" style="display: none;">
+						</div>
+						<div class="get_collect" style="display: none;">
+						</div>
+						<div class="menu_cart" style="display: none; height: 100%;overflow: hidden;">
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</div>
+
+		<!--购物车-->
+		<div class="cart">
+			<div class="cart-contant">
+				<div class="cart-filter clearfix">
+					<ul class="clearfix fl">
+						<li>
+							<a href="">全部商品
+								<span class="red num">3</span></a>
+						</li>
+						<li>
+							<a href="javascript:;">降价商品<span class="red">0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;">库存紧张<span class="red">0</span></a>
+
+						</li>
+					</ul>
+					<ol class="fr clearfix">
+						<li>
+							购物车&nbsp;
+						</li>
+						<li>
+							>&nbsp;填写核对订单&nbsp;>
+						</li>
+						<li>
+							&nbsp;付款 &nbsp;>
+						</li>
+						<li>
+							&nbsp;订单支付成功 &nbsp;
+						</li>
+					</ol>
+
+				</div>
+				<div class="cart-table-th">
+					<div class="wp clearfix">
+						<div class="cart-checkbox clearfix">
+							<i class="i-false"></i>
+							<span class="fl">全选</span>
+						</div>
+						<div class="cart-item">
+							商品信息
+						</div>
+						<div class="cart-info">
+
+						</div>
+						<div class="cart-price">
+							单价
+						</div>
+						<div class="cart-amount">
+							数量
+						</div>
+						<div class="cart-sum">
+							金额
+						</div>
+						<div class="cart-op">
+							操作
+						</div>
+					</div>
+					<div class="shop-info shop-one">
+						
+						
+						<ul class="clearfix">
+							<li>
+								<i class="i-ture"></i>
+							</li>
+							<li class="cart-item clearfix">
+								<img class="fl" src="img/payphoto/38785741.jpg" alt="" width="80" height="80" />
+								<span class="fl">黑色文化石天然黑板岩背景墙石条流水石P018黑石板条型砖墙面背景</span>
+							</li>
+							<li class="cart-info">
+
+								<div>颜色分类：黑色</div>
+
+								<div>大小：1平米</div>
+							</li>
+							<li class="cart-price">
+								￥<span>104.00</span>
+							</li>
+							<li class="cart-amount relative">
+
+								<a href="javascript:;" class="amount-minus" data-spm-anchor-id="a1z0d.6639537.1997196601.8">-</a>
+								<input type="text" value="2" class="text text-amount J_ItemAmount" data-max="2" data-now="2" autocomplete="off">
+								<a href="javascript:;" class="amount-plus" data-spm-anchor-id="a1z0d.6639537.1997196601.9">+</a>
+
+							</li>
+							<li class="cart-sum">
+								￥<span>132.00</span>
+							</li>
+							<li class="cart-op">
+								<span>删除</span>
+							</li>
+						</ul>
+					</div>
+					<div class="shop-info shop-two">
+						
+						<ul class="clearfix">
+							<li>
+								<i class="i-false"></i>
+							</li>
+							<li class="cart-item clearfix">
+								<img class="fl" src="img/payphoto/110x110.jpg" alt="" width="80" height="80" />
+								<span class="fl">初璟女装冬季通勤印花常规外套修身秋冬季呢子大衣</span>
+							</li>
+							<li class="cart-info">
+
+								<div>颜色分类：黑色</div>
+
+								<div>尺码：S</div>
+							</li>
+							<li class="cart-price">
+								￥<span>256.00</span>
+							</li>
+							<li class="cart-amount relative">
+								<a href="javascript:;" class="amount-minus" data-spm-anchor-id="a1z0d.6639537.1997196601.8">-</a>
+								<input type="text" value="2" class="text text-amount J_ItemAmount" data-max="2" data-now="2" autocomplete="off">
+								<a href="javascript:;" class="amount-plus" data-spm-anchor-id="a1z0d.6639537.1997196601.9">+</a>
+
+							</li>
+							<li class="cart-sum">
+								￥<span>132.00</span>
+							</li>
+							<li class="cart-op">
+								<span>删除</span>
+							</li>
+						</ul>
+					</div>
+					<ul class="float-bar-wrapper clearfix">
+						<li>
+							<i class="i-ture"></i>
+							<span>全选</span>
+						</li>
+
+						<li>删除</li>
+						<li>移入收藏夹</li>
+						<li>分享</li>
+						<li>已选商品<span class="red num">0</span>件</li>
+						<li>合计（不含运费）：<span class="red price-sum">0.00</span></li>
+						<li><a href="collate.html" style="color: #FFFFFF;">结&nbsp;算</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="public-footer">
+			<div class="container">
+				<div class="footer-message-top">
+					<ul class="clearfix">
+						<li class="footer-message-top01">
+							<a href="" target="_blank"><img src="img/public/footer_message01.jpg"></a>
+							<div class="footer-message-top01-r">
+								<p class="p1">正品保障</p>
+								<p class="p2">
+									<a href="" target="_blank">品牌授权,官方验真</a>
+								</p>
+							</div>
+						</li>
+						<li class="footer-message-top01">
+							<a href="" target="_blank"><img src="img/public/footer_message02.jpg"></a>
+							<div class="footer-message-top01-r">
+								<p class="p1">专柜发货</p>
+								<p class="p2">
+									<a href="" target="_blank">专柜直接或到店自提</a>
+								</p>
+							</div>
+						</li>
+						<li class="footer-message-top01">
+							<a href="" target="_blank"><img src="img/public/footer_message03.jpg"></a>
+							<div class="footer-message-top01-r">
+								<p class="p1">无忧售后</p>
+								<p class="p2">
+									<a href="" target="_blank">7天无理由退换货</a>
+								</p>
+							</div>
+						</li>
+						<li class="footer-message-top01">
+							<a href="" target="_blank"><img src="img/public/footer_message04.jpg"></a>
+							<div class="footer-message-top01-r">
+								<p class="p1">VIP服务</p>
+								<p class="p2">
+									<a href="" target="_blank">享品牌会员售前售后服务</a>
+								</p>
+							</div>
+						</li>
+						<li class="footer-message-top01">
+							<a href="" target="_blank"><img src="img/public/footer_message05.jpg"></a>
+							<div class="footer-message-top01-r">
+								<p class="p1">权威荣誉</p>
+								<p class="p2">
+									<a href="" target="_blank">商务部授予诚信示范企业</a>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-message-ctr">
+					<div class="footer-message-ctr-l">
+						<ul style="padding-left: 20px;" class="clearfix">
+							<li>
+								<span class="sp01">服务保障</span>
+								<span><a href="" target="_blank">品牌授权正品</a></span>
+								<span><a href="" target="_blank">品牌客服</a></span>
+								<span><a href="" target="_blank">预约到店体验</a></span>
+								<span><a href="" target="_blank">7天无理由退换</a></span>
+							</li>
+							<li>
+								<span class="sp01">使用帮助</span>
+								<span><a href="" target="_blank">常见问题</a></span>
+								<span><a href="" target="_blank">会员制度</a></span>
+								<span><a href="" target="_blank">集团采购</a></span>
+								<span><a href="" target="_blank">礼品卡</a></span>
+							</li>
+							<li>
+								<span class="sp01">支付方式</span>
+								<span><a href="" target="_blank">到店付款</a></span>
+								<span><a href="" target="_blank">货到付款</a></span>
+								<span><a href="" target="_blank">在线支付</a></span>
+								<span><a href="" target="_blank">余额支付</a></span>
+								<span><a href="" target="_blank">分期付款</a></span>
+							</li>
+							<li>
+								<span class="sp01">配送方式</span>
+								<span><a href="" target="_blank">配送说明</a></span>
+								<span><a href="" target="_blank">专柜自提</a></span>
+								<span><a href="" target="_blank">运费说明</a></span>
+								<span><a href="" target="_blank">验货签收</a></span>
+							</li>
+							<li>
+								<span class="sp01">售后服务</span>
+								<span><a href="" target="_blank">品牌售后</a></span>
+								<span><a href="" target="_blank">售后咨询</a></span>
+								<span><a href="" target="_blank">退换政策</a></span>
+								<span><a href="" target="_blank">发票保障</a></span>
+							</li>
+							<li class="pht-app">
+								<span class="sp01">关注微信</span>
+								<span><img src="img/public/about.png" width="80" height="80"></span>
+							</li>
+							<li class="pht-weibo">
+								<span class="sp01">赞助我们</span>
+								<span><img src="img/public/about02.png" width="80" height="80"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-message-btm">
+					<div class="footer-message-btm-t">
+						<a href="" target="_blank">箱包</a> 丨
+						<a href="" target="_blank">美妆</a> 丨
+						<a href="" target="_blank">服饰</a> 丨
+						<a href="" target="_blank">腕表</a> 丨
+						<a href="" target="_blank">配饰</a> 丨
+						<a href="" target="_blank">鞋靴</a> 丨
+						<a href="" target="_blank">特惠</a> 丨
+						<a href="" target="_blank">名品闪购</a> 丨
+						<a href="" target="_blank">礼品区</a>
+					</div>
+					<div class="">
+						<a href="" target="_blank">关于</a> 丨
+						<a href="" target="_blank">网站地图</a> 丨
+						<a href="" target="_blank">品牌合作专区</a> 丨
+						<a href="" target="_blank">媒体聚焦</a> 丨
+						<a href="" target="_blank">商务合作</a> 丨
+						<a href="" target="_blank">商家合作</a> 丨
+						<a href="" target="_blank">加入我们</a> 丨
+						<a href="" target="_blank">友情链接</a> 丨
+						<a href="" target="_blank">奢尚志</a> 丨
+						<a href="" target="_blank">联系我们</a> 丨
+						<a href="" target="_blank">投诉建议</a>
+						<p>Copyright © 2008-2016 瑞美嘉信国际信息技术（北京）有限公司&nbsp; 版权所有京ICP备09012701号-1 京公网安备110105007400号 食品经营许可证号：
+						</p>
+					</div>
+					<div class="footer-message-btm-b">
+						<a href=""><img src="img/public/14567178388519.jpg" alt=""></a>
+						<a href=""><img src="img/public/footer_message10.jpg" alt=""></a>
+						<a href=""><img src="img/public/footer_message11.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

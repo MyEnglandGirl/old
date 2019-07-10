@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+        .move {
+            width: 240px;
+            height: 240px;
+            margin: 100px auto;
+        }
+        .move li {
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 0 20px 20px 0;
+            background: #39f;
+        }
+        .move li div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #000;
+            opacity: 0.5;
+            left: 100%;
+            top: 0;
+        }
+    </style>
+    <body>
+        <ul class="move">
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+        </ul>
+        <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $('.move li').hover(function(){// 移入效果
+                var x=event.pageX-$(this).offset().left,//得到鼠标在块中的坐标
+                    y=event.pageY-$(this).offset().top,//得到鼠标在块中的坐标
+                    h=$(this).outerHeight(), //用于获得包括内边界(padding)和边框(border)的元素高度
+                    w=$(this).outerWidth(), ///用于获得包括内边界(padding)和边框(border)的元素宽度
+                    k=Math.floor(h/w);//为了防止不能整除
+
+                if((k * x) >= y && (h - k * x) >= y){//上方进入
+                    //初始悬浮块位置，下同
+                    $(this).children().css({
+                        "top":"-100px",
+                        "left": 0
+                    })
+                    //设置出现动画，下同
+                    $(this).children().stop(true,true).animate({
+                        "top": "0"
+                    });
+                }
+
+                if((k * x) < y && (h - k * x) < y){// 从下方进入
+                    $(this).children().css({
+                        "top": "100px",
+                        "left": "0"
+                    })
+                    $(this).children().stop(true,true).animate({
+                        "top": "0"
+                    });
+                }
+
+                if((k * x) < y && (h - k * x) > y){
+                    $(this).children().css({// 从左边进入
+                        "top": "0",
+                        "left": "-100px"
+                    })
+                    $(this).children().stop(true,true).animate({
+                        "left": "0"
+                    });
+                }
+
+                if((k*x)>y && (h-k*x)<y){// 从右边进入
+                    $(this).children().css({
+                        "top": "0",
+                        "left": "100px"
+                    })
+                    $(this).children().stop(true,true).animate({
+                        "left": "0"
+                    });
+                }
+
+            },function() { // 移出效果
+                var x=event.pageX-$(this).offset().left,//得到鼠标在块中的坐标
+                    y=event.pageY-$(this).offset().top,//得到鼠标在块中的坐标
+                    h=$(this).outerHeight(),            
+                    w=$(this).outerWidth(),
+                    k=Math.floor(h / w);//为了防止不能整除
+                if((k * x) >= y && (h - k * x) >= y){ //从上方移出
+                    //移出动画，下同
+                    $(this).children().stop(true,true).animate({
+                        "top": "-100px"
+                    });
+                }
+
+                if((k * x) < y && (h - k * x) < y){ //从下方移出
+                    $(this).children().stop(true,true).animate({
+                        "top": "100px"
+                    });
+                }
+
+                if((k * x ) < y && (h - k * x) > y){ //从左边移出
+                    $(this).children().stop(true,true).animate({
+                        "left": "-100px"
+                    });
+                }
+                if((k * x) > y && (h - k * x) < y){ //下右边移出
+                    $(this).children().stop(true,true).animate({
+                        "left": "100px"
+                    });
+                }
+            })
+        </script>
+    </body>
+</html>

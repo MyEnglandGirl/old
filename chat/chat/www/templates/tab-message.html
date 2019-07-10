@@ -1,0 +1,60 @@
+<!--<ion-view>
+    <ion-content on-swipe-left="onSwipeLeft()">
+        <ion-list rj-close-back-drop>
+            <ion-item class="item-avatar" ng-class="{'rj-item-top': message.isTop}" on-hold="popupMessageOpthins(message)" rj-hold-active ng-repeat="message in messages | orderBy:['isTop', 'lastMessage.timeFrome1970']:true" ng-click="messageDetils(message)">
+                <img ng-src="{{message.pic}}">
+                <span class="rj-sm-red-icon" ng-show="message.showHints"><p ng-bind="message.noReadMessages"></p></span>
+                <h2 ng-bind="message.name"></h2>
+                <p class="rj-list-p" ng-bind="message.lastMessage.content"></p>
+                <span class="rj-push-right" ng-bind="message.lastMessage.time"></span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>-->
+	<ion-header-bar align-title="left" class="bar-dark">
+			<div class="h1 title">微信(16)</div>
+			<div class="buttons">
+
+				<a ng-click="modal.show()" class="header-icon"><img src="img/png/search.png" / width="30"></a>
+				</button>
+				<a ui-sref="add" href="" class="header-icon"><img src="img/png/plus.png" / width="30"></a>
+				</button>
+			</div>
+		</ion-header-bar>
+<ion-view>
+	<div class="" style="margin-top: 43px;">
+
+	</div>
+	<div class="list">
+		<a ui-sref="message-chat" class="item relative item-avatar jy-padding-16">
+			<img src="img/max.png" width="40">
+			<span class="rj-sm-red-icon"><p class="">2</p></span>
+			<h2 class="">群聊</h2>
+			<p class="rj-list-p ng-binding">你在干什么?</p>
+			<span class="year">2015</span>
+		</a>
+		<a ui-sref="private-chat" class="item relative item-avatar jy-padding-16">
+			<img src="img/adam.jpg" width="40">
+			<span class="rj-sm-red-icon"><p class="">2</p></span>
+			<h2 class="">李明</h2>
+			<p class="rj-list-p ng-binding">你在干什么?</p>
+			<span class="year">2015</span>
+		</a>
+		<a class="item relative item-avatar jy-padding-16">
+			<img src="img/adam.jpg" width="40">
+			<span class="rj-sm-red-icon"><p class="">2</p></span>
+			<h2 class="">李明</h2>
+			<p class="rj-list-p ng-binding">你在干什么?</p>
+			<span class="year">2015</span>
+		</a>
+		<a class="item relative item-avatar jy-padding-16">
+			<img src="img/adam.jpg" width="40">
+			<span class="rj-sm-red-icon"><p class="">2</p></span>
+			<h2 class="">李明</h2>
+			<p class="rj-list-p ng-binding">你在干什么?</p>
+			<span class="year">2015</span>
+		</a>
+
+	</div>
+
+</ion-view>

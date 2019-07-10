@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<form action="">
+			<lable>用户名：</lable>
+			<input type="text" name="tel" id="name" value="" />
+			</p>
+			<lable>密&nbsp;码：</lable>
+			<input type="password" name="password" id="psd" value="" />
+			</p>
+			<input type="button" name="" id="login" value="登录" />
+		</form>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#login").click(function() {
+					var user = $("from").serialize();//序列化列表，获取所有的value，发送给后台
+					console.log(user);
+					//					$.post("/mobile/login",user,function (data) {
+					//						console.log(data.status);
+					//						if(data.status){
+					//							
+					//						}else{
+					//							alert(data.status);
+					//						}
+					//					});
+					$.ajax({
+						type: "post",
+						url: "/mobile/login",
+						data: user,
+						async: false,
+						success: function(data) {
+							// console.log(data);
+							alert("2");
+						},
+						
+						error: function(XMLHttpRequest, textStatus, errorThrown) {
+							console.log(XMLHttpRequest);
+							console.log(textStatus);
+							console.log(errorThrown);
+						}
+					});
+					alert("1");
+				});
+			});
+		</script>
+	</body>
+	<!--<script type="text/javascript">
+		window.onload = function() {
+			
+//			ajax.open("post","js/test.json",true);
+			
+//			ajax.open('Get', 'http://192.168.1.128:3000/mobile/login', true);
+//			ajax.send();
+//			console.log(ajax.readyState);
+				var loginBtn = document.getElementById('login');
+				var oName = document.getElementById('name');
+				var oPsd = document.getElementById('psd');
+				loginBtn.onclick = function () {
+					var name = oName.value;
+					var psd = oPsd.value;
+					var ajax = new XMLHttpRequest();
+					ajax.open("post","http://192.168.1.128:3000/mobile/login",true);
+					ajax.send('tel='+name+'&password'+psd);
+					ajax.onreadystatechange = function() {
+					if(ajax.readyState == 4) {
+//					console.log(ajax.responseText);
+//					console.log(ajax.responseXML);//输出的是字符串
+					
+					var data = JSON.parse(ajax.responseText);//字符串转对象
+					if(data.status){
+						alert(data.message);
+						}else{
+							alert(data.message);
+						}
+					}
+				}
+			}
+		}
+	</script>
+	<script>
+		var animal = {
+			name:"tom",
+			age:"'2",
+			color:{'yllow','white'}
+		};
+		var dog = {};
+		for (var i = 0; i < dog.animal.length; i++) {
+			dog.name = animal.name;
+		}
+	</script>-->
+
+</html>

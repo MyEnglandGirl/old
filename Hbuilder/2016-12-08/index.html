@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			window.onload = function () {
+				//html+css加载完再执行script
+				var oTitle = document.getElementById('title');
+//				console.log(oTitle);
+//				console.dir(document.getElementById('title'));
+//				oTitle.innerText = '小目标，一个亿';
+				oTitle.innerHTML='<i>斜体</i>';
+				oTitle.style.color="#ff0";
+//				var oP = document.getElementsByTagName("p");
+//				console.log(oP[3]);
+				var oQ = document.querySelectorAll(".red p");
+//				console.log(oQ);
+				for(i=0;i<oQ.length;i++){
+					oQ[i].style.color="#f0f";
+				}
+				var oInput = document.querySelectorAll("input");
+				oInput[0].style.border="2px solid #00f";
+				oInput[1].style.border="2px dashed #345547";
+				var oC = document.createElement("p");
+//				var oResult = document.getElementById("red");
+				var oT =document.getElementById("test");
+				console.log(oT);
+				oC.innerText="在一起";
+				oResult.appendChild(oC);
+//				oC.innerHTML= "<a href='Http://www.baidu.com'>百度一下</a>";
+//				oResult.insertBefore(oC,oT);
+				
+			}
+			
+		</script>
+		
+		<h1 id="title">一对"CP"</h1>
+		<img src="" alt="" />
+		<p>这里是一段话，这里是一段话，这里是一段话，这里是一段话，这里是一段话，这里是一段话，</p>
+		<p>这里是一段话，这里是一段话</p>
+		<p>这
+			<a href="">高颜值</a>和大长腿，这里是一段话，这里是一段话</p>
+		<input type="" name="" id="" value="" />
+		<input type="button" name="" id="" value="评论" />
+		<br />
+		<div class="big">
+			<div class="red" id="red">
+				<p id="test">这里是一段话</p>
+			</div>
+			<div class="red">
+				<p>这里是一段话</p>
+			</div>
+			<div class="red">
+				<p>这里是一段话</p>
+			</div>
+
+		</div>
+
+		<!--<script type="text/javascript">
+			var regId = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+			var id =430626199602294625;
+			var flag = regId.test(id);
+			console.log(flag);
+		</script>
+			-->
+	</body>
+
+</html>

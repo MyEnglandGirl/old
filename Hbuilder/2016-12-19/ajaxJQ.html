@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		测试文字!
+		http://192.168.1.126:3000/ajax/JY/index.html
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// $.getJSON("/getEvent",{
+			// 	acid:"26816955"
+			// },function (data) {
+			// 	console.log(data);
+			// 	console.log(data.events.address);	
+			// });
+			var geo = "";
+			$.getJSON("/getEvent?acid=26816955",function (data) {
+				console.log(data);
+				console.log(data.events.address);
+				// console.log(data.events.geo);
+				geo = data.events.geo;	
+				console.log(geo);
+			});
+			console.log(geo);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="register">
+
+			<h1>ShareLink</h1>
+			<p>Link the world.Share to world.</p>
+			<form action="" method="get" id="from">
+				<ul>
+					<li>
+						<input type="text" name="username" id="name" value="" placeholder="你的用户名" />
+						<div class="point">
+							必须填写用户名
+						</div>
+					</li>
+					<li>
+						<input type="password" name="password" id="password" value="" placeholder="输入密码" />
+						<div class="point">
+							必须填写密码
+						</div>
+					</li>
+					<li>
+						<input type="password" name="confirm_password" id="confirm_password" value="" placeholder="再次输入密码" />
+						<div class="point">
+							请再次填写密码
+						</div>
+					</li>
+					<li>
+						<input type="text" name="tel" id="tel" value="" placeholder="输入手机号码" />
+						<div class="point">
+							必须输入手机号
+						</div>
+					</li>
+					<li>
+						<input type="text" name="code" id="code" value="" placeholder="输入邮编" />
+						<div class="point">
+							必须输入邮编
+						</div>
+					</li>
+					<li>
+						<input type="text" name="email" id="email" value="" placeholder="输入邮箱地址" />
+						<div class="point">
+							必须输入邮箱地址
+						</div>
+					</li>
+					<input type="button" name="submit" id="register" value="注册" />
+					<a href="login.html">
+						<input type="submit" name="" id="to-logo" value="已经有账号?" />
+					</a>
+				</ul>
+			</form>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/additional-methods.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/messages_zh.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$().ready(function() {
+				$("#signupForm").validate({
+					debug: true
+				});
+			});
+			$().ready(function() {
+
+				// 在键盘按下并释放及提交后验证提交表单
+				$("#from").validate({
+
+					rules: {
+						firstname: "required",
+						lastname: "required",
+						username: {
+							required: true,
+							minlength: 2
+						},
+						password: {
+							required: true,
+							minlength: 5
+						},
+						confirm_password: {
+							required: true,
+							minlength: 5,
+							equalTo: "#password"
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						topic: {
+							required: "#newsletter:checked",
+							minlength: 2
+						},
+						code: { //input的name值
+							required: true,
+							isZipCode: true, //function方法的name值
+							//							maxlength:6
+						},
+						tel:{
+							required:true,
+							isTel:true,
+						},
+						agree: "required"
+					},
+					errorElement:"div",
+					messages: {
+						firstname: "请输入您的名字",
+						lastname: "请输入您的姓氏",
+						username: {
+							required: "请输入用户名",
+							minlength: "用户名必需由两个字母组成"
+						},
+						password: {
+							required: "请输入密码",
+							minlength: "密码长度不能小于 5 个字母"
+						},
+						confirm_password: {
+							required: "请输入密码",
+							minlength: "密码长度不能小于 5 个字母",
+							equalTo: "两次密码输入不一致"
+						},
+						code: {
+							required: "请输入邮编",
+							minlength: "长度不能小于 6个字母"
+						},
+						tel: {
+							required: "请输入邮编",
+							minlength: "请输入正确的手机号"
+						},
+						email: "请输入一个正确的邮箱",
+						agree: "请接受我们的声明",
+						topic: "请选择两个主题"
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

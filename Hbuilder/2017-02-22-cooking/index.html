@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<input type="file" multiple="" name="" id="fileInput" value="" />
+		<input type="button" name="" id="btn" value="显示" />
+		<div id="preview">
+
+		</div>
+
+		<script type="text/javascript">
+			function setCookie(cname, cvalue, exdays) {
+				var d = new Date();
+				d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+				var expires = "expires=" + d.toGMTString();
+				document.cookie = cname + "=" + cvalue + ";" + expires;
+				//				document.cookie = "name" + "=" +"value" + ";" +expires;
+			}
+			setCookie("username", "pass", "1");
+
+			function getCookie(cname) {
+				var arr = document.cookie.split(';');
+				for(var i = 0; i < arr.length; i++) {
+					var c = arr[i].trim(); //去空格
+					var arrC = c.split("=");
+					if(arrC[0] == cname) {
+						return arrC[1];
+
+					}
+				}
+				return "";
+			}
+			getCookie("username");
+			console.log(getCookie("username"));
+
+			var obj = {
+				name: 1,
+				sex: 2
+			}
+			var str = JSON.stringify(obj);
+			sessionStorage.setItem("key", str);
+			x = sessionStorage.getItem("key");
+			x = JSON.parse(x)
+			console.log(x);
+
+			localStorage.setItem("key2", "value2");
+			y = localStorage.getItem("key2");
+			console.log(y);
+
+			if(window.FileReader) {
+				//				var fr = new FileReader();
+				//				console.log(fr);
+				var fileInput = document.getElementById("fileInput");
+				var btn = document.getElementById("btn");
+				var preview = document.getElementById("preview");
+				var fileReader = new FileReader;
+//				选择文件
+				fileInput.addEventListener("change", function() {
+					console.dir(fileInput);
+					var firstFile = fileInput.files[0];
+					fileReader.readAsDataURL(firstFile);
+//					fileReader.readAsBinaryString(firstFile);
+					fileReader.onload = function () {
+						console.dir(fileReader);
+//						preview.innerText = fileReader.result;
+						
+						var img = document.createElement("img");
+						img.src=fileReader.result;
+						preview.appendChild(img);
+						
+					}
+				});
+
+			} else {
+				alert("Not supported by your browser!")
+			}
+		</script>
+	</body>
+
+</html>

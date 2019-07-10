@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<pre>
+		加分题目：
+				编写一个带return的function，将字符串str中search的“键值对”转化成obj对象，并return出来！
+		</pre>
+		<div class="" id="result">
+		</div>
+		<script type="text/javascript">
+			var str = 'https://s.taobao.com/search?q=%E6%AF%9B%E9%92%88%E7%BB%87%E8%A1%AB&refpid=430274_1006&source=tbsy&style=grid&tab=all&pvid=5a409b0c6e66d0359b527a85224dfd7c&clk1=ad2693f8e1bda7b794fb06ef34484470&spm=a21bo.50862.201856-sline.22.SnU3TL';
+			window.onload = function() {
+				function get() {
+					var obj = {};
+					var oSearch = str.indexOf('search?');
+					//						  console.log(oSearch);
+					var newStr = str.substring(oSearch + 7);
+					//						  console.log(newStr);
+					var arr = newStr.split('&');
+					//						  console.log(arr);
+					for(var i = 0; i < arr.length; i++) {
+						var equal = arr[i].indexOf('=');
+						//				 	 	  console.log(equal);
+						var id = arr[i].substring(0, equal);
+						//				  		 console.log(id);
+						var value = arr[i].substring(equal + 1);
+						//				  		 console.log(value);
+						obj[id] = value;
+					}
+					return obj;
+					//				  	console.log(obj);
+				};
+				console.log(get());
+			}
+
+			//--------------------------------------我是分割线------------------------------------------
+			//  		    var obj = new Array();
+			//  		    var oSearch = str.indexOf('search?');
+			//  		    console.log(oSearch);
+			//  		    var x = str.slice(21,29);
+			//  		    console.log(x);
+			//  		    var id = str.indexOf('&style=');
+			//  		    console.log(id);
+			//  		    var and = str.indexOf('&');
+			//  		    console.log(and);
+			//  		    var equal = str.indexOf('=');
+			//  		    console.log(equal);
+			////  		    var equal = str.indexOf('=',30);
+			//  		    var lastEqual = str.lastIndexOf('=');
+			//  		    console.log(equal);
+			////  		    for (var i = 0; i < str.length; i++) {
+			////  		    	var and = str.indexOf('&');
+			////  		    	var equal = str.indexOf('=');
+			////  		    	if(and>equal){
+			////  		    		var equal = str.indexOf('=',equal);
+			////  		    	}
+			////  		    }
+			//  			var and = str.indexOf('&');
+			//  		    var equal = str.indexOf('=');
+			//  		    var lastEqual = str.lastIndexOf('=');
+			//				for (equal<lastEqual;equal++){
+			//					if (and>equal) {
+			//						var id  = str.substring(and,equal);
+			//						console.log(id);
+			//					}
+			//				}
+			//--------------------------------------我是分割线------------------------------------------
+		</script>
+	</body>
+
+</html>

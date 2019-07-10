@@ -1,0 +1,95 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1110px;
+	margin: 0 auto;
+	
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.container{
+	box-shadow: 1px 0px 5px rgba(100, 100, 100, 0.3);
+	padding:20px;
+	background-color: #fff;
+}
+body{
+	background-color: rgb(246,246,246);
+}
+.bgColor{
+	padding: 6px 12px;
+	font-size: 14px;
+}
+.blueBg{
+	font-size: 14px;
+	background-color: rgb(53,176,213);
+	padding: 6px 12px;
+	border-radius:4px;
+	border: 0;
+	color: #FFFFFF;
+}
+.text{
+	padding: 6px 12px;
+	border-radius:4px;
+	border: 1px solid #ccc;
+}
+table{
+	width: 1110px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 36px;
+}
+table tr td{
+	border: 1px solid #ddd;
+	padding-left: 12px;
+}
+table tr th{
+	width: 25%;
+	border: 1px solid #ddd;
+	padding-left: 12px;
+	text-align: left;
+}
+a{
+	color: #666666;
+}
+a:hover{
+	cursor: pointer;
+	color: #23527c;
+	text-decoration: underline;
+}

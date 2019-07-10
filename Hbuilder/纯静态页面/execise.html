@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			.playBox {
+				width: 200px;
+				margin: 0 auto;
+			}
+			
+			.playBox .title {
+				background: url(img/down_list_h2_bg.gif);
+				padding: 0 8px;
+				height: 25px;
+				line-height: 25px;
+			}
+			
+			.playBox .arrow.up {
+				background: url(img/up.gif) no-repeat center;
+				width: 8px;
+				height: 25px;
+			}
+			
+			.playBox .arrow.down {
+				background: url(img/down.gif) no-repeat center;
+					width: 8px;
+				    height: 25px;
+			}
+			
+			.playList {
+				border: 1px solid #CBD1D4;
+				border-top: none;
+			}
+			
+			.playList li a {
+				display: block;
+				background-color: #EEEEF7;
+				padding: 3px 6px;
+			}
+			
+			.playList li a:hover {
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bg playBox clearfix">
+			<div class="title clearfix">
+				<b>播放列表</b>
+				<div class="arrow up fr">
+				</div>
+			</div>
+
+			<div class="playList">
+				<ul>
+					<li>
+						<a href="#">
+							流年——王菲
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							忘情水——刘德华
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							流年——王菲
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							忘情水——刘德华
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".playBox .title").click(function(){
+				var $playList = $(".playBox .playList");
+				var flag = $playList.is(":hidden");
+				console.log(flag);
+				if (flag) {
+					$playList.slideDown();
+					$(this).find(".arrow").removeClass("down").addClass("up");
+				}else {
+					 $playList.slideUp();
+					 $(this).find(".arrow").removeClass("up").addClass("down");
+				
+				}
+			});
+			
+			
+			
+		</script>		
+		
+		
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+{
+	"nickName":"MrZ",
+	"realName":"徐涛",
+	"programmers": [
+		{
+			"firstName": "Brett",
+			"lastName": "McLaughlin",
+			"email": "Brett@126.com"
+		}, {
+			"firstName": "Jason",
+			"lastName": "Hunter",
+			"email": "Jason@163.com"
+		}, {
+			"firstName": "Elliotte",
+			"lastName": "Harold",
+			"email": "Harold@gmail.com"
+		}
+	],
+	"authors": [
+		{
+			"firstName": "Isaac",
+			"lastName": "Asimov",
+			"genre": "sciencefiction"
+		}, {
+			"firstName": "Tad",
+			"lastName": "Williams",
+			"genre": "fantasy"
+		}, {
+			"firstName": "Frank",
+			"lastName": "Peretti",
+			"genre": "christianfiction"
+		}
+	],
+	"musicians": [
+		{
+			"firstName": "Eric",
+			"lastName": "Clapton",
+			"instrument": "guitar"
+		}, {
+			"firstName": "Sergei",
+			"lastName": "Rachmaninoff",
+			"instrument": "piano"
+		}
+	]
+}

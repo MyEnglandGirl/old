@@ -1,0 +1,177 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	
+}
+img{
+	border: none;
+	}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear:both;
+}
+.container{
+	width: 1220px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.top{
+	width: 1198px;
+	height: 85px;
+	border: #cccccc;
+}
+.text-style{
+	font-size: 14px;
+	color: #333333;
+}
+.input-text-style{
+	width: 172px;
+	height: 14px;
+	border: 1px solid #d5d5d5;
+	padding: 4px 6px;
+	line-height: 14px;
+}
+.top ul li{
+	float: left;
+	text-align: right;
+	/*margin: 20px 30px;*/
+}
+.select-style{
+	width: 186px;
+	height: 24px;
+	border: 1px solid #d5d5d5;
+	padding: 4px 6px;
+}
+.select-style option{
+	
+}
+.top ul li div{
+	margin: 20px;
+}
+.button-style-find{
+	width: 78px;
+	height: 28px;
+	background-color: #6181bc;
+	color: #fff;
+	border: 1px solid #225cba;
+	margin-right: 20px;
+}
+.new{
+	
+	margin-top: 30px;
+	height: 32px;
+	width: 1218px;
+	background-color: #f3f3f3;
+	border: 1px solid #cbcbcb;
+	border-bottom: 0;
+}
+.new .button-style{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #6181bc;
+	border: 1px solid #225cba;
+	margin: 3px 2px 3px 3px;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+.button-style img{
+	display: block;
+	margin: 0;
+	
+}
+/*.new span{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}*/
+
+
+table{
+	border: 1px solid #cbcbcb;
+	border-top:0 ;
+	text-align: center;
+	vertical-align: middle;
+}
+table th {
+	border: 0;
+	border-bottom: 1px solid #eaeaea;
+}
+table td{
+		border: 0;
+		border-right: 1px dashed #bfc2c3;
+}
+table td:last-child{
+		
+		border-right: 1px solid #bfc2c3;
+}
+.bgcolor{
+	background-color: #f5f8fa;
+	
+}
+
+
+
+/*雪碧图*/
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprite.png) no-repeat;
+}
+.diamond{
+	background-position: 0px 0px;
+	width: 21px;
+	height: 18px;
+}
+.pencil{
+	background-position: -3px -22px;
+	width: 16px;
+	height: 16px;
+}
+.gift{
+	background-position: -3px -45px;
+	width: 16px;
+	height: 14px;
+}
+
+/*.father .diamond{
+	width: 37px;
+	height: 37px;
+	 border: 1px solid #FFFFFF;
+}*/
+.father .box{
+	width: 37px;
+	height: 37px;
+	 border: 1px solid #FFFFFF;
+	 
+}
+.box .diamond{
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+/*body{
+	background-color: #999999;
+}*/

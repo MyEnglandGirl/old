@@ -1,0 +1,82 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+html,body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+img{
+	border: none;
+	display: block;
+	}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear:both;
+}
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+p:before{
+	content: '前面';
+	color: #ff0;
+	
+}
+p:after{
+	content: '...';
+}
+p:after{
+	content: url();
+}
+.text-float li{
+	margin: 10px;
+	float: left;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.fz16{
+	font-size: 16px;
+}
+.white{
+	color: #FFFFFF;
+}
+a{
+	color: #FFFFFF;
+}
+h2{
+	font-size: 24px;
+	color: #cc0001;
+	font-weight: normal;
+}
+h3{
+	font-size: 14px;
+	color: #323232;
+	font-weight: 400;
+}
+.overflow{
+	overflow: hidden;
+	width: 1200px;
+}
+

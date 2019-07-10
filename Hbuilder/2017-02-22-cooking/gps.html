@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div class="" id="position">
+			
+		</div>
+		<script type="text/javascript">
+			window.onload = function () {
+				var pos= document.getElementById("position");
+				console.dir(this);
+				if(window.navigator.geolocation){
+//					alert("支持定位");
+//					navigator.geolocation.getCurrentPosition(function (position) {
+//						console.log(position);
+//						pos.innerText = JSON.stringfy(position);
+//					},function (error) {
+//						
+//					});
+					navigator.geolocation.getCurrentPosition(function (position) {
+						pos.innerText = JSON.stringify(position);
+					}, function () {
+						
+					})
+					
+				}else{
+					alert("不支持定位");
+				}
+			};
+		</script>
+	</body>
+</html>

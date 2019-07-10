@@ -1,0 +1,72 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	box-shadow: 1px 0px 5px rgba(100, 100, 100, 0.3);
+	height: 500px;
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+body{
+	background: rgb(246,246,246);
+}
+.img{
+	position: relative;
+}
+.img img{
+	display: block;
+}
+.img a{
+	position: absolute;
+}
+.left,.right{
+	padding: 20px;
+	background: #fff;
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	margin-top: -26px;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}

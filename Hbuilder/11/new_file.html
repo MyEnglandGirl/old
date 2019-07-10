@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<header contenteditable="true">头部</header>
+		<nav>
+			<ul contenteditable="true" contextmenu="9">
+				<li>写点字</li>
+				<li>写点字</li>
+				<li>写点字</li>
+				<li>写点字</li>
+			</ul>
+		</nav>
+		<meter>30%</meter>
+		<progress>20%</progress>
+		<input type="search" name="" id="" value="" />
+		<input type="number" name="" id="" value="" />
+		<input type="datetime-local" name="" id="" value="" />
+		<input type="range" name="" id="" value="" />
+		<input type="color" name="" id="" value="" />
+		<footer>尾部</footer>
+		<canvas id="canvas" width="400" height="400"></canvas>
+		<script type="text/javascript">
+		window.onload = function () {
+			
+			var oCanvas = document.getElementById("canvas");
+			var context = oCanvas.getContext("2d");
+			//文字
+			context.fillStyle="#ff0";
+
+			context.font="blod 50px 微软雅黑";
+			context.fillText("Hello world",180,50);
+			
+			
+			context.strokeStyle="#0B6FA2";
+			context.strokeText("Hello",300,70);
+//			var metrics = context.measureText(Text);
+			//矩形
+			context.lineWidth = 2;
+			context.strokeRect(0,0,400,400);
+			context.fillStyle="rgb(245,245,245)";
+			context.fillRect(0,0,400,400);
+			//圆
+			
+			context.fillStyle="rgba(255,0,0,0.1)";
+			for(var i=0;i<10;i++){
+				context.beginPath();
+				context.arc(30*i,30*i,14*i,0,2*Math.PI);
+				 context.fill();
+				 context.closePath();
+			}
+			context.ellipse(300,100,30,20,Math.PI,0,2*Math.PI);
+			context.fill();
+//          context.arc(50,50,30,0,2*Math.PI,true);
+            
+			context.beginPath();
+            context.moveTo(20,20);
+            context.lineTo(20,360);
+            context.moveTo(20,360);
+            context.lineTo(360,360);
+            context.lineJoin="round";
+            context.lineCap="round"
+            context.stroke();
+            context.closePath();
+            
+            context.beginPath();
+            context.moveTo(20,360);
+            context.lineTo(360,20);
+			context.setLineDash([5,15]);
+			context.stroke();
+			context.closePath();
+           
+           
+		}
+
+		</script>
+	</body>
+</html>

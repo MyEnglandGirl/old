@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var box = document.getElementById("btn_box");
+				for(var i = 1; i < 11; i++) {
+					var btn = document.createElement("button");
+					btn.style.width = "50px";
+					btn.style.height = "25px";
+					btn.style.marginLeft = "10px";
+					btn.setAttribute("id", i);
+					btn.innerText = "按钮";
+					box.appendChild(btn);
+				}
+
+				var arr = document.getElementsByTagName('button');
+				for(var i = 0; i < arr.length; i++) {
+					arr[i].onclick = function() {
+						alert(this.id);
+					}
+				}
+
+			}
+		</script>
+	</head>
+
+	<body>
+		在for循环里生成10个button,并绑定click事件，点击button分别弹出1~10（数字代表每一个button的序号）
+		<div class="div1" id="btn_box">
+
+		</div>
+
+	</body>
+
+<html>

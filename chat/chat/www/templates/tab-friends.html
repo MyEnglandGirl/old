@@ -1,0 +1,52 @@
+<ion-header-bar align-title="left" class="bar-dark">
+	<div class="h1 title">微信(16)</div>
+	<div class="buttons">
+
+		<a ng-click="modal.show()" class="header-icon"><img src="img/png/search.png" / width="30"></a>
+		</button>
+		<a ui-sref="add" href="" class="header-icon"><img src="img/png/plus.png" / width="30"></a>
+		</button>
+	</div>
+</ion-header-bar>
+<ion-view view-title="Chats">
+	<ion-content>
+		<div class="list">
+
+			<a ui-sref="toVerifyFriend" class="item">
+				<img src="img/png/tab-friends/a_b.png" class="jy-vertical-align" width="30"/>
+				<span class="jy-vertical-align jy-margin-left-xs">新的朋友</span>
+			</a>
+			<a ui-sref="message-chat" class="item" href="#">
+				<img src="img/png/tab-friends/a_j.png" class="jy-vertical-align" width="30"/>
+				<span class="jy-vertical-align jy-margin-left-xs">群聊</span>
+			</a>
+			<a class="item" href="#">
+				<img src="img/png/tab-friends/aeo.png" class="jy-vertical-align" width="30"/>
+				<span class="jy-vertical-align jy-margin-left-xs">标签</span>
+			</a>
+			<a class="item" href="#">
+				<img src="img/png/tab-friends/a_h.png" class="jy-vertical-align" width="30"/>
+				<span class="jy-vertical-align jy-margin-left-xs">公众号</span>
+			</a>
+			<span class="jy-description jy-margin-sm">好友</span>
+			<!--<a class="item" href="#">
+				<img src="img/adam.jpg" class="jy-vertical-align" width="30"/>
+				<span class="jy-vertical-align jy-margin-left-xs">好友</span>
+			</a>-->
+			<div ng-repeat="x in userArr">
+			<div class="item jy-border-0 jy-margin-top-sm">
+				<img ng-show="{{x.img}}" ng-src="{{x.img.sm_img}}" src="img/ben.png" width="50" class="jy-vertical-align fl">
+				<img ng-hide="{{x.img}}" src="../img/img.jpg" width="40" class="jy-vertical-align fl">
+				<div class="jy-vertical-align jy-margin-left-sm fl" style="margin-top: 5px;">
+					<span class="my-name">{{x.name}}</span><br>
+					<!--<span class="my-nameID">微信号：giiw</span>-->
+				</div>
+				
+
+			</div>
+		</div>
+			
+
+		</div>
+	</ion-content>
+</ion-view>

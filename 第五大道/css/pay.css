@@ -1,0 +1,35 @@
+@charset "utf-8";
+.pay-amend{
+	margin-top: 10px;
+	border: 1px solid #CCCCCC;
+	height: 64px;
+}
+.pay-amend div{
+	padding: 15px;
+	font-size: 14px;
+}
+.pay-time{
+	background-color: #ebeaea;
+	font-size: 12px;
+	padding: 10px 20px;
+	color: #000000;
+	margin-top: 20px;
+}
+.pay-money{
+	margin-top: 15px;
+	margin-left: 30px;
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+.pay-number{
+	margin-top: 10px;
+	padding: 15px 40px 20px 40px;
+    border: 1px solid #dfdfdf;
+    background: #f7f7f7;
+    margin-bottom: 20px;
+}
+.pay-write li{
+ display: inline-block;	
+ margin: 10px 60px 10px 20px;
+ color: #000000;
+}

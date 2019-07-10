@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>搜索</title>
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			html {
+				background: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="am-g public-head  color-fff am-padding-vertical-sm am-text-lg">
+			<div class="am-u-sm-2">
+				<a href="javascript:history.go(-1);" class="color-fff">
+					<i class="am-icon-angle-left am-icon-sm"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-8 am-text-center">搜索</div>
+			<div class="am-u-sm-2"></div>
+		</div>
+		<div class="search-con">
+			<div class="am-g am-padding-vertical-sm bg-color-e7e7e7">
+				<div class="am-u-sm-9 am-padding-right-0">
+					<input type="text" class="am-form-field am-radius" placeholder="搜索商品/品牌" />
+				</div>
+				<div class="am-u-sm-3">
+					<button type="button" class="am-btn am-btn-default  am-btn-block bg-color-990100 color-fff">搜索</button>
+				</div>
+			</div>
+		</div>
+		<div class="search-hot am-padding-horizontal-sm bg-color-fff">
+			<p class="color-333 am-text-sm am-padding-vertical-sm">热搜</p>
+			<ul class="am-avg-sm-3 am-thumbnails search-hot-con">
+				<li>
+					<a href="" class="color-666">贝亲Pigeon</a>
+				</li>
+				<li>
+					<a href="" class="color-666">康贝Combi</a>
+				</li>
+				<li>
+					<a href="" class="color-666">乐儿宝BOBO</a>
+				</li>
+				<li>
+					<a href="" class="color-666">三洋DACOO</a>
+				</li>
+				<li>
+					<a href="" class="color-666"></a>
+				</li>
+				<li>
+					<a href="" class="color-666"></a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="search-history am-padding-horizontal-sm bg-color-fff">
+			<div class="am-g">
+				<div class="am-u-sm-6 am-padding-left-0">
+					<p class="color-333 am-text-sm am-padding-vertical-sm">搜索记录</p>
+				</div>
+				<div class="am-u-sm-6 am-text-right am-padding-right-0">
+					<a href="javascript:;" class="clear-history">
+						<p class="color-999 am-text-xs am-padding-vertical-sm">清空搜索历史</p>
+					</a>
+
+				</div>
+			</div>
+			<ul class="am-avg-sm-3 am-thumbnails search-history-con">
+				<li>
+					<a href="" class="color-666">贝亲Pigeon</a>
+				</li>
+				<li>
+					<a href="" class="color-666">康贝Combi</a>
+				</li>
+				<li>
+					<a href="" class="color-666">乐儿宝BOBO</a>
+				</li>
+				<li>
+					<a href="" class="color-666">三洋DACOO</a>
+				</li>
+				<li>
+					<a href="" class="color-666"></a>
+				</li>
+
+			</ul>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".clear-history").click(function () {
+					$(this).parents(".search-history").find("ul li").remove();
+				});
+			});
+		</script>
+	</body>
+
+</html>

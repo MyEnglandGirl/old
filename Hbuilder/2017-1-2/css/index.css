@@ -1,0 +1,341 @@
+html body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+}
+
+
+/*桌面*/
+
+.desktop {
+	width: 100%;
+	height: 1000px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #666;
+	background-image: url(../img/bg_03.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.desk-continer {
+	width: 100%;
+	height: 100%;
+}
+
+.desk-continer .file {
+	width: 100px;
+	/*height: 100px;*/
+	border-width: 2px;
+	border-color: transparent;
+	border-style: solid;
+	box-sizing: border-box;
+	padding: 8px 0;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	transition: background-color 0.5s ease;
+	border-radius: 5px;
+	position: absolute;
+	cursor: default;
+}
+
+.icon {
+	background-image: url(../img/sprits.png);
+	background-repeat: no-repeat;
+}
+
+.desk-continer .file .icon {
+	width: 60px;
+	height: 62px;
+	display: block;
+	margin: 0 auto;
+}
+
+.desk-continer .file .garbage {
+	background-position: 2px -199px;
+}
+
+.desk-continer .file .music {
+	background-position: -203px -111px;
+}
+
+.desk-continer .file .fileIcon {
+	background-position: -92px -199px;
+}
+
+.desk-continer .file .picture {
+	background: url(../img/xin.jpg) no-repeat;
+	width: 62px;
+	height: 62px;
+	display: block;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.desk-continer .file .kalendar {
+	width: 60px;
+	height: 62px;
+	margin: 0 auto;
+	background: url(../img/calendar.png) no-repeat 0px 10px;
+}
+
+.desk-continer .file:hover {
+	background: rgba(0, 0, 0, 0.2);
+	border-color: #d6d6d7;
+}
+
+.smallData {
+	width: 180px;
+	height: 75px;
+	border: 1px solid red;
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+}
+
+.data_main {
+	width: 200px;
+}
+
+.data_left {
+	width: 48px;
+	height: 68px;
+	border: 1px solid red;
+	border-radius: 4px;
+	float: left;
+}
+
+.data_left ul {
+	height: 14px;
+}
+
+.data_left ul li {
+	width: 2px;
+	height: 2px;
+	border: 1px solid #e50020;
+	border-radius: 100%;
+	float: left;
+	margin: 5px 4px;
+}
+
+.main {
+	background: #fd9187;
+	width: 40px;
+	height: 45px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.mouth {
+	font-size: 12px;
+	color: #666;
+	padding-top: 5px;
+}
+
+.day {
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+}
+
+.data_right {
+	width: 130px;
+	height: 70px;
+	float: right;
+}
+
+.data_right p {
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	text-shadow: 0 0 10px #fff;
+	line-height: 23px;
+}
+
+
+/*日历*/
+
+#calendarCon {
+	height: 0;
+	width: 320px;
+	background: rgba(93, 64, 69, 0.9);
+	/*background-color: #fafafa;*/
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #333;
+}
+
+p {
+	margin: 0;
+}
+
+#dt {
+	margin: 30px auto;
+	height: 28px;
+	width: 200px;
+	padding: 0 6px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+.calendarConTime .time {
+	color: #FFFFFF;
+	font-size: 24px;
+	padding: 8px 0 0px 10px;
+}
+
+.calendarConTime .data {
+	color: #e15671;
+	margin: 6px 0 0px 10px;
+}
+
+.calendarConTime .week {
+	color: #e15671;
+	margin: 6px 0 0px 0px;
+}
+
+.calendarConTime>span {
+	font-size: 24px;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	padding: 1px 8px;
+	cursor: pointer;
+	/*background-color: #e15671;*/
+	border-radius: 10px;
+}
+/*右键菜单*/
+
+.menu {
+	width: 260px;
+	height: 320px;
+	background: #f0f1f1;
+	position: absolute;
+	display: none;
+	border: 2px solid #919292;
+	top: 50px;
+	left: 100px;
+	z-index: 999;
+}
+
+.menu li {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 20px;
+	position: relative;
+}
+
+.menu li i {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+
+.menu li .smallMenu {
+	width: 100px;
+	height: auto;
+	position: absolute;
+	z-index: 10;
+	display: none;
+	top: -2px;
+	left: 100%;
+	background: #f0f1f2;
+	border: 2px solid #8b8b8b;
+}
+
+.menuList li:hover {
+	background: rgb(218, 218, 218);
+}
+
+.menuList li:hover .smallMenu {
+	display: block;
+}
+
+.smallMenu a:hover {
+	background: rgb(218, 218, 218);
+}
+
+.menu li .smallMenu a {
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	font-size: 14px;
+	color: #3a3a3a;
+}
+
+.arrow {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: -520px -2px;
+	position: relative;
+	top: 9px;
+	float: right;
+}
+
+.menu li {
+	cursor: pointer;
+}
+
+.menu li:nth-of-type(5),
+.menu li:nth-of-type(6),
+.menu li:nth-of-type(7) {
+	color: #999;
+	cursor: not-allowed;
+}
+
+.menu li:after {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+.view {
+	background-position: -471px -2px;
+}
+
+.sort {
+	background-position: -438px -2px;
+}
+
+.refresh {
+	background-position: -392px -3px;
+}
+
+.newFolder {
+	background-position: 0 0;
+}
+
+.setting {
+	background-position: -120px 0;
+}
+
+.individuation {
+	background-position: -120px 0;
+}
+
+.control {
+	background-position: -89px 0;
+}
+
+.clearCache {
+	background-position: -226px -5px;
+}

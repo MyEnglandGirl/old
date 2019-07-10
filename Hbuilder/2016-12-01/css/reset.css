@@ -1,0 +1,127 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	
+}
+img{
+	border: none;
+	}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear:both;
+}
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+ul{
+	margin-top: 30px;
+}
+.container ul li{
+	float: left;
+	margin-left: 28px;
+}
+
+
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprite.png) no-repeat;
+}
+.tablet{
+	background-position: 0px 0px;
+	width: 42px;
+	height: 56px;
+}
+h2{
+	display: block;
+}
+p{
+	font-size: 18px;
+	color: #000000;
+}
+
+ul li div{
+	margin-left: 10px;
+	margin-right: 12px;
+	margin-top: 10px;
+	width: 274px;
+}
+.settings{
+	background-position: -69px 0px;
+	width: 42px;
+	height: 56px;
+}
+.layer{
+	background-position: -138px 0px;
+	width: 42px;
+	height: 56px;
+}
+.rectangle{
+	background-position: 0px -84px;
+	width: 42px;
+	height: 56px;
+}
+.checklist{
+	background-position: -69px -84px;
+	width: 42px;
+	height: 56px;
+}
+.rectangle{
+	background-position: -138px -84px;
+	width: 42px;
+	height: 56px;
+}
+.compass{
+	background-position: 0px -168px;
+	width: 42px;
+	height: 56px;
+}
+.diamond{
+	background-position: -69px -168px;
+	width: 42px;
+	height: 56px;
+}
+.sun{
+	background-position: -138px -168px;
+	width: 42px;
+	height: 56px;
+}
+
+
+
+.left{
+	width: 400px;
+	height: 100px;
+	padding-bottom: 9999px;
+	
+	margin-bottom: -9999px;
+	overflow: auto;
+	
+	
+	background-color: #ff0;
+}
+.right{
+	overflow: auto;
+	height: 1000px;
+	background-color: #666666;
+}

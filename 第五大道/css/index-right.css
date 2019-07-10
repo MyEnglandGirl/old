@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.index-bazuo {
+	position: fixed;
+	z-index: 90;
+	top: 0;
+	right: 0;
+	width: 37px;
+	height: 100%;
+	/* opacity: 0.7; */
+}
+
+.index-bazuo dl {
+	height: 100%;
+	width: 335px;
+	overflow: hidden;
+}
+
+.index-bazuo dl dt {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	width: 35px;
+	height: 100%;
+}
+
+.index-mouyi {
+	position: absolute;
+	z-index: 2;
+	top: 30%;
+	left: 0px;
+	width: 35px;
+	height: 234px;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.index-mouyi ul li {
+	background-color: #333;
+	margin-bottom: 1px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.index-mouyi ul li a {
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.index-tablog {
+	background: url(../img/public/share02.png) no-repeat -88px -156px;
+}
+
+
+/*.index-tablogo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 35px;
+	height: 35px;
+}*/
+
+.index-zich {
+	background: url(../img/public/share02.png) no-repeat -140px -154px;
+}
+
+.index-chanzi {
+	display: none;
+	position: absolute;
+	z-index: 999999;
+	right: 35px;
+	top: 0;
+	width: 99px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	color: #363636;
+	background-color: #fff;
+	border: 1px solid #e4e4e4;
+	border-right: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+.index-mouyi ul li a:hover .index-chanzi {
+	display: block;
+}
+
+.index-mouyi ul li a:hover .index-zich {
+	background: url(../img/public/lux_index.png) no-repeat -273px -54px;
+}
+
+.index-mouyi ul li a:hover .index-tablog {
+	background: url(../img/public/lux_index.png) no-repeat -57px -44px;
+	background-color: #c69c6d
+}
+
+.index-mouyi ul li a:hover .index-logolisk {
+	background: url(../img/public/lux_index.png) no-repeat -199px -53px;
+}
+
+.index-mouyi ul li a:hover .index-kf {
+	background-color: #c69c6d
+}
+
+.index-fangx {
+	position: absolute;
+	z-index: -1;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	font-family: "\5b8b\4f53";
+}
+
+.index-fang {
+	top: 10px;
+	right: -8px;
+	color: #fff;
+}
+
+.index-logolisk {
+	background: url(../img/public/share02.png) no-repeat -202px -155px;
+}
+
+.index-tablogo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 35px;
+	height: 35px;
+}
+
+.index-kf {
+	background: url(../img/public/share02.png) no-repeat -258px -125px;
+}
+
+.index-cart {
+	box-shadow: 0 0 4px #999;
+	-webkit-box-shadow: 0 0 4px #999;
+	-moz-box-shadow: 0 0 4px #999;
+	width: 460px;
+	padding: 10px 10px 15px 20px;
+	position: absolute;
+	top: -60px;
+	left: -490px;
+	background-color: #FFF;
+}
+
+.index-musan {
+	position: absolute;
+	z-index: 2;
+	bottom: 35px;
+	left: 0px;
+	width: 35px;
+	height: 140px;
+}
+
+.index-musan ul li {
+	background-color: #333;
+	margin-bottom: 1px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.index-musan ul li a {
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.index-erwei {
+	background: url(../img/public/share02.png) no-repeat -312px -155px;
+}
+
+.index-tipo {
+	position: absolute;
+	top: 0px;
+	right: 35px;
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	z-index: 999999;
+	cursor: default;
+	border: 1px solid #e4e4e4;
+	border-right: 0;
+}
+
+.index-fankui {
+	background: url(../img/public/share02.png) no-repeat -374px -157px;
+}
+
+.index-women {
+	background: url(../img/public/line_bg.png) no-repeat 10px 9px;
+}
+
+.index-shangqu {
+	background: url(../img/public/share02.png) no-repeat -437px -153px;
+}
+
+.index-musan ul li a:hover .index-chanzi {
+	display: block;
+}
+
+.index-musan ul li a:hover .index-erwei {
+	background: url(../img/public/share02.png) no-repeat -313px -125px;
+	background-color: #c69c6d;
+}
+
+.index-musan ul li a:hover .index-fankui {
+	background: url(../img/public/lux_index.png) no-repeat -124px -52px;
+	background-color: #c69c6d;
+}
+
+.index-musan ul li a:hover .index-women {
+	background: url(../img/public/line_bg.png) no-repeat 10px -19px;
+	background-color: #c69c6d;
+}
+
+.index-musan ul li a:hover .index-shangqu {
+	background: url(../img/public/lux_index.png) no-repeat -401px -52px;
+	background-color: #c69c6d;
+}
+
+.index-fo {
+	background: #fff;
+	height: 100%;
+	width: 294px;
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+
+.index-musan ul li a div {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px
+}
+
+

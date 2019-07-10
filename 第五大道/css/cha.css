@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* css 重置 */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background: #fff;
+	font: normal 12px/22px 宋体;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: #1974A1;
+}
+
+.js {
+	width: 90%;
+	margin: 10px auto 0 auto;
+}
+
+.js p {
+	padding: 5px 0;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.js p span {
+	float: right;
+}
+
+.js p span a {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.js textarea {
+	height: 100px;
+	width: 98%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-top: 2px solid #aaa;
+	border-left: 2px solid #aaa;
+}
+
+
+/* 本例子css */
+
+.slideGroup {
+	width: 510px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.slideGroup .parHd {
+	height: 30px;
+	line-height: 30px;
+	background: #f4f4f4;
+	padding: 0 20px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+
+.slideGroup .parHd ul {
+	float: left;
+	position: absolute;
+	left: 20px;
+	top: -1px;
+	height: 32px;
+}
+
+.slideGroup .parHd ul li {
+	float: left;
+	padding: 0 15px;
+	cursor: pointer;
+	padding-top: 7px;
+}
+
+.slideGroup .parHd ul li.on {
+	height: 24px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #fff;
+	background-color: #C69C6D;
+}
+
+.slideGroup .slideBox {
+	overflow: hidden;
+	zoom: 1;
+	padding: 10px 0 10px 42px;
+	position: relative;
+}
+
+.slideGroup .sPrev,
+.slideGroup .sNext {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	display: block;
+	width: 30px;
+	height: 94px;
+	border: 1px solid #ddd;
+	background: url(../img/car_left.jpg) center center no-repeat #f4f4f4;
+}
+
+.slideGroup .sNext {
+	left: auto;
+	right: 5px;
+	background: url(../img/car_right.jpg) center center no-repeat #f4f4f4;
+}
+
+.slideGroup .sPrev:hover,
+.slideGroup .sNext:hover {
+	border-color: #f60;
+}
+
+.slideGroup .parBd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.slideGroup .parBd ul li {
+	margin: 0 8px;
+	float: left;
+	_display: inline;
+	overflow: hidden;
+	text-align: center;
+}
+
+.slideGroup .parBd ul li .pic {
+	text-align: center;
+}
+
+.slideGroup .parBd ul li .pic img {
+	width: 120px;
+	height: 90px;
+	display: block;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+.slideGroup .parBd ul li .pic a:hover img {
+	border-color: #999;
+}
+
+.slideGroup .parBd ul li .title {
+	line-height: 24px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			window.onload = function() {
+				var oBody = document.getElementsByTagName('body')[0];
+				//			oBody.style.backgroundColor = 'rgba(0,0,0,0,3)';
+
+				console.log(oBody);
+				var oBtn = document.createElement('input');
+				oBody.appendChild(oBtn);
+				//			oBody.style.position = 'relative';
+				//			oBody.style.zIndex = '0';
+				oBtn.setAttribute('type', 'button');
+				oBtn.setAttribute('value', '登录');
+				oBtn.setAttribute('id', 'btn');
+				oBtn.style.padding = '5px 20px';
+				//			oBtn.style.wordSpacing = '5px';
+
+				//建一个div
+				var oDiv = document.createElement('div');
+				oBody.appendChild(oDiv);
+				oDiv.style.display = 'none';
+				oDiv.style.width = 337 + 'px';
+				oDiv.style.height = 200 + 'px';
+				oDiv.style.backgroundColor = '#d1d1d1';
+				oDiv.style.position = 'absolute';
+				oDiv.style.left = '0';
+				oDiv.style.right = '0';
+				oDiv.style.bottom = '0';
+				oDiv.style.top = '0';
+				oDiv.style.margin = 'auto';
+				oDiv.style.zIndex = '2';
+
+				var oName = document.createElement('lable');
+				oDiv.appendChild(oName);
+				oName.style.display = 'inline-block';
+				oName.innerText = '用户名：';
+				oName.style.fontSize = '16px';
+				oName.style.margin = '50px 20px 10px 40px';
+
+				var oNtxt = document.createElement('input');
+				oDiv.appendChild(oNtxt);
+				oNtxt.style.display = 'inline-block';
+				oNtxt.style.margin = '50px 20px 10px 10px';
+				oNtxt.style.padding  = '3px';
+
+				var oPass = document.createElement('lable');
+				oDiv.appendChild(oPass);
+				oPass.style.display = 'inline-block';
+				oPass.innerHTML = '密&nbsp;&nbsp;&nbsp;码：';
+				oPass.style.fontSize = '16px';
+				oPass.style.margin = '20px 20px 10px 40px';
+
+				var oPassword = document.createElement('input');
+				oDiv.appendChild(oPassword);
+				oPassword.style.display = 'inline-block';
+				oPassword.style.margin = '20px 22px 10px 10px';
+				oPassword.style.padding  = '3px';
+
+
+				var oLog = document.createElement('input');
+				oDiv.appendChild(oLog);
+				oLog.setAttribute('id', 'logIn')
+				oLog.setAttribute('type', 'button');
+				oLog.setAttribute('value', '登录');
+				oLog.style.fontSize = '16px';
+				oLog.style.width = '60px';
+				oLog.style.display = 'inline-block';
+				oLog.style.margin = '20px 20px 10px 80px';
+
+				var oShut = document.createElement('input');
+				oDiv.appendChild(oShut);
+				oShut.setAttribute('id', 'shutDown')
+				oShut.setAttribute('type', 'button');
+				oShut.setAttribute('value', '关闭');
+				oShut.style.fontSize = '16px';
+				oShut.style.width = '60px';
+				oShut.style.display = 'inline-block';
+				oShut.style.margin = '20px 20px 10px 40px';
+
+				oBtn.onclick = function() {
+					oBody.style.backgroundColor = '#999999';
+					//			oBody.style.opacity = '0.3';
+					oDiv.style.display = 'block';
+				}
+
+				oLog.onclick = function() {
+					if(oNtxt.value.length < 8 && oPassword.value == '123') {
+						window.location.href = 'http://www.baidu.com'
+					} else {
+						alert('用户名或密码错误！');
+					}
+				}
+
+				oShut.onclick = function() {
+					oDiv.style.display = 'none';
+					oBody.style.backgroundColor = 'white';
+				}
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+	</head>
+
+	<body>
+		<div id="slider1" class="fullSlide">
+			<div class="bd">
+				<ul class="clearfix">
+					<li _src="url(img/banner01.jpg)" style="background:#E2025E center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+					<li _src="url(img/banner02.jpg)" style="background:#DED5A1 center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+					<li _src="url(img/banner03.jpg)" style="background:#B8CED1 center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+					<li _src="url(img/banner04.jpg)" style="background:#B8CED1 center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="hd">
+				<ul></ul>
+			</div>
+			<span class="prev"></span>
+			<span class="next"></span>
+		</div>
+		<script type="text/javascript">
+			function slider(option) {
+				$(this).wrap = (option.wrap);
+				$(this).ulBox = $(this).wrap("bd ul");
+				$(this).li = $(this).ulBox("li");
+				$(this).prevBtn = $(this).wrap("#prev");
+				$(this).nextBtn = $(this).wrap("#next");
+				$(this).hdUl = $(this)("#hd ul");
+				//定时器
+				$(this).time = null;
+				//当前图片停留时的索引
+				$(this).index = 0;
+			}
+			slider.protptype = {
+				constructor: slider,
+				init: function() {
+					$(this).resize();
+					$.each($(this).li, function(i, li) {
+						$(this).li.css({
+							"background": $(this).li.attr("_src") + ' top center no-repeat';
+						});
+						$(this).createPointers();
+					});
+					//获取指示器li数组
+				}
+			}
+		</script>
+	</body>
+
+</html>

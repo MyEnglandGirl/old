@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+	</head>
+
+	<body>
+		<div id="slider1" class="fullSlide">
+			<div class="bd">
+				<ul class="clearfix">
+					<li _src="url(img/banner01.jpg)" style="background:#E2025E center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+					<li _src="url(img/banner02.jpg)" style="background:#DED5A1 center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+					<li _src="url(img/banner03.jpg)" style="background:#B8CED1 center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+					<li _src="url(img/banner04.jpg)" style="background:#B8CED1 center 0 no-repeat;">
+						<a href="http://www.baidu.com"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="hd">
+				<ul></ul>
+			</div>
+			<span class="prev"></span>
+			<span class="next"></span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function slider(option) {
+			this.wrap = document.getElementById(option.wrap);
+			this.ulBox = this.wrap.querySelector('.bd ul');
+			this.li = this.ulBox.getElementsByTagName('li');
+			this.prevBtn = this.wrap.querySelector('.prev');
+			this.nextBtn = this.wrap.querySelector('.next');
+			this.hdUl = this.wrap.querySelector('.hd ul');
+			//定时器obj
+			this.time = null;
+			//当前图片停留时的索引
+			this.index = 0;
+		}
+		slider.prototype = {
+			constructor: slider,
+			init: function() {
+				this.resize();
+				for(var i = 0; i < this.li.length; i++) {
+					//设置li的背景图
+					this.li[i].style.background = this.li[i].getAttribute('_src') + ' top center no-repeat';
+					this.createPointers();
+				}
+				//获取指示器li数组
+				this.hdLi = this.hdUl.querySelectorAll('li');
+				//绑定事件
+				this.bindEvent();
+				//自动轮播
+				this.play();
+			},
+			resize: function() {
+				//取得每次移动距离
+				this.step = this.wrap.offsetWidth;
+				//设置ul的总宽度
+				this.ulBox.style.width = this.li.length * this.step + 'px';
+				for(var i = 0; i < this.li.length; i++) {
+					//设置li的宽度
+					this.li[i].style.width = this.step + 'px';
+				}
+			},
+			animate: function(step) {
+				var now = parseFloat(this.ulBox.offsetLeft);
+				var hope = now + step;
+				this.ulBox.style.left = hope + 'px';
+				if(hope > 0) {
+					this.ulBox.style.left = (1 - this.li.length) * this.step + 'px';
+				}
+				if(hope < (1 - this.li.length) * this.step) {
+					this.ulBox.style.left = '0px';
+				}
+			},
+			bindEvent: function() {
+				var self = this;
+				console.log(self);
+				console.log(this);
+				console.log(slider);
+				console.log(mySlider);
+				this.nextBtn.onclick = function() {
+					self.index++;
+					if(self.index > (self.li.length - 1)) {
+						self.index = 0;
+					}
+					self.animate(-self.step);
+					self.indicator(self.index);
+				};
+				this.prevBtn.onclick = function() {
+					self.index--;
+					if(self.index < 0) {
+						self.index = self.li.length - 1;
+					}
+					self.animate(self.step);
+					self.indicator(self.index);
+				};
+				this.wrap.onmouseover = function() {
+					self.nextBtn.style.display = 'block';
+					self.prevBtn.style.display = 'block';
+					self.stop();
+				};
+				this.wrap.onmouseout = function() {
+					self.nextBtn.style.display = 'none';
+					self.prevBtn.style.display = 'none';
+					self.play();
+				};
+				for(var i = 0; i < this.hdLi.length; i++) {
+					this.hdLi[i].index = i;
+					this.hdLi[i].onclick = function() {
+						self.indicator(this.index);
+						//计算需要位移的距离，self.index当前图片索引，this.index点击的指示器索引
+						var distance = self.step * (self.index - this.index);
+						self.animate(distance);
+						//存放鼠标点击后的位置，用于小圆点的正常显示
+						self.index = this.index;
+					}
+				}
+				//窗口改变大小
+				window.onresize = function() {
+					self.resize();
+				}
+			},
+			stop: function() {
+				clearInterval(this.time);
+			},
+			play: function() {
+				var self = this;
+				this.time = setInterval(function() {
+					self.nextBtn.onclick();
+				}, 2000);
+			},
+			createPointers: function() {
+				//生成指示器
+				var oLi = document.createElement('li');
+				this.hdUl.appendChild(oLi);
+			},
+			indicator: function(index) {
+				//这里需要清除之前的样式
+				for(var i = 0; i < this.hdLi.length; i++) {
+					if(this.hdLi[i].className == 'on') {
+						this.hdLi[i].className = '';
+					}
+				}
+				this.hdLi[index].className = 'on';
+			}
+		}
+		window.onload = function() {
+			 mySlider = new slider({
+				
+				wrap: 'slider1'
+			});
+			mySlider.init();
+		}
+	</script>
+	<!--<script type="text/javascript">
+		function slider(wrap) {
+			this.wrap = $(wrap);
+			this.ulBox = this.wrap.find(".bd ul");
+			this.indicatorsBox = this.wrap.find(".hd ul");
+			//克隆第一个li
+			var $liCopy = this.wrap.find(".bd ul li").eq(0).clone();
+			this.ulBox.append($liCopy);
+			this.li = this.wrap.find(".bd ul li");
+			this.liLen = this.li.length;
+			//初始化界面
+			this.li.each(function(i) {
+				var img = $(this).attr("_src");
+				$(this).css("background-image", img);
+			});
+			for(var i = 0; i < this.liLen - 1; i++) {
+				this.indicatorsBox.append("<li></li>");
+			}
+			this.indicators = this.indicatorsBox.find("li");
+			this.indicators.eq(0).addClass("on");
+			//没有图片报错
+			if(!this.liLen) {
+				console.log("没有图片");
+			}
+			var _this = this;
+			this.move = function() {
+				var now = parseFloat(_this.ulBox.css("left"));
+				var index = Math.abs(now - _this.width) / _this.width;
+				_this.indicators.removeClass("on");
+				if(now + _this.ulWidth == 2 * _this.width) {
+					_this.indicators.eq(0).addClass('on');
+					_this.ulBox.animate({
+						left: now - _this.width
+					}, function() {
+						$(this).css("left", "0");
+					});
+				} else {
+					_this.ulBox.animate({
+						left: now - _this.width
+					});
+					_this.indicators.eq(index).addClass('on');
+				}
+			}
+			var time = setInterval(this.move, 2000);
+			//窗口改变resize
+		}
+		slider.prototype = {
+			constructor: slider,
+			init: function() {
+				this.width = this.wrap.outerWidth();
+				this.li.width(this.width);
+				this.ulWidth = this.width * this.liLen;
+				this.ulBox.width(this.ulWidth);
+			}
+		}
+		var fullslide = new slider(".fullSlide");
+		fullslide.init();
+	</script>-->
+
+</html>

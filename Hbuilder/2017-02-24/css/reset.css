@@ -1,0 +1,110 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 10px;
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+img{
+	border: none;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1240px;
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+body{
+	background-color: #fff;
+	font-size: 14px;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(../f/iconfont.eot?v=22a147);
+    src: url(../f/iconfont.eot?v=22a147?#iefix) format('embedded-opentype'),url(../f/iconfont.woff?v=99a6d0) format('woff'),url(../iconfont.ttf) format('truetype'),url(../iconfont.svg#iconfont) format('svg')
+}
+
+.bg-color-f2f2f2{
+	background: #f2f2f2;
+}
+.bg-color-fff{
+	background: #fff;
+}
+.color-333{
+	color: #333;
+}
+.color-666{
+	color: #666;
+}
+.color-999{
+	color: #999;
+}
+.color-000{
+	color: #000;
+}
+.color-fff{
+	color: #fff;
+}
+.color-01af63{
+	color: #01af63;
+}
+.color-ff811a{
+	color: #ff811a;
+}
+.bg-color-ff811a{
+	background-color: #ff811a;
+}
+.jy-border-radius{
+	border-radius: 3px;
+}
+.jy-font-weight{
+	font-weight: blod;
+}
+.jy-border-bottom{
+	border-bottom: 1px solid #e5e5e5;
+}
+.icon {
+    font-family: iconfont!important;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+i{
+	font-style: normal;
+}
+.day-include p{
+	font-size: 10px;
+	color: #333;
+	line-height: 22px;
+}

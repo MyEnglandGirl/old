@@ -1,0 +1,254 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+img{
+	border: none;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1210px;
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+body{
+	background-color: rgb(247,248,248);
+}
+.public-head{
+	background: rgb(242,242,242);	
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.public-head img,.public-head a{
+	display: inline-block;
+	color: #666666;
+}
+.go-home img{
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+.go-home a{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.public-head i{
+	border-right: 1px solid rgb(223,223,223);
+	display: inline-block;
+	height: 12px;
+}
+.phone b{
+	background: url(../img/brandstore_share.png) no-repeat -348px -338px;
+	width: 25px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.phone span{
+	padding: 0 15px;
+	margin-left: 26px;
+}
+.header-right{
+	height: 14px;
+	line-height: 14px;
+	padding: 8px 15px;
+}
+.header-right a{
+	border-right:1px solid rgb(223,223,223);
+	padding-right:15px ;
+}
+.header-right dl{
+	padding-left: 15px;
+}
+.register b{
+	background: url(../img/youli.gif) no-repeat;
+	width: 22px;
+	height: 24px;
+	display: inline-block;
+	/*position: absolute;
+	top: -8px;
+	left: 0;*/
+	float: left;
+	margin-top: -8px;
+	margin-right: 8px;
+}
+.public-logo-con{
+	background-color: #FFFFFF;
+}
+.logo{
+	width: 249px;
+	height: 110px;
+	/*overflow: hidden;*/
+	background: url(../img/logo.PNG);
+	background-position: center center;
+	background-size:cover;
+}
+.public-logo-con .container>img{
+	margin-left: 20px;
+	padding: 15px 0;
+}
+.search-con{
+	margin-top: 27px;
+	margin-left: 40px;
+	
+}
+.search-text{
+	width: 300px;
+	height: 39px;
+	line-height: 34px;
+	vertical-align: middle;
+	background: #FFFFFF;
+	padding-left:3px ;
+	border: 0;
+	outline: none;
+}
+.search-btn{
+	width: 75px;
+	height: 34px;
+	border: none;
+	color: #FFFFFF;
+	font-size: 15px;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+.search{
+	width: 385px;
+	background: #c69c6d;
+	padding: 2px;
+	
+}
+.search-con ul li{
+	float: left;
+	display: inline-block;
+	color: #999;
+	font-size: 11px;
+	padding-right: 25px;
+	line-height: 32px;
+}
+.search-con ul li a{
+	color: #999;
+	
+}
+.cartbox{
+	width: 138px;
+	height: 32px;
+	line-height: 32px;
+	text-indent: 45px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 2px rgba(0,0,0,.2);
+	box-shadow: 0 0 2px rgba(0,0,0,.2);
+	color: #666666;
+	background: url(../img/brandstore_share.png) no-repeat -337px -405px;
+	margin-top: 40px;
+}
+.red{
+	color: red;
+}
+.cartbox img{
+	position: absolute;
+	top: 2px;
+	left: 10px;
+}
+.public-footer{
+	border-top: 1px solid #999999;
+	margin-top: 100px;
+	background: #FFFFFF;
+}
+.public-footer a{
+	color: #333;
+}
+.footer-message-top ul li{
+	float: left;
+	width: 242px;
+	height: 64px;
+	margin-top: 26px;
+	overflow: auto;
+	
+}
+.footer-message-top ul li a{
+	display: inline-block;
+	float: left;
+}
+.footer-message-top01-r{
+	display: inline-block;
+	width: 160px;
+	height: 48px;
+	margin-top: 16px;
+	float: left;
+	margin-left: 10px;
+}
+.footer-message-top ul{
+	padding-bottom: 26px;
+	border-bottom: 1px solid #d1d1d1;
+}
+.footer-message-ctr-l ul li{
+	float: left;
+	width: 185px;
+	overflow: hidden;
+}
+.footer-message-ctr-l .sp01{
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #000;
+	display: block;
+}
+.footer-message-ctr-l .pht-app {
+    width: 140px;
+    height: 283px;
+}
+.footer-message-ctr-l .pht-weibo {
+    width: 125px;
+    height: 283px;
+}
+.footer-message-ctr-l span{
+	line-height: 24px;
+}
+.footer-message-btm-t{
+	line-height: 66px;
+}
+.footer-message-btm{
+	text-align: center;
+}
+.footer-message-btm a{
+	/*float: left;*/
+	display: inline-block;
+	color: #333;
+}

@@ -1,0 +1,39 @@
+<ion-header-bar align-title="left" class="bar-dark">
+	<a href="#/main" style="line-height: 43px;">
+		<img src="img/png/back.png" width="20" />
+	</a>
+	<div class="h1 title">填写手机号</div>
+
+	</div>
+</ion-header-bar>
+<ion-content>
+	<style type="text/css">
+		html,
+		body {
+			background: #FFFFFF;
+		}
+	</style>
+
+	<div class="jy-margin-horizontal-sm" style="padding-top: 20px;">
+		<span>国家/地区</span>
+		
+		<a href="" class="jy-a fr jy-a-color">中国</a>
+
+	</div>
+	<div class="list jy-margin-top-sm">
+		<label class="item item-input">
+    		<span class="input-label">+86</span>
+    		<input type="text" ng-model="user.phone">
+  			</label>
+		<label class="item item-input">
+    <span class="input-label" >密码</span>
+    <input type="password" ng-model="user.password">
+  </label>
+	</div>
+	<div class="jy-margin-horizontal-sm">
+		<button ng-click="register()" class="button button-block button-positive main-bg-color">注册</button>
+	
+		<span class="jy-description">点击上面的"注册",即表示你同意《<a href="" class="jy-a-color">腾讯微信软件许可及服务协议</a>》</span>
+	</div>
+
+</ion-content>

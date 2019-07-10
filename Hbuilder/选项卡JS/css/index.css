@@ -1,0 +1,26 @@
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.container>ul{
+	border: 1px solid #666;
+}
+.container>ul>li{
+	padding:10px 20px;
+	float: left;
+	
+}
+.one{
+	color: #666666;
+	background: #fff;
+}
+.two{
+	color: #fff;
+	background: blue;
+}
+.classOne{
+	padding: 10px 0 10px 10px;
+	background: #FFFFFF;
+	display: none;
+}

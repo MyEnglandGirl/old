@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# 2017-02-22 v1.0.0
+css/amazeui.min.css
+css/reset.css
+css/index.css
+js/amazeui.min.js
+js/jquery-1.12.4.min.js
+img/jpg/index/index-1-01.jpg
+img/jpg/index/index-1-02.jpg
+img/jpg/index/index-1-03.jpg
+index.html
+
+NETWORK:
+*

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" name="tel" id="" value="" />
+        <input type="text" name="password" id="" value="" />
+        <input type="button" name="" id="btn" value="登录" />
+    </form>
+    <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script type="text/javascript">
+			$.getJSON("/getEvent",{
+				acid:"26816955"
+			},function () {
+								
+			});
+		</script>-->
+    <script type="text/javascript">
+    	function setHeaders(parmas) {
+    		// body...
+    	}
+    			$("#btn").click(function() {
+    				var data = $("#form").serialize();
+    				console.log(data);
+    				$.post('/mobile/login', data, function(res) {
+    					if(res.status) {
+    						Cookies.set('code',code);
+    						window.location.href = "http://192.168.1.148:3000/ajax/JY/json/jsonData.html";
+    					} else {
+    
+    					}
+    				});
+    				});
+    				// $.ajax({
+    				// 	type: "post",
+    				// 	url: "/mobile/login",
+    				// 	async: true,
+    				// 	success: function() {
+    
+    				// 	}
+    				// });
+    </script>
+</body>
+
+</html>

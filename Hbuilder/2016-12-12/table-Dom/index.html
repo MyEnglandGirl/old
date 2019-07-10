@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>表格操作</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body class="">
+		<div class="bg-grey pd20">
+			<div class="table_box pd20 bg-white">
+				<form class="form-inline" action="" method="">
+					<div class="form-group">
+						<label for="">添加：</label>
+						<input type="text" class="form-control" id="name_input" placeholder="姓名">
+						<input type="text" class="form-control" id="age_input" placeholder="年龄">
+						<button type="button" class="btn btn-info" id="add_btn">添加</button>
+					</div>
+					<div class="form-group">
+						<label for="">变色：</label>
+						<button type="button" class="btn btn-info" id="hover_btn">开启移入变色</button>
+					</div>
+				</form>
+				<br />
+				<!--表格-->
+				<table class="table table-bordered" id="chart">
+					<thead>
+						<tr>
+							<td>ID</td>
+							<td>姓名</td>
+							<td>年龄</td>
+							<td>操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>张三</td>
+							<td>33</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>李四</td>
+							<td>34</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>王五</td>
+							<td>25</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>赵六</td>
+							<td>16</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>王四</td>
+							<td>44</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Danny</td>
+							<td>23</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--尾部操作-->
+				<form class="form-inline" action="" method="">
+					<div class="form-group">
+						<label for="">搜索：</label>
+						<input type="text" class="form-control" id="search_txt" placeholder="姓名">
+						<button type="button" class="btn btn-info" id="search_btn">搜索</button>
+					</div>
+					<div class="form-group">
+						<label for="">排序：</label>
+						<button type="button" class="btn btn-info" id="sort_btn">年龄从小到大排序</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--js-->
+		<script type="text/javascript">
+			window.onload = function() {
+				//定义变量
+				var hoverBtn = document.getElementById('hover_btn');
+				var oTable = document.getElementById('chart');
+				var addBtn = document.getElementById('add_btn');
+				var oName = document.getElementById('name_input');
+				var oAge = document.getElementById('age_input');
+				var oTbody = document.getElementsByTagName('tbody')[0];
+				var searchBtn = document.getElementById('search_btn');
+				var searchTxt = document.getElementById('search_txt');
+				var sortBtn = document.getElementById('sort_btn');
+				//获取当前的数据
+				function getData() {
+					var aTr = oTbody.querySelectorAll('tr');
+					return aTr;
+				}
+				//变色
+				var flag = false;
+				hoverBtn.onclick = function() {
+					if(flag) {
+						flag = false;
+						this.innerText = '开启移入变色';
+						this.className = 'btn btn-info';
+						oTable.className = 'table table-bordered'
+					} else {
+						flag = true;
+						this.innerText = '关闭移入变色';
+						this.className = 'btn btn-danger';
+						oTable.className = 'table table-bordered table-hover';
+					}
+				};
+				//添加数据
+				addBtn.onclick = function() {
+					var name = oName.value;
+					var age = parseInt(oAge.value);
+					var isAge = (/^[1-9]\d?$|^1[0-4]\d$|^0$|^150$/).test(age);
+					if(isAge) {
+						if(name) {
+							var tr = document.createElement('tr');
+							tr.innerHTML = '<td>' + (getData().length + 1) + '</td><td>' + name + '</td><td>' + age + '</td><td><a href="javascript:;">删除</a></td>';
+							oTbody.appendChild(tr);
+						} else {
+							alert('请输入名字！');
+						}
+					} else {
+						alert('请输入0-150之间的数字！');
+					}
+				};
+				//搜索数据
+				searchBtn.onclick = function() {
+					var txt = searchTxt.value;
+					if(txt) {
+						var data = getData();
+						for(var i = 0; i < data.length; i++) {
+							var tdTxt = data[i].getElementsByTagName('td')[1].innerText;
+							data[i].style.background = '';
+							if(tdTxt == txt) {
+								data[i].style.background = 'yellow';
+							}
+						}
+					} else {
+						alert('请输入正确的名字！');
+					}
+				};
+				//排序
+				sortBtn.onclick = function() {
+					var arr = getData();
+					var trArray = [];
+					for(var i = 0; i < arr.length; i++) {
+						trArray[i] = arr[i];
+					}
+					trArray.sort(function(a, b) {
+						var aTxt = a.getElementsByTagName('td')[2].innerText;
+						var bTxt = b.getElementsByTagName('td')[2].innerText;
+						if(aTxt > bTxt) {
+							return aTxt - bTxt;
+						}
+					});
+					var html = '';
+					for(var i = 0; i < trArray.length; i++) {
+						html += '<tr>' + trArray[i].innerHTML + '</tr>';
+					}
+					oTbody.innerHTML = html;
+				};
+				//删除操作-事件委托
+				oTable.onclick = function(eve) {
+					if(eve.target.innerText == '删除') {
+						oTbody.removeChild(eve.target.parentNode.parentNode);
+					}
+				}
+				//结束
+			}
+		</script>
+	</body>
+
+</html>

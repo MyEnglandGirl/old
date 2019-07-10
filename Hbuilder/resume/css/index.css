@@ -1,0 +1,115 @@
+html {
+	font-size: 10px;
+}
+body{
+	font-size: 1.4rem;
+}
+.container-fluid{
+	/*width: 90%;*/
+}
+.portrait{
+	background: gray;
+	padding: 2rem 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+.head-portrait{
+	border-radius: 100%;
+	overflow: hidden;
+	width: 20rem;
+	height: 20rem;
+	margin: 0 auto;
+	background: #ff0;
+}
+
+.name{
+	display: block;
+	color: #333333;
+	font-size: 4rem;
+	margin-top: 1rem;
+}
+.occupation{
+	display: block;
+	font-size: 1.6rem;
+	color: #666;
+}
+.left-title{
+	display: inline-block;
+	border-radius: .3rem;
+	border: .2rem solid #333;
+	font-size: 2rem;
+	margin: 2rem 0;
+	padding: .2rem .4rem;
+}
+.left-con{
+	display: block;
+	font-size: 1.2rem;
+}
+.skill ul li{
+	line-height: 2.1rem;
+	
+}
+.skill-list{
+	display: inline-block;
+	width: 9rem;
+}
+.skill ul li .bg-26415a{
+	height: 1rem;
+	
+	display: inline-block;
+	margin-top: .1rem;
+}
+.skill ul li .bg-edebeb{
+	height: 1rem;
+	
+	display: inline-block;
+	border: .2rem solid #26415a;
+	box-sizing: border-box;
+	margin-left: -.5rem;
+}
+.rignt-color{
+	background: #26415a;
+	border-left: .3rem solid #3588a6;
+}
+.right-title{
+	display: inline-block;
+	border-radius: .3rem;
+	border: .2rem solid #edebeb;
+	font-size: 2rem;
+	margin: 2rem 0;
+	padding: .2rem .4rem;
+}
+.right-con{
+	display: block;
+	font-size: 1.4rem;
+}
+span.right-con{
+	display: block;
+	line-height: 2rem;
+}
+span.right-con span{
+	display: block;
+	line-height: 2rem;
+}
+.experience-title{
+	font-size: 1.8rem;
+	line-height: 3rem;
+	display: block;
+	margin-top: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+	html{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	html{
+		font-size: 10px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	html{
+		font-size: 10px;
+	}
+}

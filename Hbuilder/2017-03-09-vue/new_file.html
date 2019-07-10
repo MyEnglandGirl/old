@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="" id="app">
+			<input type="text" v-model.number="message" min="0"/>
+			<button v-on:click="start">开始</button>
+			<!--<button v-on:click="reset">reset</button>-->			
+			<p>{{ message }}</p>
+		</div>
+		
+	</body>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				message: '',
+				
+				
+			},
+			methods: {
+				start: function() {
+					if(this.message <= 0) {
+						return;
+					} else {
+						this.message = this.message - 1;
+						setTimeout(this.start,1000);
+					}
+					return this.message;
+				},
+			}
+		});
+		console.log(this.start);
+	</script>
+
+</html>

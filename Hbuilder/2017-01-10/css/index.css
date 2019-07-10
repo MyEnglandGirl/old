@@ -1,0 +1,173 @@
+body{
+	background-color: rgb(245,245,245);
+}
+.container{
+	width: 1110px;
+}
+.span10{
+	background-color: #FFFFFF;
+}
+.nav-con{
+	width: 180px;
+}
+.shop{
+	width: 80px;
+	height: 80px;
+	margin: 40px auto;
+	background:url(../img/shop.png);
+	
+}
+.navleft{
+	line-height: 20px;
+	margin-left:0 ;
+}
+.navleft li{
+	border-left: 2px solid rgb(245,245,245);
+}
+.navleft li a{
+	color: #363636;
+	padding: 10px 0px 10px 60px;
+}
+.right-con{
+	padding-left:10px;
+	padding-right:10px;
+	background: #fff;
+	width: 910px;
+	padding-bottom:20px ;
+}
+.title ul{
+	background-color: #FFFFFF;
+	margin-bottom: 0;
+}
+.title ul li{
+	padding-bottom:10px ;
+}
+.tabbable{
+	width: 100%;
+}
+.tabbable>.nav-tabs{
+	border: 0;
+	border-left: 2px solid red;
+}
+.table th{
+	text-align: center;
+}
+table td>a,table td>img{
+	display: inline-block;
+}
+table td>a:hover{
+	text-decoration: none;	
+	/*编辑,删除的下划线*/
+}
+p{
+	padding-left:50px ;
+}
+
+.table tr td{
+	vertical-align: middle;
+}
+.table tr td:first-child{
+	line-height: 0;
+}
+.table tr td div{
+	display: inline-block;
+}
+.icon-edit,.icon-remove{
+	margin-left:8px ;
+}
+.gray{
+	border-top: 1px solid gray;
+}
+.editors-title{
+	color: #fff;
+	background-color: blue;
+	padding: 6px 10px; 
+	display: inline-block;
+}
+.blue{
+	border: 0;
+	border-top: 2px solid blue;
+	margin: 0;
+	margin-top: -2px;
+}
+.editors-title-box{
+	color: #000;
+	background-color: rgb(245,245,245);
+	padding: 4px 10px; 
+	font-weight: bold;
+}
+ul.editors-title-con{
+	margin: 0;
+}
+.left-box{
+	padding: 8px 10px 0 0;
+	text-align: right;
+	width: 120px;
+	/*border: 1px solid rgb(245,245,245);*/
+	display: inline-block;
+	
+}
+.right-box{
+	width: 756px;
+	padding: 8px 10px 10px 10px;
+	text-align: left;
+	border-left: 1px solid rgb(245,245,245);
+	/*margin-left: 122px;*/
+	display: inline-block;
+}
+.editors-title-con li{
+	border: 1px solid rgb(245,245,245);
+	/*padding-bottom:10px ;*/
+	line-height: 18px;
+}
+.editors-title-con li .red{
+	color: red;
+}
+.right-box select{
+	width: 150px;
+	margin-right: 10px;
+}
+.describe{
+	/*margin-bottom:10px ;*/
+	color: #999;
+}
+
+.btn{
+	margin-top: 10px;
+}
+.marginLeft{
+	margin-left: 20px;
+}
+.row-fluid .span2{
+	width: 80px;
+}
+span.error{
+	font-size: 14px;
+	display: inline;
+	color: red;
+	line-height: 30px;
+	margin-left:20px ;
+}
+
+input{
+	margin-bottom: 0;
+}
+input.error{
+	border: 1px solid red;
+}
+input.success{
+	border: 1px solid #468847;
+}
+.control-group{
+	margin: 0!important;
+}
+.control-group span{
+	border: 0;
+	
+}
+.editors-title-con.control-group input{
+	float: left;
+}
+.input-append input{
+	display: inline;
+}

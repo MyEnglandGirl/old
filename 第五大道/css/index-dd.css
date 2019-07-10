@@ -1,0 +1,582 @@
+	@charset "utf-8";
+	/** {
+		margin: 0px;
+		padding: 0px;
+	}*/
+	
+	
+	
+	body {
+		margin: 0;
+	
+		line-height: 20px;
+		color: #000000;
+		background-color: #fff;
+	}
+	
+	.index-tiao .icon {
+		background: url(../img/user/lux_index.png) -8px -215px no-repeat;
+		z-index: 999;
+		display: inline-block;
+	}
+	
+	/*.container {
+		width: 1210px;
+		margin: 0 auto;
+	}*/
+	
+	.index-tiao {
+		width: 1000px;
+		height: 40px;
+		background-color: #000000;
+	}
+	
+	.accordion-group {
+		width: 100px;
+	}
+	
+	.index-zuo dl dt {
+		background: #c69c6d;
+		font-size: 15px;
+		position: relative;
+		width: 155px;
+		height: 28px;
+		text-align: center;
+		padding-top: 9px;
+	}
+	
+	.index-zuo dl dd {
+		text-align: center;
+		width: 155px;
+		color: #000000;
+	}
+	
+	.index-zuo {
+		float: left;
+		margin-left: 78px;
+		width: 155px;
+		float: left;
+		background: #fff;
+		box-shadow: 0 0 5px #ccc;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+	
+	.index-zuo a {
+		color: #333;
+	}
+	
+	.index-zuo dd {
+		display: block;
+		height: 32px;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		font-size: 13px;
+	}
+	
+	.index-zuo dl .arrowcheck {
+		background: url(../img/user/share02.png) no-repeat -476px -325px;
+		display: inline-block;
+		width: 10px;
+		height: 6px;
+		position: absolute;
+		top: 16px;
+		left: 23px;
+	}
+	
+	.index-you {
+		float: left;
+		width: 825px;
+		margin-left: 10px;
+		box-shadow: 0 0 5px #ccc;
+		margin-bottom: 20px;
+	}
+	
+	.clearfix {
+		/*overflow: hidden;*/
+		zoom: 1;
+	}
+	
+	.index-dingdan {
+		border-bottom: 2px solid #cf0101;
+		height: 35px;
+		width: 68px;
+		line-height: 35px;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	
+	.index-ding {
+		margin-left: 10px;
+	}
+	
+	.index-xian {
+		border-bottom: 1px solid #ddd;
+		width: 100%;
+		line-height: 34px;
+		display: block;
+		float: left;
+	}
+	
+	.index-dier {
+		display: block;
+		text-align: right;
+		margin-top: 15px;
+	}
+	
+	.index-sou {
+		float: right;
+		margin-right: 10px;
+	}
+	
+	.index-sou input {
+		width: 178px;
+		outline: none;
+		float: left;
+		height: 14px;
+		line-height: 25px;
+		border: 1px solid #dfdfdf;
+		margin-top: 15px;
+	}
+	
+	.index-sou a {
+		height: 23px;
+		line-height: 23px;
+		color: #fff;
+		display: inline-block;
+		background: #d00000;
+		padding-right: 12px;
+		margin-top: 15px;
+		text-decoration: none;
+	}
+	
+	.index-sou a i {
+		display: inline-block;
+		margin-left: 10px;
+		width: 12px;
+		height: 12px;
+		background: url(../img/user/share02.png) no-repeat -408px -325px;
+	}
+	
+	.index-disan {
+		width: 809px;
+		color: #FFFFFF;
+		height: 26px;
+		overflow: hidden;
+		margin-bottom: 15px;
+		border-bottom: 2px solid #d00000;
+		position: relative;
+		top: 0px;
+		left: 8px;
+	}
+	
+	.index-disan li {
+		float: left;
+		width: 98px;
+		list-style: none;
+		line-height: 30px;
+		height: 30px;
+		margin-right: 2px;
+		text-align: center;
+		font-size: 13px;
+		color: #511b08;
+	}
+	
+	.index-on a {
+		color: #FFFFFF;
+	}
+	
+	.index-fu a {
+		color: #000000;
+	}
+	
+	.index-wan a {
+		color: #000000;
+	}
+	
+	.index-wu a {
+		color: #000000;
+	}
+	
+	.index-on a:hover {
+		text-decoration: none;
+		color: #c69c6d;
+	}
+	
+	.index-fu a:hover {
+		text-decoration: none;
+		color: #c69c6d;
+	}
+	
+	.index-wan a:hover {
+		text-decoration: none;
+		color: #c69c6d;
+	}
+	
+	.index-wu a:hover {
+		text-decoration: none;
+		color: #c69c6d;
+	}
+	
+	.index-on {
+		float: left;
+		background: url(../img/user/btn1.png)left 2px no-repeat;
+		color: #fff;
+	}
+	
+	.index-shan a {
+		color: #df0000;
+		text-decoration: none;
+	}
+	
+	.index-san {
+		position: relative;
+		width: 809px;
+		top: 0px;
+		left: 0px;
+		margin-left: 10px;
+	}
+	
+	.index-fu {
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}
+	
+	.index-xiangqing {
+		display: block;
+		background: #f2f2f2;
+	}
+	
+	.index-xiangqing li {
+		float: left;
+		height: 31px;
+		line-height: 31px;
+		text-align: center;
+		border-bottom: 1px solid #dfdfdf;
+	}
+	
+	.index-xiangqing select {
+		outline: none;
+		position: absolute;
+		left: 20px;
+		top: 3px;
+	}
+	
+	.index-san select {
+		border: #e5e5e5 solid 1px;
+		margin-right: 20px;
+		height: 25px;
+		padding: 2px 0;
+		float: left;
+		line-height: 25px;
+		width: 110px;
+		font-family: "微软雅黑";
+		font-size: 13px;
+		color: #000000;
+	}
+	
+	.index-qukan {
+		display: block;
+		font-size: 18px;
+		margin-top: 75px;
+	}
+	
+	.index-quyi {
+		width: 815px;
+		height: 94px;
+		text-align: center;
+		margin-left: 323px;
+	}
+	
+	.index-quer a {
+		margin-left: 352px;
+		margin-top: 20px;
+		border: 1px solid #D00000;
+		width: 105px;
+		height: 25px;
+		text-align: center;
+		background-color: #D00000;
+		padding-top: 5px;
+		text-decoration: none;
+		color: #FFFFFF;
+		font-family: "微软雅黑";
+		font-size: 15px;
+		border-radius: 3px;
+	}
+	
+	.index-quer a:hover {
+		background-color: #FFFFFF;
+		color: #757272;
+	}
+	
+	.index-dingdantiao {
+		margin: 10px 0;
+		border: 1px solid #dfdfdf;
+	}
+	
+	.index-dingbei {
+		padding-left: 15px;
+		background: #f2f2f2;
+		display: block;
+		font-size: 11px;
+		border-bottom: 1px solid #dfdfdf;
+		width: 809px;
+		height: 35px;
+	}
+	
+	.index-xiangqing li {
+		display: list-item;
+	}
+	
+	.index-dingbei li {
+		float: left;
+		margin-right: 40px;
+		height: 31px;
+		line-height: 31px;
+	}
+	
+	.index-bianhao {
+		color: blue;
+	}
+	
+	.index-diwu i {
+		display: inline-block;
+		width: 18px;
+		height: 15px;
+		background: url(../img/user/share02.png) no-repeat -422px -326px;
+	}
+	
+	.index-table td {
+		border-right: 1px solid #dfdfdf;
+	}
+	
+	.index-dingdantiao table {
+		border: none;
+		text-align: left;
+	}
+	
+	.index-dingdantiao tr {
+		border: none;
+		text-align: left;
+	}
+	
+	.index-dingdantiao td {
+		border: none;
+		text-align: left;
+		border-right: 1px solid #dfdfdf;
+	}
+	
+	.index-dingdantiao th {
+		border: none;
+		text-align: left;
+	}
+	
+	.clearfix {
+		/*overflow: hidden;*/
+		zoom: 1;
+	}
+	
+	.index-titd {
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.index-table .index-yitu {
+		display: block;
+		padding-left: 16px;
+		padding-top: 13px;
+		padding-bottom: 16px;
+	}
+	
+	.index-table .index-yitu img {
+		margin-top: 3px;
+		float: left;
+		width: 60px;
+		height: 60px;
+		border: 1px solid #ededed;
+	}
+	
+	.index-table .index-yitu a {
+		float: left;
+		width: 213px;
+		margin-left: 10px;
+	}
+	
+	.index-table .index-yitu span {
+		float: left;
+		height: 18px;
+		line-height: 18px;
+		margin-left: 53px;
+	}
+	
+	.index-table .index-other {
+		text-align: center;
+		padding-top: 16px;
+	}
+	
+	.index-table .index-other span {
+		display: block;
+	}
+	
+	.index-table .index-other a {
+		display: block;
+	}
+	
+	.index-qian {
+		font-weight: bold;
+	}
+	
+	.index-table .index-zhi {
+		color: #666;
+	}
+	
+	.index-table .index-lan {
+		color: blue;
+	}
+	
+	.index-other a {
+		color: #000000;
+	}
+	
+	.index-zhifu {
+		display: inline-block;
+		padding: 0 10px;
+		height: 22px;
+		line-height: 22px;
+		border: 1px solid #ff0000;
+		border-radius: 3px;
+		width: 56px;
+		padding: 0px 10px;
+		margin-left: 10px;
+	}
+	
+	.index-table .index-zhifu:hover {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	
+	.index-table .last {
+		text-align: center;
+		padding-top: 16px;
+	}
+	
+	.index-table .index-quxiao {
+		color: blue;
+	}
+	
+	.slideGroup {
+		width: 825px;
+		margin-bottom: 30px;
+	}
+	
+	.tempWrap {
+		width: 715px;
+	}
+	
+	.index-sou a {
+		color: #FFFFFF;
+	}
+	
+	.index-on a {
+		color: #FFFFFF;
+	}
+	
+	.index-fu a {
+		color: #000000;
+	}
+	
+	.index-wan a {
+		color: #000000;
+	}
+	
+	.index-wu a {
+		color: #000000;
+	}
+	
+	.index-shan a {
+		color: #D00000;
+	}
+	
+	.index-yitu a {
+		color: #000000;
+	}
+	
+	.index-yitu a:hover {
+		color: #c69c6d;
+	}
+	
+	.slideGroup .parBd ul li .pic img {
+		width: 165px;
+		height: 170px;
+		border: 0px solid;
+	}
+	
+	.title p {
+		width: 167px;
+	}
+	
+	.title p:hover {
+		color: #C69C6D;
+	}
+	
+	.slideGroup .sPrev,
+	.slideGroup .sNext {
+		position: absolute;
+		left: 5px;
+		top: 10px;
+		display: block;
+		width: 30px;
+		height: 260px;
+		border: 0px solid #FFFFFF;
+		background: url(../img/user/car_left.jpg) center center no-repeat #FFFFFF;
+	}
+	
+	.slideGroup .sNext {
+		left: auto;
+		right: 5px;
+		background: url(../img/user/car_right.jpg) center center no-repeat #FFFFFF;
+	}
+	
+	.parBd {
+		box-shadow: #a7a7a7 0px 2px 16px;
+	}
+	
+	.slideGroup .parBd ul li {
+		width: 175px;
+		padding-top: 20px;
+		margin: 0 8px;
+		float: left;
+		_display: inline;
+		overflow: hidden;
+		text-align: center;
+		height: 259px;
+	}
+	
+	.title a {
+		text-decoration: none;
+	}
+	
+	.index-table a {
+		text-decoration: none;
+	}
+	
+	.title strong {
+		color: #d73128;
+	}
+	
+	.index-zuo .d4 a {
+		margin-bottom: 10px;
+	}
+	
+	.index-zuo .d10 a {
+		margin-bottom: 10px;
+	}
+	
+	.index-zuo .d15 a {
+		margin-bottom: 10px;
+	}
+	

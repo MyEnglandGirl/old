@@ -1,0 +1,118 @@
+.login {
+	/*background: url(../img/bg.jpg);
+	width: 800px;
+	height: 500px;*/
+	margin: 0 auto;
+}
+
+.login h1 {
+	margin-top: 100px;
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+	font-weight: 400;
+}
+
+.login input {
+	display: block;
+	margin: 20px auto;
+	padding-left: 6px;
+	width: 214px;
+	height: 34px;
+	border-radius: 6px;
+	background: rgb(245, 245, 245);
+	border: 0;
+}
+
+.login #login {
+	color: #fff;
+	background: rgb(21, 130, 223);
+	border: 0;
+	width: 220px;
+	height: 34px;
+}
+
+.login #to-register {
+	color: #fff;
+	background: rgb(50, 111, 155);
+	border: 0;
+	width: 220px;
+	height: 34px;
+}
+
+
+/*----------------------------------------------------*/
+
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: 100%;
+	/*opacity: 0.5;*/
+}
+
+.register {
+	/*background:url(../img/bg-2.jpg) no-repeat;
+	background-size:100%;
+	opacity: 0.5;*/
+	margin: 0 auto;
+}
+.point {
+	margin: 0px auto;
+	width: 220px;
+	height: 28px;
+	line-height: 28px;
+	color: #FFFFFF;
+	background: red;
+	text-align: center;
+	border-radius: 4px;
+	display: none;
+}
+div.error {
+	margin: 0px auto;
+	width: 220px;
+	height: 28px;
+	line-height: 28px;
+	color: #FFFFFF;
+	background: red;
+	text-align: center;
+	border-radius: 4px;
+	display: none;
+}
+.register h1 {
+	text-align: center;
+	color: #fff;
+	padding: 30px 0 10px 0;
+	font-weight: 400;
+}
+
+.register p {
+	text-align: center;
+	color: #fff;
+}
+
+.register input {
+	display: block;
+	margin: 20px auto 0;
+	padding-left: 6px;
+	width: 214px;
+	height: 34px;
+	border-radius: 6px;
+	background: rgb(245, 245, 245);
+	border: 0;
+}
+
+
+.register #to-logo {
+	color: #fff;
+	background: rgb(21, 130, 223);
+	border: 0;
+	width: 220px;
+	height: 34px;
+}
+
+.register #register {
+	color: #fff;
+	background: rgb(50, 111, 155);
+	border: 0;
+	width: 220px;
+	height: 34px;
+}

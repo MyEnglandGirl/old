@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<!--<style type="text/css">
+			body {
+				background-color: #FFFFFF;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 87px;
+				margin: 20px auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>-->
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="backgound">
+				<div class="register-logo">
+
+				</div>
+				<div class="register">
+					注册账号
+				</div>
+				<div class="regbox">
+					<form action="" method="post">
+						<select class="detail-select">
+							<option value="volvo">中国（+86）</option>
+							<option value="saab">中国台湾（+886）</option>
+							<option value="opel">中国香港（852）</option>
+							<option value="audi">Brazil(+55)</option>
+						</select>
+						<input type="text" id="" value="" />
+						<input type="text" id="" value="" class="regbox-verification"><img src="img/1.png" width="100" height="38" id="verification" />
+					</form>
+					<div class="register-reg">
+					<input type="button" id="" value="立即注册" class="but"/>
+					</div>
+					<div class="xieyi">
+						点击“立即注册”，即表示您同意并愿意遵守小米
+						<a href="">用户协议</a>和
+						<a href="">隐私政策</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<ul>
+					<li>简体 | 繁体 | English | 常见问题</li>
+					<li>小米公司版权所有-京ICP备10046444-<span class="jingcha"><img src="img/ghs.png"/></span>京公网安备11010802020134号-京ICP证110507号</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var pic = $('#verification img')
+				$('#verification').click(function() {
+					var num = Math.floor(Math.random() * 2 + 1);
+					console.log(num);
+					$(this).attr({
+						"src": "img/" + num + ".png"
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,19 @@
+.container{
+	margin-top:100px ;
+}
+.event-info {
+    height: auto !important;
+    /*height: 223px;*/
+    min-height: 223px;
+}
+.event-detail {
+    margin-left: 33px;
+    margin-bottom: 5px;
+    min-height: 1.5em;
+    clear: left;
+}
+.pl {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}

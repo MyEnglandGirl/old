@@ -1,0 +1,105 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+img{
+	border: none;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1240px;
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.am-padding {
+	padding: 0;
+	padding-bottom: 1rem;
+}
+.am-padding-0{
+	padding: 0;
+}
+.am-margin-0{
+	margin: 0;
+}
+.am-padding-sm{
+	padding: 1rem 2rem 1rem 3rem;
+}
+.color-333{
+	color: #333;
+}
+.color-edebeb{
+	color: #edebeb;
+}
+.bg-26415a{
+	background: #26415a;
+}
+
+.bg-edebeb{
+	background: #edebeb;
+}
+.h-10{
+	height: 1rem;
+}
+.w-1{
+	width: 1rem;
+}
+.w-2{
+	width: 2rem;
+}
+.w-3{
+	width: 3rem;
+}
+.w-6{
+	width: 6rem;
+}
+.w-7{
+	width: 7rem;
+}
+
+.w-8{
+	width: 8rem;
+}
+.auto{
+	padding-bottom:9999px ;
+	margin-bottom:-9999px;
+	overflow: auto;
+}
+.an-padding-bottom{
+	padding-bottom: 1rem;
+}
+.an-padding-bottom-left{
+	padding-bottom: 1rem;
+	padding-left: 3rem;
+}

@@ -1,0 +1,303 @@
+.cart{
+	
+}
+.cart-contant {
+	width: 1180px;
+	margin: 0 auto;
+	border-top: 1px solid #ccc;
+}
+
+.cart-filter {
+	margin-top: 20px;
+}
+
+.cart-filter ul li {
+	float: left;
+	width: 98px;
+	padding-left: 20px;
+}
+.cart-filter ul li:nth-child(3) a{
+	cursor: not-allowed;
+}
+.cart-filter ul li:nth-child(2) a{
+	cursor: not-allowed;
+}
+.cart-filter ul li a {
+	font-size: 16px;
+	padding: 2px 0px 16px 0px;
+	color: #666;
+}
+
+.cart-filter ul li:first-child a {
+	color: #f40;
+}
+
+.red {
+	color: #f40;
+}
+
+.cart-filter ul li span {
+	font-size: 14px;
+}
+
+.cart-filter hr {
+	border-top: 2px solid rgb(245, 245, 245);
+	margin-top: -2px;
+}
+
+.cart-filter ul li:first-child {
+	border-bottom: 2px solid #f40;
+}
+
+.cart-filter ol li {
+	float: left;
+	font-size: 16px;
+}
+
+.cart-filter ol li:first-child {
+	color: #6e3e0e;
+	font-weight: bold;
+}
+
+.wp>div {
+	float: left;
+}
+
+.cart-table-th {
+	line-height: 50px;
+}
+
+.cart-table-th i {
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-position: 0 0;
+	line-height: 200em;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(../img/checkbox.png) no-repeat;
+	top: 18px;
+	left: 0;
+}
+/*.shop-info .i-ture{
+	background-position: 0 -20px;
+}
+.shop-info .i-false{
+	background-position: 0 0;
+}
+.cart-checkbox .i-ture{
+	background-position: 0 -20px;
+}
+.cart-checkbox .i-ture{
+	background-position: 0 0px;
+}*/
+.cart-checkbox {
+	margin-left: 15px;
+}
+
+.cart-checkbox span {
+	padding-left: 60px;
+}
+
+.cart-item {
+	padding-left: 100px;
+}
+
+.cart-info {
+	width: 172px;
+	padding-left: 20px;
+}
+
+.cart-price {
+	padding-left: 140px;
+}
+
+.cart-amount {
+	padding-left: 116px;
+}
+
+.cart-sum {
+	padding-left: 175px;
+}
+
+.cart-op {
+	padding-left: 114px;
+}
+
+.shop-info ul {
+	background: rgb(252, 252, 252);
+	border: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.shop-info ul li {
+	float: left;
+}
+
+.shop-info i {
+	margin-left: 18px;
+	margin-right: 10px;
+}
+
+.shop-info ul li i {
+	margin-left: 18px;
+}
+
+.cart-item img {
+	margin-top: 18px;
+	display: inline-block;
+	border: 1px solid #eee;
+}
+
+.shop-info ul li.cart-item {
+	padding: 0;
+}
+
+.cart-item span {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 6px;
+	width: 240px;
+	line-height: 20px;
+	color: #3c3c3c;
+}
+
+.shop-info ul .cart-info {
+	line-height: 20px;
+}
+
+.cart-info {
+	color: #9c9c9c;
+	margin-top: 15px;
+	line-height: 20px;
+}
+
+.shop-info ul .cart-price {
+	padding-left: 20px;
+}
+
+.cart-price span {
+	color: #3c3c3c;
+	font-weight: 700;
+}
+
+.shop-info ul li.cart-amount {
+	padding-left: 80px;
+	width: 190px;
+	height: 100px;
+}
+
+.cart-amount a {
+	display: block;
+	height: 23px;
+	width: 17px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	line-height: 23px;
+	position: absolute;
+	top: 16px;
+	background: #fff0e7;
+	color: #efbba9;
+}
+
+.cart-amount a:last-child {
+	left: 140px;
+}
+
+.cart-amount input {
+	width: 39px;
+	height: 15px;
+	line-height: 15px;
+	border: 1px solid #aaa;
+	color: #343434;
+	text-align: center;
+	padding: 4px 0;
+	background-color: #fff;
+	background-position: -75px -375px;
+	position: absolute;
+	z-index: 2;
+	left: 99px;
+	top: 16px;
+}
+
+.shop-info ul li.cart-sum {
+	padding-left: 20px;
+	width: 80px;
+}
+
+.cart-sum span {
+	color: #f40;
+	font-weight: 700;
+}
+
+.shop-info ul li.cart-op {
+	padding-left: 76px;
+}
+
+
+/*//结算*/
+
+.float-bar-wrapper {
+	background: #e5e5e5;
+	margin-bottom: 20px;
+}
+
+.float-bar-wrapper li {
+	float: left;
+}
+
+.float-bar-wrapper li:first-child span {
+	margin-left: 10px;
+}
+.float-bar-wrapper li:nth-child(1) {
+	margin-left: 20px;
+}
+.float-bar-wrapper li:nth-child(2) {
+	margin-left: 25px;
+}
+
+.float-bar-wrapper li:nth-child(3) {
+	margin-left: 25px;
+}
+
+.float-bar-wrapper li:nth-child(4) {
+	margin-left: 25px;
+	width: 70px;
+}
+
+.float-bar-wrapper li:nth-child(5) {
+	margin-left: 458px;
+	font-size: 14px;
+	width: 110px;
+}
+.float-bar-wrapper li:nth-child(6) {
+	margin-left: 18px;
+	width: 190px;
+	
+}
+.float-bar-wrapper li:nth-child(7) {
+	background: #f22d00;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 0 25px;
+	font-weight: 700;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.float-bar-wrapper .red {
+	font-size: 16px;
+	color: #f40;
+	font-weight: 700;
+}
+
+.cart-op span{
+	cursor: pointer;
+}
+.cart-op span:hover{
+	color: #f40;
+}
+

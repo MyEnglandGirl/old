@@ -1,0 +1,15 @@
+.big{
+	margin-top: 10px;
+	border: 1px solid #666666;
+}
+.red{
+	
+	height: 30px;
+	border-left: 5px solid red;
+	margin: 10px 0;
+}
+.red p{
+	display: inline-block;
+	line-height: 30px;
+	margin-left: 10px;
+}

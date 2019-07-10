@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>账户注册</title>
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="am-g public-head  color-fff am-padding-vertical-sm am-text-lg">
+			<div class="am-u-sm-2">
+				<a href="javascript:history.go(-1);" class="color-fff">
+					<i class="am-icon-angle-left am-icon-sm"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-8 am-text-center">账户注册</div>
+			<div class="am-u-sm-2"></div>
+		</div>
+		<div class="am-g am-margin-top-xs register-con">
+			<div class="am-u-md-8 am-u-sm-centered">
+				<form action="" class="am-form" data-am-validator>
+					<fieldset class="am-form-set am-margin-bottom-sm">
+						<input type="text" id="doc-vld-name-2" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+						<input type="password" id="doc-vld-pwd-1" placeholder="6 位数字的银行卡密码" pattern="^\d{6}$" required/>
+						<input type="email" id="doc-vld-email-2" placeholder="输入邮箱" required/>
+					</fieldset>
+
+					<div class="am-form-group am-form-group-sm">
+						<div class="am-checkbox am-text-middle">
+							<label>
+          						<input type="checkbox"> 我已阅读并同意<a href="" class="am-inline-block color-990100">《用户协议》</a>
+        					</label>
+						</div>
+
+					</div>
+					<button type="submit" class="am-btn am-btn-block am-margin-top-sm">注册个账号</button>
+				</form>
+			</div>
+		</div>
+		<div class="am-text-xs am-padding-sm">
+			已有账号？
+			<a href="login.html" class="color-990100 am-inline-block">立即登陆</a>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<style type="text/css">
+		.progress {
+			width: 60%;
+			height: 4px;
+			background: #d1d1d1;
+			margin: 8px 3px 0px 3px;
+		}
+		
+		.red {
+			width: 50%;
+			height: 4px;
+			background: red;
+		}
+		a{
+			font: 16px;
+		}
+	</style>
+
+	<body>
+
+		<audio>
+			<source src="audio.mp3" type="audio/mpeg"></source>
+		</audio>
+		<video width="320" height="180" loop=""  id="video">
+			<source src="mov_cartoon.mp4"></source>
+		</video>
+		<div class="" style="width: 320px;">
+			<input type="button" name="play" id="play" value="开始" class="fl" />
+			<div class="fl">
+				<span id="now"></span>/
+				<span id="length"></span>
+			</div>
+
+			<input type="range" name="" id="schedule" min="0" max="100" value="0" />
+			<div class="clear">
+				
+			</div>
+			<!--<a id="add">+</a>
+			<span id="sound-num"></span>
+			<a id="minue">-</a>-->
+			声音
+			<input type="range" name="" min="0" max="100" id="sound" value="" class="fl"/>
+
+		</div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var oPlay = document.getElementById("play");
+				var oVideo = document.getElementById("video")
+				var oLength = document.getElementById("length");
+				var oNow = document.getElementById("now");
+				var oSound =  document.getElementById("sound");
+				var oSchedule = document.getElementById("schedule");
+				var flag = false;
+				oPlay.onclick = function play() {
+					if(flag == false) {
+						oVideo.play();
+						oPlay.value = "暂停";
+						flag = true;
+					} else {
+						oVideo.pause();
+						oPlay.value = "开始";
+						flag = false;
+					}
+
+				};
+//				时间
+				setInterval(function () {
+					if(oVideo.currentTime.toFixed(0) < 10){
+						oNow.innerHTML = "0"+oVideo.currentTime.toFixed(0);
+					}
+					oNow.innerHTML = oVideo.currentTime.toFixed(0);
+					oLength.innerHTML = oVideo.duration.toFixed(0);
+					oSchedule.value = oVideo.currentTime.toFixed(0)*100/oVideo.duration.toFixed(0);
+				},500);
+//				声音
+				oSound.onchange = function () {
+					oVideo.volume = oSound.value/100;
+//					document.getElementById("sound-num").innerHTML =parseInt(oSound.value);
+				};
+				//				视频播放位置
+				
+				oSchedule.onchange = function () {
+					oVideo.currentTime = oSchedule.value/100*oVideo.duration.toFixed(0);
+				};
+//				document.getElementById("sound-num").innerHTML = oSound.value;
+//				document.getElementById("add").onclick = function () {
+////					 oVideo.volume = (parseInt(oSound.value)+1)/100;
+////					console.log();
+//					document.getElementById("sound-num").innerHTML = parseInt(oSound.value)+1;
+//					
+//				};
+				
+//				var oProgress = document.getElementById("progress");
+//				console.dir(oProgress);
+//				var width = oProgress.clientWidth;
+//				console.log(width);
+				
+
+				
+			}
+		</script>
+	</body>
+
+</html>

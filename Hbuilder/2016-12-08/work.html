@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				font-family: "微软雅黑";
+			}
+			
+			.face img {
+				max-width: 100%;
+			}
+			.result {
+				margin-top: 20px;
+				padding: 10px 10px 0 10px;
+				border: 1px solid #CCCCCC;
+				color: #e77064;
+			}
+			
+			.result p {
+				margin-top: 0;
+				padding-left: 10px;
+				border-left: 4px solid #E77064;
+			}
+			.result p b{
+				float: right;
+				cursor: pointer;
+			}
+			.result p:after{
+				content: '';
+				clear: both;
+				display: block;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1><span class="" id="title">一对"CP"</span></h1>
+		</div>
+		<div class="face" id="content">
+			<img id="img" src="http://www.wanbt.cn/data/attachment/portal/201604/27/120045g1eplnbpbz4fluz0.jpeg" />
+			<p><span></span>爱朔州网2月23日消息，此前曾报道胡歌、霍建华两位男神赴北海道拍大片，这组大片将在《时尚芭莎》3月下封面大片亮相。</p>
+			<p>大片中两位男神CP雪地嬉戏基情满满。</p>
+			<p>这
+				<a href="2-BOM.html">高颜值</a>和大长腿，小编表示血槽已空啊……</p>
+		</div>
+		<div class="comment">
+			<input type="text" name="" id="txt" value="" />
+			<input type="button" name="" id="btn" value="评论" />
+			<div class="result" id="result">
+				<p>基情满满<b>X</b></p>
+				<p>是胡不是霍<b>X</b></p>
+				<p>撒娇的<b>X</b></p>
+				<p>要删除的评论<b>X</b></p>
+			</div>
+		</div>
+		<div class="div1" id="btn_box">
+		</div>
+		<script type="text/javascript">
+			// 所有操作必须使用js来完成
+			// 1.让文章标题《一对"CP"》文字居中，并改成《胡歌霍建华北海道拍写真 雪中上演“冬季恋歌”》
+			// 2.将图片的宽度改为600px
+			// 3.点击标题隐藏图片，再次点击显示图片
+			var oTitle = document.getElementById('title');
+			oTitle.innerText = "胡歌霍建华北海道拍写真 雪中上演“冬季恋歌”";
+			oTitle.style.display = "block";
+			oTitle.style.textAlign = "center";
+			var oImg = document.getElementById('img');
+			oImg.style.width = "600px";
+			oTitle.onclick = function() {
+				//		oImg.getAttribute('display');
+				if(oImg.style.display == 'block') {
+					oImg.style.display = 'none';
+				} else {
+					oImg.style.display = 'block';
+				}
+			}
+		</script>
+	<script type="text/javascript">
+			//		在for循环里生成10个button,并绑定click事件，点击button分别弹出1~10（数字代表每一个button的序号）
+				window.onload = function() {
+				var box = document.getElementById("btn_box");
+				for(var i = 1; i < 11; i++) {
+					var btn = document.createElement("button");
+					btn.style.width = "50px";
+					btn.style.height = "25px";
+					btn.style.marginLeft = "10px";
+					btn.setAttribute("id", i);
+					btn.innerText = "按钮";
+				}
+				var arr = document.getElementsByTagName('button');
+				for(var i = 0; i < arr.length; i++) {
+					arr[i].onclick = function() {
+						alert(this.id);
+					}
+				}
+			}
+		</script>
+		<script type="text/javascript">
+				//删除一个元素
+//				新建一个p元素
+				var oResult = document.getElementById('result');
+				var oBtn = document.getElementById('btn');
+				var oTxt = document.getElementById('txt');
+				oBtn.onclick=function () {
+					var cResult = document.querySelectorAll('#result p')[0];
+					console.log(cResult);
+//					if (oTxt.value == '') {
+//						console.log('请输入评论');
+//					} else{
+//						var oP = document.createElement('p');
+//						oP.innerText = oTxt.value;
+//						oResult.appendChild(oP);
+//					}
+					if (oTxt.value !='') {
+						var oP = document.createElement('p');
+//						oP.innerText = oTxt.value;
+						oP.innerHTML=oTxt.value+'<b>X<b>';
+						console.log(oP);
+//						oResult.appendChild(oP);
+						//在后面插入
+						oResult.insertBefore(oP,cResult);
+						oTxt.value ='';
+//						oResult:父级;  oP:插入的内容 ;cResult:插入的位置,父级下的第一个元素
+					} else{
+						console.log('请输入评论');
+					}
+				};
+				
+				
+//				oP.innerText="在一起";
+//				console.log(oP);
+//				oResule.appendChild(oP);
+//				console.log(oTxt);
+
+
+//              删除一个元素
+//				var oX = oResult.querySelectorAll('.result p b');
+//				console.log(oX);
+//				for (var i = 0; i < oX.length; i++) {
+//					oX[i].onclick = function () {
+////						console.log(i);
+////						点击是i已经循环完,i为for循环最后那个值
+//						console.log(this.parentNode);
+//						oResult.removeChild(this.parentNode);
+//					}
+//				}
+//				oResult.removeChild(oResult.childNodes[1]);
+//				oResult:父级   childNodes:固定语法
+
+//				target
+				oResult.onclick = function (q) {
+					console.dir(q.target.innerText);
+					if (q.target.innerText == 'X') {
+						this.removeChild(q.target.parentNode);
+						//，this就指谁
+					}
+				};
+		</script>
+		</body>
+
+</html>

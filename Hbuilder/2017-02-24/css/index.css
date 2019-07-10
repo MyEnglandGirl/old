@@ -1,0 +1,362 @@
+.icon_a1:before {
+	content: "\e674"
+}
+
+.icon_a2:before {
+	content: "\e675"
+}
+
+.icon_a3:before {
+	content: "\e66a"
+}
+
+.icon_a4:before {
+	content: "\e66b"
+}
+
+.icon_a5:before {
+	content: "\e66c"
+}
+
+.qn .qnas {
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.qn a {
+	color: #333;
+	text-align: center;
+}
+
+.qn i {
+	font-size: 22px;
+	color: #fff;
+	font-style: normal;
+}
+
+.qn .around {
+	background-color: #2db2ff;
+}
+
+.qn .domestic {
+	background-color: #fd5d4f;
+}
+
+.qn .abroad {
+	background-color: #fc9c2e;
+}
+
+.qn .local {
+	background-color: #fed559;
+}
+
+.qn .visa {
+	background-color: #32d7c9;
+}
+
+.vip .icon_vip {
+	background: url(../img/png/icon_vip.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.vip .icon-mice {
+	background: url(../img/png/icon_mice.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.vip i {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+}
+
+.hot-product a img {
+	height: 56px;
+	overflow: hidden;
+	border: none;
+}
+
+.pro-card img {
+	width: 100%;
+	height: auto;
+}
+
+.pro-card dd a {
+	line-height: 20px;
+}
+
+.pro-card dd ul li {
+	float: left;
+	border: 1px solid #e5e5e5;
+	padding: 0 5px;
+	font-size: 10px;
+	margin-right: 5px;
+	font-size: 10px;
+}
+
+.pro-card dt {
+	position: relative;
+	height: 13rem;
+	overflow: hidden;
+}
+
+.pro-card dt a img {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.pro-ard dt a {
+	display: block;
+	position: relative;
+	height: 100%;
+}
+
+.pro-card dt .tag {
+	color: #fff;
+	font-size: 10px;
+	display: inline-block;
+	padding: 4px 10px;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	-p-border-radius: 2px;
+	border-radius: 2px;
+	font-weight: 400;
+}
+
+.pro-card dt .price {
+	position: absolute;
+	right: 0;
+	bottom: 8px;
+	width: 86px;
+	overflow: hidden;
+	text-align: center;
+	-webkit-border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+	-o-border-radius: 2px 0 0 2px;
+	-p-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+}
+
+.pro-card dt .price .sale-price {
+	background-color: #01af63;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.pro-card dt .price .sale-price .sym {
+	font-size: 8px;
+}
+
+.pro-card dt .price .sale-price .qi {
+	font-size: 7px;
+}
+
+
+/*details.html*/
+
+.pro-banner .type-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 26px;
+	color: #fff;
+	font-size: 10px;
+	line-height: 26px;
+	padding: 0 12px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%);
+}
+
+.pro-price em {
+	font-style: normal;
+	color: #ff811a;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.pro-price .market-price {
+	text-decoration: line-through;
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+.icon-detail-phone:before {
+	content: "\e690";
+}
+
+.icon-more-open:before {
+	content: "\e609";
+}
+
+.pro-phone .icon-more-open {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -6px;
+	font-size: 10px;
+	color: #999;
+	/*float: right;*/
+	font-style: normal;
+}
+
+.pro-phone div {
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.icon-detail-tag:before {
+	content: "\e61a";
+}
+
+.pro-tags i {
+	color: #01af63;
+}
+
+.re-confirm {
+	background: #fffbf5;
+	font-size: 10px;
+}
+
+.head-icon {
+	display: inline-block;
+	width: 2px;
+	height: 14px;
+	margin-right: 5px;
+	background-color: #01af63;
+}
+
+.head-icon {
+	position: relative;
+	top: 2px;
+}
+
+.detail-content-font {
+	font-size: 11px;
+}
+
+.dotted {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #01AF63;
+	position: relative;
+	top: -2px;
+}
+
+.icon-up:before {
+	content: "\e60a";
+}
+
+.icon-more:before {
+	content: "\e603";
+}
+
+.product-point .detail-head i {
+	position: absolute;
+	right: 10px;
+	top: 16px;
+}
+
+.day-icon {
+	position: absolute;
+	left: 0px;
+	top: 4px;
+	display: block;
+	background: #01af63;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+}
+
+.icon-plane:before {
+	content: "\e60d";
+}
+
+.detail-content-one {
+	border-bottom: 1px dashed rgb(238, 238, 238);
+}
+
+.detail-content {
+	display: none;
+	font-size: 11px;
+}
+
+.detail-bottom {
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background-color: #ff811a;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.jy-margin-bottom {
+	margin-bottom: 50px;
+}
+
+
+/*order.css*/
+
+.type {
+	border: 1px solid #eee;
+	height: 22px;
+	line-height: 20px;
+}
+
+.number div {
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	border: 1px solid #eee;
+}
+
+.red {
+	color: #FF7466;
+	margin-top: 2px;
+}
+
+.information input {
+	border: none;
+	outline: none;
+}
+
+.invoice-input {
+	display: block;
+	width: 100%;
+	border: 1px solid rgb(194, 194, 194);
+	outline: none;
+	padding: 5px 5px 6px 5px;
+}
+
+.invoice-type {
+	border: 1px solid #eee;
+	line-height: 24px;
+	width: 100px;
+	height: 24px;
+	text-align: center;
+	font-size: 12px;
+	
+}
+.order{
+	position:fixed;
+	bottom: 0;
+}

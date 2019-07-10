@@ -1,0 +1,142 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.index-renkuang {
+	float: left;
+	width: 815px;
+	padding: 0 10px;
+	box-shadow: 0 0 5px #ccc;
+	margin-left: 10px;
+}
+
+.index-renkuang .index-geren {
+	overflow: hidden;
+	position: relative;
+}
+
+.index-renkuang .index-geren .index-gerenxin {
+	border-bottom: 2px solid #cf0101;
+	/* width: 90px; */
+	height: 35px;
+	line-height: 35px;
+	display: block;
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.index-renkuang .index-geren .index-fout {
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	line-height: 34px;
+	display: block;
+	float: left;
+}
+
+table {
+	width: 825px;
+}
+
+.index-vef {
+	vertical-align: top;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.index-renkuang .index-hend {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	border: 1px #ddd solid;
+	box-shadow: #ddd 0px 0px 3px;
+	overflow: hidden;
+	margin-left: 49px;
+}
+
+.index-xiutou {
+	width: 75px;
+	margin: 5px auto;
+	clear: both;
+	float: none;
+}
+
+.index-xiutou a {
+	padding-left: -50px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.index-xiutou a:hover {
+	color: #C69C6D;
+}
+
+.index-user tr td {
+	height: 40px;
+	line-height: 40px;
+}
+
+.index-xing b {
+	color: #E00403;
+}
+
+.index-inputt {
+	width: 180px;
+	height: 26px;
+	margin: 0 3px 0 0;
+	border: 1px solid #DCDCDC;
+	line-height: 26px;
+}
+
+.index-aaa:hover {
+	text-decoration: none;
+	color: #C69C6D;
+}
+
+.index-aaa {
+	width: 56px;
+	position: absolute;
+	top: 252px;
+	left: 827px;
+}
+
+.index-user .index-tips {
+	line-height: 25px;
+	color: gray;
+}
+
+input[type="radio"] {
+	margin: -3px 7px 0;
+}
+
+select {
+	border: #e5e5e5 solid 1px;
+	margin-right: 20px;
+	height: 25px;
+	padding: 2px 0;
+	float: left;
+	line-height: 25px;
+}
+
+.index-all_btn {
+	display: inline-block;
+	padding: 0px 17px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	border: 0px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.index-user tr td input{
+	outline: none;
+}
+input[type="text"]{
+	border-radius: 0px;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	</head>
+
+	<body>
+		<!--<a href="http://www.baidu.com">百度一下</a>
+		<script type="text/javascript">
+			 var link = document.getElementsByTagName('a')[0];
+			 link.onclick = function (even) {
+				even.preventDefault();
+			 };
+		</script>-->
+		<div class="bgColor">
+			<div class="container">
+				<span class="noneBg">添加：</span>
+				<input type="text" name="" id="addName" value="name" class="text" />
+				<input type="text" name="" id="addAge" value="age" class="text" />
+				<input type="button" name="" id="add" value="添加" class="blueBg" />
+				<span class="noneBg">变色：</span>
+				<input type="button" name="" id="changeBg" value="开启移入变色" class="blueBg" />
+				<table border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<th>ID</th>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>操作</th>
+					</tr>
+						<tr>
+							<td>1</td>
+							<td class="name">姓名1</td>
+							<td class="age">1</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="name">姓名</td>
+							<td class="age">2</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td class="name">姓名</td>
+							<td class="age">6</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td class="name">姓名2</td>
+							<td class="age">4</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td class="name">姓名</td>
+							<td class="age">5</td>
+							<td>
+								<a href="javascript:;">删除</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="noneBg">搜索：</span>
+				<input type="text" name="" id="searchTxt" value="" class="text" />
+				<input type="button" name="" id="search" value="搜索" class="blueBg" />
+				<span class="noneBg">排序：</span>
+				<input type="button" name="" id="ageId" value="年龄从小排序" class="blueBg" />
+			</div>
+
+		</div>
+		<script type="text/javascript">
+		//删除
+			var oTable = document.getElementsByTagName('table')[0];
+			function aDelTr(obj) {
+				var oDel = obj.getElementsByTagName('a');
+				for(var i = 0; i < oDel.length; i++) {
+					oDel[i].onclick = function() {
+						obj.removeChild(this.parentNode.parentNode);
+					}
+				}
+			}
+			aDelTr(oTable.tBodies[0]);
+		//移入变色
+			console.log(oTable);
+			
+			function OverBg (obj) {
+				for (var i = 0; i < obj.rows.length ; i ++) {
+					obj.rows[i].onmouseover = function () {
+						this.style.backgroundColor = 'rgb(238,238,238)';
+					}
+					obj.rows[i].onmouseout = function () {
+						this.style.backgroundColor = '';
+					}
+				}
+			}
+			function OutBg (obj) {
+				for (var i = 0; i<obj.rows.length; i++){
+					obj.rows[i].onmouseover = function () {
+						this.style.backgroundColor = '';
+					}
+				}
+
+			}
+			window.onload = function() {
+				
+				var oAddName = document.getElementById('addName');
+				var oAddAge = document.getElementById('addAge');
+				var oChangeBg = document.getElementById('changeBg');
+				var oAdd = document.getElementById('add');
+				var oIdNum = document.getElementsByTagName('tr').length - 1;
+				//标题的tr-1  
+				var oTable = document.getElementsByTagName('table')[0];
+					
+			
+				
+				oAdd.onclick = function() {
+					if(oAddName.value == '' || oAddAge.value == '') {
+						alert('请输入内容!');
+					} else {
+						var oTr = document.createElement('tr');
+						var oTd = document.createElement('td');
+						oTd.innerText = oIdNum++;
+						oTr.appendChild(oTd);
+
+						var oTd = document.createElement('td');
+						oTd.setAttribute('class','name');
+						oTd.innerText = oAddName.value;
+						oTr.appendChild(oTd);
+						var oTd = document.createElement('td');
+						oTd.innerText = oAddAge.value;
+						oTr.appendChild(oTd);
+						var oTd = document.createElement('td');
+						oTd.innerHTML = '<a href="javascript:;">删除</a>';
+						oTr.appendChild(oTd);
+//            oTable.appendChild(oTr);
+						oTable.tBodies[0].appendChild(oTr);
+						
+						aDelTr(oTable.tBodies[0]);
+					}
+				}
+				oChangeBg.onclick = function () {
+					if (oChangeBg.value == '开启移入变色') {
+						OverBg (oTable.tBodies[0]);
+						oChangeBg.value = '关闭移入变色';
+						oChangeBg.style.backgroundColor = 'red';
+					} else  {
+						OutBg (oTable.tBodies[0]);
+						oChangeBg.value = '开启移入变色';
+						oChangeBg.style.backgroundColor = 'rgb(53,176,213)';
+					}
+				}
+				//搜索
+				var oSearch = document.getElementById('search');
+			   	var oSearchTxt = document.getElementById('searchTxt');
+				console.log(oSearchTxt);
+				oSearch.onclick = function () {
+					if (oSearchTxt.value == '') {
+						alert('请输入搜索内容');
+					} else {
+						var oName = document.getElementsByClassName('name');
+//						oName.style.background = '';
+						console.log(oName);
+						for (var i = 0; i < oIdNum; i++) {
+							oName[i].parentNode.bgColor = '';
+							if(oSearchTxt.value == oName[i].innerHTML){
+								// console.dir(oName.innerHTML.parentNode);
+								oName[i].parentNode.bgColor = 'yellow';
+							}
+						}
+						
+					}
+				}
+				//年龄
+				var oAge = document.getElementById('ageId');
+				oAge.onclick = function() {
+					if( oAge.value == '年龄从小排序'){
+						oAge.value == '恢复默认排序';
+						var aSage = [];
+						for (var i = 0 ; i < oTdNum; i++){
+							aSage[i] = oTable.tBodies.rows[i];
+						}
+							aSage.sort(function (a,b) {
+								var aTet = document.get
+							})
+					}
+					else{
+						oAge.value = '年龄从小排序';
+						var ageId = [];
+						for (var i = 0 ; i < oTdNum; i++){
+							ageId[i] = oTable.tBodies.rows[i];
+							
+
+						}
+					}
+					
+				}
+			}
+		</script>
+	</body>
+
+</html>

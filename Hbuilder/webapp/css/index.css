@@ -1,0 +1,335 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	background: rgb(245, 245, 245);
+}
+
+.head-nav {
+	background: #990100;
+}
+
+.head-nav img {
+	/*width: 100%;*/
+}
+
+.shop-name {
+	height: 51px;
+	text-align: center;
+	line-height: 51px;
+}
+
+.head-slider .am-control-nav {
+	position: absolute;
+	bottom: 10px;
+}
+
+.recommend span {
+	font-size: 14px;
+}
+
+.special-con>div {
+	border-bottom: 1px dashed #e7e7e7;
+}
+
+.special {
+	border: 1px solid #e7e7e7;
+}
+
+.special-head {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.special .special-con {
+	border: 0;
+}
+
+.special-con {
+	border-bottom: 1px dashed #e7e7e7;
+}
+
+.special-con .color-990100 {
+	width: 51px;
+}
+
+.special-con .del {
+	width: 51px;
+}
+
+.special .am-u-sm-8 {
+	height: 25px;
+}
+
+.product>.out-of-stock {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.product>.buy-gifs {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.del {
+	text-decoration: line-through;
+}
+
+.search .am-icon-search {
+	position: absolute;
+	top: 20%;
+	right: 6%;
+}
+.video{
+	display: none;
+}
+
+/*站内消息*/
+
+.news {
+	padding-top: 1rem;
+}
+
+.news li {
+	margin: 0 1rem 1rem 1rem;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #e7e7e7;
+}
+
+.news-title {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*账户注册*/
+
+
+/*.am-form-set input:nth-child(4){
+	margin-top: -1px;
+}*/
+
+.register-con button {
+	background: #990100;
+	color: #fff;
+}
+
+
+/*地址管理*/
+
+.address-icon {
+	color: #99999;
+	margin-top: 3px;
+}
+
+.address-box>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 33px;
+}
+
+
+/*用户中心*/
+
+.user-header {
+	background: url(../img/jpg/user-bg.jpg);
+	background-size: cover;
+	background-size: 100% 100%;
+	width: 100%;
+}
+
+.user-con img {
+	margin-top: -4px;
+}
+
+.user-con {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*订单详情*/
+
+.logistics {
+	border: 1px solid #e7e7e7;
+	border-radius: 3px;
+}
+
+.order-num {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*搜索*/
+
+
+/*商品详情*/
+
+.detail-modal {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.am-modal-hd {
+	border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.detail-modal img {
+	border: 1px solid rgb(229, 229, 229);
+}
+
+.am-modal-right {
+	width: 70%;
+}
+
+.am-modal-bd {
+	border: 0;
+}
+
+.am-modal-bd div div {
+	border: ;
+	border-radius: 3px;
+}
+
+.am-modal-bd .detail-age {
+	border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.detail p {
+	margin: 10px 0;
+}
+
+.add-shopping {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.add-shopping img {
+	margin-top: -4px;
+}
+
+.add-shopping li:first-child {
+	background: #dd5a03;
+}
+
+.add-shopping li:last-child {
+	background: #990100;
+}
+
+
+/*用户登录*/
+
+.login-input {
+	border: 0;
+	outline: none;
+	outline-style: none;
+	outline-color: #fff;
+}
+
+.login-input:focus {
+	outline: none;
+	outline-style: none;
+	outline-color: #fff;
+}
+
+.login-buttom {
+	border-radius: 3px;
+}
+
+.line {
+	position: absolute;
+	left: 47%;
+}
+
+.third-party {
+	margin-top: 70%;
+}
+
+
+/*我的收藏*/
+
+.del-collection-con {
+	position: absolute;
+	right: -86px;
+	top: 0;
+	border: 0;
+	background: #e7e7e7;
+	width: 76px;
+	height: 76px;
+}
+
+.del-collection-con>div {
+	border-radius: 3px;
+}
+
+
+/*购物车*/
+
+.shop-con {
+	border: 1px solid #e7e7e7;
+	border-radius: 3px;
+}
+
+.special-con:hover {
+	color: #666;
+}
+
+.shop-con i {
+	cursor: pointer;
+}
+
+.check-all,
+.balance {
+	cursor: pointer;
+}
+
+.shop-title {
+	line-height: 14px;
+}
+
+.shop-number {
+	border: 1px solid #cccccc;
+	display: inline-block;
+}
+
+.shop-number a {
+	text-align: center;
+	background: #e6e6e6;
+	width: 22px;
+}
+
+.number {
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 2px 0 2px 2px;
+	width: 50px;
+	height: 22px;
+}
+
+
+/*限时特卖*/
+.refresh{
+	display: none;
+}
+
+.sale-none{
+	display: none;
+}
+/*结算中心*/
+.address-truncate{
+	height: 39px;
+	overflow: hidden;
+}
+.message{
+	width: 100%;
+	border: 0;
+	outline: none;
+}

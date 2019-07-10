@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.bg {
+				width: 300px;
+				height: 200px;
+				background: -webkit-linear-gradient(45deg, transparent, #f00 12%, #fffc00 28%, #01b439 45%, #00eaff 60%, #000390 75%, #ff00c6 88%, transparent);
+				background: -moz-linear-gradient(transparent, #f00 12%, #fffc00 28%, #01b439 45%, #00eaff 60%, #000390 75%, #ff00c6 88%, transparent);
+				background: -o-linear-gradient(transparent, #f00 12%, #fffc00 28%, #01b439 45%, #00eaff 60%, #000390 75%, #ff00c6 88%, transparent);
+				background: --linear-gradient(transparent, #f00 12%, #fffc00 28%, #01b439 45%, #00eaff 60%, #000390 75%, #ff00c6 88%, transparent);
+			}
+			
+			.demo {
+				width: 300px;
+				height: 200px;
+				background: radial-gradient(ellipse at 130px 50px, #ff0, #f0f,#00f);
+			}
+			.yuan{
+				width: 200px;
+				height: 200px;
+				border-radius: 100%;
+				background: radial-gradient(ellipse at center, #ff0, #f0f,#00f);
+			}
+			.mail{
+				width: 300px;
+				height: 200px;
+				border: 10px solid;
+				border-image: url(img/QQ图片20170112135935.jpg) repeat;
+				border-image-width: 10px;
+				border-image-source: 30px;
+				border-image-outset: initial;
+				border-image-slice: 30px;
+			}
+			/*body{
+				background-color: #FF00FF;
+			}*/
+			.De{				
+				margin-left:500px ;
+				background-color: #000;
+				width: 300px;
+				height: 200px; 			
+			}
+			div:hover{
+				-webkit-transform: translate(-300px,0);
+				-moz-transform: translate(-300px,0);
+				-ms-transform: translate(-300px,0);
+				-o-transform: translate(-300px,0);
+				transform: translate(-300px,0) skew(130deg,0);
+			}
+			.trans{			
+				-webkit-transition: all 0.5s ease-in-out;
+				-ms-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;				
+			}
+			p{
+				color: #fff;
+			}
+			
+@-webkit-keyframes brake{
+	0%{
+		-webkit-transform: translateX(2%);
+		-moz-transform: translateX(2%);
+		-ms-transform: translateX(2%);
+		-o-transform: translateX(2%);
+		transform: translateX(2%);
+	}
+	75%{
+		-webkit-transform: translateX(2%) skewX(60deg);
+		-moz-transform: translateX(2%) skewX(60deg);
+		-ms-transform: translateX(2%) skewX(60deg);
+		-o-transform: translateX(2%) skewX(60deg);
+		transform: translateX(2%) skewX(60deg);
+	}
+	90%{
+		-webkit-transform: translatrX(1%) skew(-60deg);
+		-moz-transform: translatrX(1%) skew(-60deg);
+		-ms-transform: translatrX(1%) skew(-60deg);
+		-o-transform: translatrX(1%) skew(-60deg);
+		transform: translatrX(1%) skew(-60deg);
+	}
+	100%{
+		-webkit-transform: translate(0%);
+		-moz-transform: translate(0%);
+		-ms-transform: translate(0%);
+		-o-transform: translate(0%);
+		transform: translate(0%);
+	
+	}
+}
+@-moz-keyframes brake{
+	from{}
+	to{}
+}
+@-
+		</style>
+	</head>
+
+	<body>
+		<div class="De trans">
+			<p>HUIUh</p>
+		</div>
+		<div class="bg">
+			
+		</div>
+	
+		<div class="yuan">
+			
+		</div>
+		<div class="mail">
+			
+		</div>
+	<div class="come">
+	</div>
+	</body>
+
+</html>

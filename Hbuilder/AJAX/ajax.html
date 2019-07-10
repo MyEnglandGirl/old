@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$getJSON('url',function (data) {
+				
+			});
+			$.ajax({
+				url:'',//跨域http://192.168.1.213:3000/+url,
+				type:'',
+				async:'true',
+				data:{
+					acid:''
+				},
+				dataType:'JSONP',//跨域处理
+				success:function(data){
+					
+				}
+			});
+			var data = $("#from").serialize();
+			$.post('url',data,function(res){
+				
+			});
+		</script>
+	</body>
+</html>

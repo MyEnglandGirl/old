@@ -1,0 +1,56 @@
+<ion-header-bar align-title="left" class="bar-dark">
+	<a ng-click="back()" style="line-height: 43px;">
+		<img src="img/png/back.png" width="20" />
+	</a>
+	
+	<h1 class="title">使用手机号登录</h1>
+</ion-header-bar>
+<!--href="#/main"-->
+<!--<ion-nav-bar align-title="left" class="bar-dark">
+	
+	<ion-nav-back-button class="button-clear">
+		<i class="icon ion-ios-arrow-back"></i>返回
+		<h1 class="title">使用手机号登录</h1>
+	</ion-nav-back-button>
+	
+</ion-nav-bar>-->
+
+<ion-content>
+	<style type="text/css">
+		html,
+		body {
+			background: #FFFFFF;
+		}
+	</style>
+
+	</div>
+	<div class="jy-margin-horizontal-sm" style="padding-top: 20px;">
+		<span>国家/地区</span>
+
+		<a href="" class="jy-a fr jy-a-color">中国</a>
+
+	</div>
+	<div class="list jy-margin-top-sm">
+		<label class="item item-input">
+    		<span class="input-label" >+86</span>
+    		<input type="text" ng-model="user.phone">
+  			</label>
+		<label class="item item-input">
+    <span class="input-label">密码</span>
+    <input type="password" ng-model="user.password">
+  </label>
+	</div>
+	<div class="jy-margin-horizontal-sm">
+		<button ng-click="login()" class="button button-block button-positive main-bg-color">登录</button>
+
+		<div class="row">
+			<div class="col jy-text-center">
+				<a ui-sref="find" href="" class="jy-text-center jy-block jy-a-color">忘记密码</a>
+			</div>
+			<div class="col col-60 jy-text-center">
+				<a href="#/login-m" class="jy-a-color">使用账号密码登录</a>
+			</div>
+		</div>
+	</div>
+
+</ion-content>

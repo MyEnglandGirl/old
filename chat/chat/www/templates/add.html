@@ -1,0 +1,50 @@
+<ion-view>
+	<ion-header-bar align-title="left" class="bar-dark">
+
+		<!--<a ng-click="add.hide()" style="line-height: 43px;">
+			<img src="img/png/back.png" width="20" />
+		</a>-->
+		<input ng-model="master.phone" type="search" class="add" placeholder="Search" >
+		<button ng-click="searchPhone()" class="button button-block button-positive addBtn">搜索</button>
+		
+		<!--<h1 class="title">添加朋友</h1>-->
+	</ion-header-bar>
+	<div ng-show="master.show" class="" style="margin-top: 53px;">
+		<div class="item jy-border-0 jy-margin-top-sm" >
+			<img ng-show="master.img" ng-src="{{master.img.sm_img}}" src="img/ben.png" width="50" class="jy-vertical-align fl">
+			<img ng-hide="master.img" src="../img/img.jpg" width="50" class="jy-vertical-align fl">
+			<div class="jy-vertical-align jy-margin-left-sm fl" style="margin-top: 5px;">
+				<span class="my-name" ng-bind="master.name">MY</span><br>
+				<!--<span class="my-nameID">微信号：giiw</span>-->
+			</div>
+
+		</div>
+		<ul class="list jy-bg-color-fff jy-margin-top-sm">
+			<li class=" ">
+				<div class="row jy-border-bottom jy-a ">
+					<div class="col jy-vertical-align ">地区</div>
+					<div class="col jy-vertical-align jy-text-right ">
+						<span class="jy-description ng-binding" ng-bind="master.address ">dcdcdcdcd</span>
+					</div>
+				</div>
+			</li>
+			<li class=" ">
+				<div class="row jy-border-bottom jy-a ">
+					<div class="col jy-vertical-align ">个性签名</div>
+					<div class="col jy-vertical-align jy-text-right ">
+						<span class="jy-description ng-binding" ng-bind="master.autograph ">dcdcdcdcd</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="jy-margin-sm">
+		<button ng-show="master.addfriend" ng-click="add()" class="button button-block button-positive main-bg-color">添加好友</button>		
+		<button ng-show="master.send" class="button button-block button-positive main-bg-color">等待对方验证</button>
+		<button ng-show="master.myfriend" class="button button-block button-positive main-bg-color">发消息</button>
+		</div>
+
+	</div>
+	<div ng-show="master.hide" class="" style="margin-top: 83px;">
+		<div class="jy-text-center jy-description">未找到该用户</div>
+	</div>
+</ion-view>

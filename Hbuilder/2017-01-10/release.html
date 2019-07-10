@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row-fluid clearfix">
+				<div class="pull-left nav-con">
+					<div class="shop">
+
+					</div>
+
+					<ul class="navleft">
+						<li style="background: #FFFFFF;border-left: 2px solid red;">
+							<a href="">商品发布</a>
+						</li>
+						<li>
+							<a href="">淘宝导入</a>
+						</li>
+						<li>
+							<a href="index.html">出售中商品</a>
+						</li>
+						<li>
+							<a href="">仓库中的商品</a>
+						</li>
+						<li>
+							<a href="">关联版式</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="pull-left right-con">
+					<form>
+						<div class="title">
+							<ul class="breadcrumb">
+								<li><i class=" icon-folder-open"></i></li>
+								<li>
+									<a href="#">商品管理中心</a>
+								</li>
+								<li><span class="divider">&gt;</span></li>
+								<li>
+									<a href="#">商品</a>
+								</li>
+								<li><span class="divider">&gt;</span></li>
+								<li class="active">出售中商品</li>
+							</ul>
+
+						</div>
+						<div class="editors-con">
+							<hr class="gray" />
+							<div class="editors-title">
+								编辑商品
+							</div>
+							<hr class="blue" />
+							<div class="editors-title-box">
+								商品基本信息
+							</div>
+							<ul class="editors-title-con">
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										商品分类:
+									</div>
+									<div class="right-box pull-left">
+										<select>
+											<option>食品饮料</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+										<select>
+											<option>进口食品</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+										<select>
+											<option>饼干蛋糕</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										#<span class="red">*</span>商品名称:
+									</div>
+									<div class="right-box pull-left">
+										<div class="">
+											<input type="text" name="commodityName" placeholder="Text input">
+										</div>
+										<div class="describe">商品标题长度名称最少3个字符，最多50个汉字</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										#商品卖点:
+									</div>
+									<div class="right-box pull-left">
+
+										<div>
+											<textarea rows="3" name="commoditySellingPoint"></textarea>
+										</div>
+
+										<div class="describe">商品卖点最长不能超过140个汉字</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										<span class="red">*</span>商品价格:
+									</div>
+									<div class="right-box pull-left">
+										<div class="input-append">
+											<input class="span2" id="" name="commodityPrices" type="text">
+											<span class="add-on">元</span>
+										</div>
+										<div class="describe">价格必须是0.01~9999999之间的数字，且不能高于市场值</div>
+										<div class="describe">此价格为商品实际销售价格，如果商品存在规格，该商品显示最低价格。</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										<span class="red">*</span>市场价:
+									</div>
+									<div class="right-box pull-left">
+										<div class="input-append">
+											<input class="span2" id="" name="marketPrice" type="text">
+											<span class="add-on">元</span>
+										</div>
+										<div class="describe">价格必须是0.01~9999999之间的数字，此价格仅为市场参考售价，请根据实际情况认真填写。</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										成本价:
+									</div>
+									<div class="right-box pull-left">
+										<div class="input-append">
+											<input class="span2" id="" name="costPrice" type="text">
+											<span class="add-on">元</span>
+										</div>
+										<div class="describe">价格必须是0.01~9999999之间的数字，此价格为商户对所销售的商品实际成本价格进行备注记录，非必填项，不会再前台页面显示</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										折扣:
+									</div>
+									<div class="right-box pull-left">
+										<div class="input-prepend">
+											<span class="add-on"></span>
+											<span class="add-on">%</span>
+										</div>
+										<div class="describe">根据销售与市场价比例自动生成，不需要编辑</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										#<span class="red">*</span>商品库存:
+									</div>
+									<div class="right-box pull-left">
+										<div>
+											<input type="text" placeholder="Text input" name="stock">
+										</div>
+										
+										<div class="describe">商铺库存数量必须为0~999999999之间的整数</div>
+										<div class="describe">若启配置，则系统自动生成计算商品的总数，此处无需卖家填写</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										#库存预警值:
+									</div>
+									<div class="right-box pull-left">
+										<div>
+										<input type="text" placeholder="Text input" name="inventoryWarningValue">
+											
+										</div>
+
+										<div class="describe">设置最低库存预警值，当库存低于预警值时商家中心商品列表页库存列红色提醒</div>
+										<div class="describe">请填写0~255的数字，0为不预警</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										#商品货号:
+									</div>
+									<div class="right-box pull-left">
+										<div>
+										<input type="text" placeholder="Text input" name="productCode">
+											
+										</div>
+
+										<div class="describe">商家货号是指商家管理商品的编号,买家不可见</div>
+										<div class="describe">最多可输入20个字符,支持输入中文、字母、数字、_、/、-和小数点</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										<span class="red">*</span>商品图片:
+									</div>
+									<div class="right-box pull-left">
+										<img src="img/shopimg.png" class="img-rounded">
+										<div class="describe">上传商品默认主图，如多规格值时将默认使用该图或分规格上传各规格主图;支持jpg,gif,png格式上传或从图片空间中选择,建议使用<span class="red">尺寸800*800像素以上、大小不超过1M的正方形图片</span>,上传后的图片将会自动保存在图片空间默认分类中。</div>
+										<button class="btn" type="button"><i class=" icon-arrow-up"></i>商品上传</button>
+									</div>
+								</li>
+							</ul>
+							<div class="editors-title-box">
+								商品详情描述
+							</div>
+							<ul class="editors-title-con">
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										商品品牌:
+									</div>
+									<div class="right-box pull-left">
+										<input type="text" placeholder="Text input">
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										商品描述:
+									</div>
+									<div class="right-box pull-left">
+										<img src="img/miaoshu.png" />
+									</div>
+								</li>
+							</ul>
+							<div class="editors-title-box">
+								商品物流信息
+							</div>
+							<ul class="editors-title-con">
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										所在地:
+									</div>
+									<div class="right-box pull-left">
+										<select>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										#运费:
+									</div>
+									<div class="right-box pull-left">
+										<label class="radio">
+  									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>固定运费</label>
+										<div class="input-append">
+											<input class="span2" id="appendedInput" type="text" name="freight">
+											<span class="add-on">元</span>
+										</div>
+										<div class="describe">运费设置为0元,前台商品将显示为免运费</div>
+
+									</div>
+								</li>
+							</ul>
+							<div class="editors-title-box">
+								发票信息
+							</div>
+							<ul class="editors-title-con">
+								<li class="clearfix">
+									<div class="left-box pull-left">
+										是否开增值税发票:
+									</div>
+									<div class="right-box pull-left clearfix">
+										<label class="radio pull-left">
+  										<input type="radio" name="options" id="optionsRadios2" value="option2">是
+									</label>
+										<label class="radio pull-left marginLeft">
+  										<input type="radio" name="options" id="optionsRadios2" value="option2">否
+									</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="text-center">
+							<button class="btn btn-primary" id="" type="submit">提交</button>
+
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/additional-methods.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/messages_zh.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>

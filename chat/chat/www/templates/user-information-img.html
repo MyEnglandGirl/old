@@ -1,0 +1,33 @@
+<ion-header-bar align-title="left" class="bar-dark">
+
+	<a ng-click="back()" style="line-height: 43px;">
+		<img src="img/png/back.png" width="20" />
+	</a>
+
+	<h1 class="title">上传头像</h1>
+
+	<button ng-click="submit_form()" class="button button-clear jy-description">
+       			 保存
+     		 </button>
+</ion-header-bar>
+<div style="margin-top: 53px;">
+
+</div>
+<style type="text/css">
+	.pane{
+		background: #fff;
+	}
+</style>
+<form>
+	<div>
+		<label>
+            <img ng-src="{{thumb.imgSrc}}" width="100%"/>
+        </label>
+		<label>
+            <input type="file" id="one-input" accept="image/*" file-model="images" onchange="angular.element(this).scope().img_upload(this.files)"/>
+            <div class="upp-add">
+			    <i class="icon ion-ios-plus-outline"></i>
+		    </div>
+        </label>
+	</div>
+</form>

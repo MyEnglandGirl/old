@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="Helloangular">
+	<style type="text/css">
+		.animate-if {
+  background:white;
+  border:1px solid black;
+  padding:10px;
+}
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
+}
+	</style>
+	<body>
+		<div ng-controller="helloAngular">
+			<p>{{test}}</p>
+			<div ng-repeat="u in friends">
+				<span>name:{{u.name}}</span>
+				<span>age:{{u.age}}</span>
+				<span>gender:{{u.gender}}</span>
+				<!--<img ng-src={{u.img}} alt="" />-->
+				<!--<div ng-if="img">
+					<img src="img/f3.ico"/>
+				</div>-->
+				<span ng-if="u.gender == 'boy'">
+					<img src="img/f3.ico" width="40"/>
+				</span>
+				<span ng-if="u.gender == 'girl'">
+					<img src="img/f4.ico" width="40"/>
+				</span>
+			</div>
+		</div>
+		
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('Helloangular',[]);
+			app.controller('helloAngular',function ($scope) {
+				$scope.test = "test";
+				$scope.friends= [
+  {name:'John', age:25, gender:'boy'},
+  {name:'Jessie', age:30, gender:'girl'},
+  {name:'Johanna', age:28, gender:'girl'},
+  {name:'Joy', age:15, gender:'girl'},
+  {name:'Mary', age:28, gender:'girl'},
+  {name:'Peter', age:95, gender:'boy'},
+  {name:'Sebastian', age:50, gender:'boy'},
+  {name:'Erika', age:27, gender:'girl'},
+  {name:'Patrick', age:40, gender:'boy'},
+  {name:'Samantha', age:60, gender:'girl'}
+];
+//		console.log($scope.friends)
+//			for (var i = 0; i < $scope.friends.length; i++) {
+//				
+//				if ($scope.friends[i].gender == "boy") {
+//					$scope.friends[i].img = 'img/f3.ico'
+//				} else{
+//					$scope.friends[i].img = 'img/f4.ico'
+//				}
+//			}
+//			console.log($scope.friends)
+			});
+		
+		</script>
+	</body>
+
+</html>

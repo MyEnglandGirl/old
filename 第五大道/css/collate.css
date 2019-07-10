@@ -1,0 +1,103 @@
+@charset "utf-8";
+p{
+	color: #000000;
+}
+.collate-box{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.collate-message{
+	background-color: #ebeaea;
+	font-size: 12px;
+	padding: 10px 20px;
+	color: #000000;
+}
+.collate-border{
+	margin-top: 20px;
+	border: 1px solid #CCCCCC;
+	padding: 20px 30px;
+}
+.collate-border p{
+	margin: 10px;
+}
+/*送货时间*/
+.collate-time{
+	background-color: #ebeaea;
+	font-size: 12px;
+	padding: 10px 20px;
+	color: #000000;
+	margin-top: 20px;
+}
+.collate-send{
+	margin-top: 20px;
+	border: 1px solid #CCCCCC;
+	padding: 20px 30px;
+}
+.collate-send p{
+	margin: 10px;
+	
+}
+.collate-amend{
+	margin-top: 10px;
+	border: 1px solid #CCCCCC;
+	height: 64px;
+}
+.collate-amend div{
+	padding: 15px;
+	font-size: 14px;
+}
+.collate-money{
+	margin-top: 15px;
+	margin-left: 30px;
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+.error{
+	color: red;
+	outline: none;
+}
+.collate-number{
+	margin-top: 10px;
+	border: 1px solid #e2e2e2;
+    overflow: hidden;
+    position: relative;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #666;
+    height: 312px;
+    width: 1200px;
+}
+.collate-number p{
+	margin: 13px 0px 12px 30px;
+}
+.collate-this ul li{
+	display: inline-block;
+	margin: 10px 30px;
+}
+.collate-way{
+	margin: 40px 30px;
+	font-size: 14px;
+}
+.collate-way p{
+	margin: 10px 10px;
+	color: #333333;
+}
+.collate-refer{
+	margin: 40px 30px;
+	font-size: 14px;
+}
+.collate-refer p{
+	margin: 10px 10px;
+	color: #333333;
+}
+.collate-this ul li{
+	float: left;
+	margin-top: 40px;
+}
+.collate-this ul li a{
+	color: #666666;
+}
+.collate-this ul li:first-child{
+
+	margin-top: 0px;
+}

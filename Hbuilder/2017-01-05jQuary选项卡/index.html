@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="tab" id="tab1">
+				<div class="title">
+					<button type="button" id="" class="one">栏目一</button>
+					<button type="button" id="" class="titlePublic">栏目二</button>
+					<button type="button" id="" class="titlePublic">栏目三</button>
+					<button type="button" id="" class="titlePublic">栏目亖</button>
+				</div>
+				<div>
+					<div class="classOne" style="display: block;">
+						<p>栏目一的内容</p>
+						<p>栏目一的内容</p>
+						<p>栏目一的内容</p>
+						<p>栏目一的内容</p>
+					</div>
+					<div class="classOne">
+						<p>栏目二的内容</p>
+						<p>栏目二的内容</p>
+						<p>栏目二的内容</p>
+						<p>栏目二的内容</p>
+					</div>
+					<div class="classOne">
+						<p>栏目三的内容</p>
+						<p>栏目三的内容</p>
+						<p>栏目三的内容</p>
+						<p>栏目三的内容</p>
+					</div>
+					<div class="classOne">
+						<p>栏目亖的内容</p>
+						<p>栏目亖的内容</p>
+						<p>栏目亖的内容</p>
+						<p>栏目亖的内容</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="tab" id="tab2">
+				<div class="title">
+					<button type="button" id="" class="one">栏目一</button>
+					<button type="button" id="" class="titlePublic">栏目二</button>
+					<button type="button" id="" class="titlePublic">栏目三</button>
+					<button type="button" id="" class="titlePublic">栏目亖</button>
+				</div>
+				<div>
+					<div class="classOne" style="display: block;">
+						<p>栏目一的内容</p>
+						<p>栏目一的内容</p>
+						<p>栏目一的内容</p>
+						<p>栏目一的内容</p>
+					</div>
+					<div class="classOne">
+						<p>栏目二的内容</p>
+						<p>栏目二的内容</p>
+						<p>栏目二的内容</p>
+						<p>栏目二的内容</p>
+					</div>
+					<div class="classOne">
+						<p>栏目三的内容</p>
+						<p>栏目三的内容</p>
+						<p>栏目三的内容</p>
+						<p>栏目三的内容</p>
+					</div>
+					<div class="classOne">
+						<p>栏目亖的内容</p>
+						<p>栏目亖的内容</p>
+						<p>栏目亖的内容</p>
+						<p>栏目亖的内容</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			$(document).ready(function() {
+				$(".title button").click(function() {
+					$(".title button").each(function() {
+						$(this).attr("class", "titlePublic");
+					});
+					$(this).attr("class", "one");
+					var index = $(this).index();
+					$(".classOne").each(function() {
+						$(this).css("display", "none");
+					});
+					//					$(".classOne").hide();     //.classOne内的元素全部隐藏
+					//					console.log($(".classOne"));
+					//					console.log(index);
+					$(".classOne").eq(index).css("display", "block");
+				});
+
+			});
+		</script>-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.fn.tab = function(options) { //在jQuary中添加一个tab的方法
+					var defaults = {
+						i: 0,
+						callback: function() {
+							alert('1');
+						},
+						id:"mouseover"
+					};
+					var opt = $.extend(true, {}, defaults, options);
+					this.each(function() {
+						var $title = $(this).find(".title button"); //$(this)  .tab用  放each中
+						var $contant = $(this).find(".classOne");
+//						console.log(opt.id);
+							$title.on(opt.id,function() {
+								$title.each(function() {
+									$(this).attr("class", "titlePublic");
+								});
+								$(this).attr("class", "one");
+								var index = $(this).index();
+								$contant.hide(); //.classOne内的元素全部隐藏
+								$contant.eq(index).css("display", "block");
+								opt.callback();
+							});
+					});
+					return this;
+				};
+				$(".tab").tab({
+					i:0,
+					callback: function() {
+//						console.log("1");
+					},
+					id:"click"
+				});
+			});
+			$("#tab2").data("dum",{id:12,num:22});
+			$("#tab2").click(function () {
+				console.log($(this).data("dum"));
+			});
+			
+		</script>
+	</body>
+
+</html>

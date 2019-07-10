@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+		
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+	</style>
+
+	<body>
+		<div class="fixedCon">
+			<div class="logo">
+				<a href=""><img src="img/logo.png" height="40px"></a>
+			</div>
+			<div class="navCon" id="navCon">
+				<a href="javascript:;">
+					<i class="icon-align-justify icon-white trans5"></i>
+				</a>
+
+			</div>
+			<div class="navRight">
+				<ul>
+					<li>
+						<a href="#1">首页</a>
+					</li>
+					<li>
+						<a href="#2">案例</a>
+					</li>
+					<li>
+						<a href="#3">新闻</a>
+					</li>
+					<li class="about" id="about">
+						<a href="#4">关于</a>
+					</li>
+					<!-- <li>
+						<a href="">联系</a>
+					</li> -->
+				</ul>
+				<!--<ol class="aboutCon trans5">
+					<li class="trans3">
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+				</ol>-->
+			</div>
+			<div class="online">
+				<div class="online-head">
+					<span>在线咨询</span>
+					<i class="icon-remove"></i>
+				</div>
+				<div class="online-qq">
+					<i></i>
+					<a href="">
+						<i class="fa fa-qq"></i> 1803007951
+					</a>
+				</div>
+				<div class="online-tel">
+					<div>
+						<i class="fa fa-phone"></i> 联系电话
+					</div>
+					<p>
+						400-888-8888
+						<br />
+					</p>
+				</div>
+			</div>
+			
+
+		</div>
+		<div id="dowebok">
+			<div class="section" id="1">
+				<div class="swiper-container">
+					<div class=" swiper-wrapper ">
+						<div class="swiper-slide" style="background-image: url(img/1467045447275.jpg);">
+
+						</div>
+						<div class="swiper-slide" style="background-image: url(img/2.jpg);">
+							<!--<img src="img/2.jpg"/>-->
+						</div>
+						<div class="swiper-slide" style="background-image: url(img/3.jpg);">
+							<!--<img src="img/3.jpg"/>-->
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination "></div>
+					<!-- Add Navigation -->
+					<div class="swiper-button-prev "></div>
+					<div class="swiper-button-next "></div>
+				</div>
+			</div>
+			<div class="section relative" id="2">
+				<div class="projectList ">
+
+					<div class="projectListTitle">
+						<p class="title">案例</p>
+						<p class="subTitle">Product</p>
+
+					</div>
+					<div class="projectListCon">
+						<ul class="clearfix">
+							<li style="width:520px;">
+								<a href="">
+									<div class="projectitem_wrapper">
+										<div class="project_img relative">
+											<img src="img/1469517857554.jpg" alt="" width="520" height="520" class="trans5" />
+										</div>
+										<div class="project_info relative trans5">
+											<p class="project_infoTitle">网页设计</p>
+											<span class="project_infoSubTitle">web design</span>
+											<span class="Project_infoCon">网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划</span>
+											<div class="more">
+												MORE
+											</div>
+										</div>
+
+									</div>
+								</a>
+							</li>
+							<li style="width: 260px;">
+								<a href="">
+									<div class="projectitem_wrapper">
+										<div class="project_img relative">
+											<img src="img/1466791411503.jpg" alt="" width="260" height="520" class="trans5" />
+										</div>
+										<div class="project_info relative">
+											<p class="project_infoTitle">我们用10几年的高端企业网站定制</p>
+											<span class="project_infoSubTitle">UI设计</span>
+											<span class="Project_infoCon">我们用10几年的高端企业网站定制服务，曾服务过：海尔、联想、北京电通、BIAD、雅虎、凤凰中心、民生银行等尽400多家高端企业用户。</span>
+											<div class="more">
+												MORE
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li style="width: 260px;">
+								<a href="">
+									<div class="projectitem_wrapper">
+										<div class="project_info relative">
+											<p class="project_infoTitle">我们用10几年的高端企业网站定制</p>
+											<span class="project_infoSubTitle">UI设计</span>
+											<span class="Project_infoCon">我们用10几年的高端企业网站定制服务，曾服务过：海尔、联想、北京电通、BIAD、雅虎、凤凰中心、民生银行等尽400多家高端企业用户。</span>
+											<div class="more">
+												MORE
+											</div>
+										</div>
+										<div class="project_img relative overflow">
+											<img src="img/1466791487674.jpg" alt="" width="260" height="520" class="trans5" />
+										</div>
+
+									</div>
+								</a>
+							</li>
+							<li style="width: 260px;">
+								<a href="">
+									<div class="projectitem_wrapper">
+										<div class="project_img">
+											<img src="img/1466791250515.jpg" alt="" width="260" height="520" class="trans5" />
+										</div>
+										<div class="project_info relative">
+											<p class="project_infoTitle">我们用10几年的高端企业网站定制</p>
+											<span class="project_infoSubTitle">UI设计</span>
+											<span class="Project_infoCon">我们用10几年的高端企业网站定制服务，曾服务过：海尔、联想、北京电通、BIAD、雅虎、凤凰中心、民生银行等尽400多家高端企业用户。</span>
+											<div class="more">
+												MORE
+											</div>
+										</div>
+
+									</div>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="section overflow" id="3">
+				<div class="new-box relative">
+					<div class="projectListTitle">
+						<p class="title">新闻</p>
+						<p class="subTitle">News</p>
+					</div>
+					<div class="new-con clearfix">
+						<a href="">
+							<div class="new-title">WEB企业版不仅支持PC桌面端</div>
+							<div class="new-date">
+								<p class="month">06-03</p>
+								<p class="year">2016</p>
+							</div>
+							<div class="description">网站打开慢的其中一个原因是图片文件过大，一个网站在打开时需要同时加载很多图片，如果网站中每张图片都很大...</div>
+							<img src="img/new-con.jpg" width="580" height="240" />
+						</a>
+						<a href="" class="left-news pull-left">
+							left
+						</a>
+						<a href="" class="right-news pull-right">right</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="section" id="4">
+				<div class="team">
+					<div class="teamTitle">
+						<p class="title">关于</p>
+						<p class="subTitle">Product</p>
+					</div>
+					<div class="teamCon">
+						<div class="teamContant">
+							<ul class="clearfix">
+								<li>
+									<a href="">
+										<div class="teamConImg">
+											<img src="img/team01.png" width="353px" height="226px" class="trans5" />
+
+										</div>
+
+										<div class="teamConTitle">
+											王志/Wangzhi
+										</div>
+										<div class="teamConSubtitle">
+											资深设计
+										</div>
+										<div class="teamDescription">
+											我们用10几年的高端企业网站定制服务，曾服务过海尔、联想、北京电通、BIAD、雅虎凤凰中心民
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="teamConImg">
+											<img src="img/team02.jpg" width="353px" height="226px" class="trans5" />
+
+										</div>
+
+										<div class="teamConTitle">
+											王志/Wangzhi
+										</div>
+										<div class="teamConSubtitle">
+											资深设计
+										</div>
+										<div class="teamDescription">
+											我们用10几年的高端企业网站定制服务，曾服务过海尔、联想、北京电通、BIAD、雅虎凤凰中心民
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="teamConImg">
+											<img src="img/team03.jpg" width="353px" height="226px" class="trans5" />
+
+										</div>
+
+										<div class="teamConTitle">
+											王志/Wangzhi
+										</div>
+										<div class="teamConSubtitle">
+											资深设计
+										</div>
+										<div class="teamDescription">
+											我们用10几年的高端企业网站定制服务，曾服务过海尔、联想、北京电通、BIAD、雅虎凤凰中心民
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.12.4.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/jquery.fullPage.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/swiper.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scrollreveal.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				$('#dowebok').fullpage({
+					sectionsColor: ['#1bbc9b', '#fff', '#fff', '#fff'],
+					continuousVertical: true,
+					afterLoad: function(anchorLink, index) {
+						if(index == 2) {
+
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev'
+			});
+		</script>
+		<script type="text/javascript">
+			var config = {
+				after: '0s',
+				enter: 'bottom',
+				move: '24px',
+				over: '0.66s',
+				easing: 'ease-in-out',
+				viewportFactor: 0.33,
+				reset: true,
+				init: true
+			};
+			window.scrollReveal = new scrollReveal();
+		</script>
+
+	</body>
+
+</html>

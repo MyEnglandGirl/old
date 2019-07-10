@@ -1,0 +1,114 @@
+html,body{
+	color: #666;
+	font-family:"Tahoma", "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+a:focus{
+	color: #333;
+}
+/*a:visited {color: #666}*/
+img{
+	border: none;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1240px;
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+html{
+	font-size: 10px;
+	background: rgb(245,245,245);
+}
+body{
+	font-size: 14px;
+	
+}
+.public-head{
+	background: #990100;
+}
+.color-fff{
+	color: #fff;
+}
+.color-333{
+	color: #333;
+}
+.color-999{
+	color: #999;
+}
+.color-666{
+	color: #666;
+}
+.color-e7e7e7{
+	color: #E7E7E7;
+}
+.color-3bb31b{
+	color: #3bb31b;
+}
+.color-990100{
+	color: #990100;
+}
+.bg-color-990100{
+	background: #990100;
+}
+.bg-color-e7e7e7{
+	background: #e7e7e7;
+}
+.bg-color-e5004b{
+	background: #E5004B;
+}
+.jy-font-weight{
+	font-weight: bold;
+}
+.jy-padding-top-bottom{
+	padding: 12px;
+}
+.jy-padding-10{
+	padding: 10px;
+}
+.jy-margin-0{
+	margin: 0px;
+}
+.bg-color-fff{
+	background: #fff;
+}
+.jy-width-60{
+	width: 60px;
+}
+.jy-border-radius{
+	border-radius: 3px;
+}
+.jy-border-bottom{
+	border-bottom: 1px solid #e7e7e7;
+}

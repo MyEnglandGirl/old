@@ -1,0 +1,436 @@
+html,
+body {
+	background: rgb(245, 245, 245);
+}
+
+.main-color {
+	color: rgb(0, 211, 13)!important;
+}
+
+.main-bg-color {
+	background: rgb(0, 211, 13)!important;
+	border: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.jy-vertical-align {
+	vertical-align: middle;
+}
+
+.jy-margin-sm {
+	margin: 10px;
+}
+
+.jy-margin-left-sm {
+	margin-left: 10px;
+}
+
+.jy-margin-left-xs {
+	margin-left: 5px;
+}
+
+.jy-margin-right-sm {
+	margin-right: 10px;
+}
+
+.jy-margin-top-sm {
+	margin-top: 10px!important;
+}
+
+.jy-margin-top-0 {
+	margin-top: 0px!important;
+}
+
+.jy-margin-bottom-sm {
+	margin-bottom: 10px!important;
+}
+
+.jy-margin-horizontal-sm {
+	margin: 0 10px 0 10px;
+}
+
+.jy-margin-vertical-sm {
+	margin: 10px 0 10px 0;
+}
+
+.jy-margin-0 {
+	margin: 0!important;
+}
+
+.jy-padding-sm {
+	padding: 10px!important;
+}
+
+.jy-padding-0 {
+	padding: 0!important;
+}
+
+.jy-padding-bottom-0 {
+	padding-bottom: 0!important;
+}
+.jy-padding-top-sm{
+	padding-top: 10px!important;
+}
+
+.jy-padding-bottom-sm {
+	padding-bottom: 10px;
+}
+
+.jy-padding-vertical-sm {
+	padding: 10px 0 10px 0;
+}
+
+.jy-border-0 {
+	border: 0!important;
+}
+
+.jy-border-bottom {
+	border-bottom: 1px solid #E8E8E8!important;
+}
+
+.jy-border-bottom-d1 {
+	border-bottom: #d1d1d1;
+}
+
+.jy-block {
+	display: block;
+}
+
+.jy-header-small {
+	color: #fff!important;
+	font-size: 12px!important;
+}
+
+.jy-border-radius {
+	border-radius: 3px;
+}
+
+.jy-color-999 {
+	color: #999;
+}
+
+.jy-color-000 {
+	color: #000;
+}
+
+.jy-color-333 {
+	color: #333!important;
+}
+
+.jy-color-fff {
+	color: #fff!important;
+}
+
+.jy-bg-color-fff {
+	background: #fff!important;
+}
+
+.jy-bg-color-gray {
+	background: rgb(245, 245, 245);
+}
+
+.jy-a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.jy-a-setting {
+	color: #444;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.jy-description {
+	color: #999;
+	font-size: 12px!important;
+}
+
+.jy-a-color {
+	text-decoration: none;
+	color: #4f8ef7;
+}
+
+.jy-a-color-d1 {
+	text-decoration: none;
+	color: rgb(0, 211, 13);
+}
+
+.jy-font-20 {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.jy-text-center {
+	text-align: center;
+}
+
+.jy-text-left {
+	text-align: left;
+}
+
+.jy-text-right {
+	text-align: right;
+}
+
+.my-name {
+	font-size: 18px;
+}
+
+.my-nameID {
+	font-size: 12px;
+	color: #999;
+}
+
+.zone-bg {
+	height: 200px;
+	background: #d1d1d1;
+}
+
+.zone-bg span {
+	position: absolute;
+	bottom: 10px;
+	right: 100px;
+	z-index: 100;
+}
+
+.relative {
+	position: relative;
+}
+
+.zone-mainImges>img {
+	position: absolute;
+	top: -50px;
+	right: 0;
+	z-index: 100;
+}
+
+.zone-mainImges>span {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	z-index: 100;
+	width: 100px;
+	line-height: 14px;
+}
+
+.login-forget {
+	position: relative;
+	top: 200px;
+	left: 0;
+}
+
+.main .row {
+	position: absolute;
+	bottom: 50px;
+}
+
+.main .row .col a {
+	padding: 10px 36px;
+	border-radius: 3px;
+	color: #000;
+	text-decoration: none;
+}
+
+.main img {
+	overflow: hidden;
+}
+
+.header-icon {
+	line-height: 53px;
+}
+.pane{
+	background: rgb(245, 245, 245);
+}
+
+.toggle .handle {
+	width: 20px;
+	height: 20px;
+}
+
+.toggle .track {
+	width: 42px;
+	height: 25px;
+}
+
+.rj-sm-red-icon {
+	background: red;
+	display: block;
+	width: 20px;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	top: 5px;
+	left: 45px;
+}
+
+.rj-sm-red-icon p {
+	color: #fff;
+}
+
+.year {
+	position: absolute;
+	right: 10px;
+	top: 16px;
+	color: #8c8c8c;
+	font-size: 13px;
+}
+
+.item-avatar img {
+	border-radius: 0!important;
+}
+
+.item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.jy-padding-16 {
+	padding-top: 16px;
+}
+
+.platform-android .bar .title {
+	font-size: 16px;
+}
+
+.rj-send-button {
+	display: inline-block;
+	line-height: 40px;
+}
+
+.rj-message-wrap img {
+	float: left;
+}
+
+.rj-message-wrap .rj-message {
+	float: left;
+	margin-left: 16px;
+	background-color: #fff;
+}
+
+.rj-message-wrap .rj-message,
+.rj-message-wrap .rj-message-right {
+	padding: 6px 8px;
+	line-height: 26px;
+	max-width: 190px;
+	border-radius: 5px;
+}
+
+.rj-message-wrap.item {
+	background: rgb(245, 245, 245);
+	border: 0;
+}
+
+.rj-message-wrap .rj-triangle-left {
+	left: 53px;
+	border-color: transparent #FFF transparent transparent;
+}
+.rj-message-wrap .rj-triangle-right {
+	right: 53px;
+	border-color: transparent #FFF transparent transparent;
+}
+
+.rj-message-wrap .rj-triangle-left,
+.rj-message-wrap .rj-triangle-right {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-width: 8px 10px;
+	border-style: solid;
+	top: 20px;
+}
+.rj-message-wrap .rj-head-pic-right {
+    float: right;
+}
+.rj-message-wrap .rj-head-pic-left {
+    float: left;
+}
+.rj-message-wrap .rj-message-right {
+    float: right;
+    margin-right: 16px;
+    background-color: #6BE00B;
+}
+.rj-message-wrap .rj-triangle-right {
+    right: 53px;
+    border-color: transparent transparent transparent #6BE00B;
+}
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active{
+	color: rgb(0, 211, 13)!important;
+}
+.platform-android .action-sheet .button{
+	text-align: center;
+	border-bottom: 1px solid #D1D1D1;
+}
+.upload{
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+.rqcode{
+	margin-left: 43px!important;
+	text-align: left!important;
+}
+section img{
+	width: 50px;
+}
+.add{
+	background: #444;
+	border: 0;
+	border-bottom:1px solid rgb(0, 211, 13)!important;
+	width: 100%;
+	margin-left: 10px;
+	color: #fff!important;
+	height: 26px!important;
+}
+.addBtn{
+	position: absolute;
+	width: 60px!important;
+	right: -4px;
+	top: -4px;
+	background: #444!important;
+	min-height:20px!important;
+	line-height: 24px;
+}
+.upp-add{
+	text-align: center;
+	
+}
+.upp-add i{
+	font-size: 50px;
+}
+#one-input{
+	display: none;
+}
+.bar-dark>h1{
+	color: #fff;
+}
+.agree{
+	min-height: 30px!important;
+	height: 30px;
+	line-height: 20px;
+	margin-top: 5px;
+}
+.rj-footer-input{
+	width: 76%;
+}
+.rj-footer-btn-wrap{
+	margin-left: 7px;
+}
+.item-input{
+	padding: 0;
+}
+.rj-footer-input textarea{
+	padding: 16px 0 5px 6px;
+}
+.item p{
+	white-space:normal;
+}

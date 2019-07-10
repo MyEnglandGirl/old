@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="login">
+			<h1>JQuery带背景切换登录注册表单</h1>
+			<form action="" method="post">
+				<input type="text" name="name" id="" value="" placeholder="用户名" />
+				<input type="password" name="password" id="" value="" placeholder="密码" />
+
+				<select name="city">
+					<option value="青岛">青岛</option>
+					<option value="上海">上海</option>
+					<option value="北京">北京</option>
+					<option value="长沙">长沙</option>
+				</select>
+				<label for="">
+					<input type="checkbox" name="xxx" id="" value="1" />单选1
+					<input type="checkbox" name="xxx" id="" value="2" />单选2
+					<input type="checkbox" name="xxx" id="" value="3" />单选3
+					<input type="checkbox" name="xxx" id="" value="4" />单选4
+				</label>
+				<input type="button" name="" id="login" value="登录" />
+				
+				<a href="register.html"><input type="button" name="" id="to-register" value="还没有账号" /></a>
+			</form>
+
+			<!--<a href="register.html" id="to-register">还没有账号</a>-->
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//			$("#to-register").click(function (e) {
+				//				e.preventDefault();
+				//				window.location.href="register.html";
+				//			});
+				$("#login").click(function() {
+					//				var user= {};
+					//				user.name = $("#name").val();
+					//				user.psd = $("#psd").val();
+					//				console.log(user);
+					var $form = $("form");
+					var user = $form.serialize();
+					console.log(user);
+//					$.post("/login.html",user,function () {
+//						
+//					});
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

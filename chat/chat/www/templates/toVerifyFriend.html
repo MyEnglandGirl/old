@@ -1,0 +1,31 @@
+<ion-view>
+	<div>
+		<ion-header-bar align-title="left" class="bar-dark">
+
+			<a ui-sref="tab.friends" style="line-height: 43px;">
+				<img src="img/png/back.png" width="20" />
+			</a>
+
+			<h1 class="title">新的朋友</h1>
+
+		</ion-header-bar>
+	</div>
+	<div class="" style="margin-top: 53px;">
+		<div ng-repeat="x in userArr">
+			<div class="item jy-border-0 jy-margin-top-sm">
+				<img ng-show="{{x.img}}" ng-src="{{x.img.sm_img}}" src="img/ben.png" width="50" class="jy-vertical-align fl">
+				<img ng-hide="{{x.img}}" src="../img/img.jpg" width="40" class="jy-vertical-align fl">
+				<div class="jy-vertical-align jy-margin-left-sm fl" style="margin-top: 5px;">
+					<span class="my-name">{{x.name}}</span><br>
+					<!--<span class="my-nameID">微信号：giiw</span>-->
+				</div>
+				<button ng-click="agree(x.phone)" class="button button-balanced agree fr">
+  			同意
+			</button>
+
+			</div>
+		</div>
+
+	</div>
+
+</ion-view>

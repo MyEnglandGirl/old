@@ -1,0 +1,86 @@
+<ion-header-bar align-title="left" class="bar-dark">
+
+	<a ui-sref="tab.user" style="line-height: 43px;">
+		<img src="img/png/back.png" width="20" />
+	</a>
+
+	<h1 class="title">个人信息</h1>
+
+</ion-header-bar>
+<style type="text/css">
+	.pane {
+		background: rgb(245, 245, 245);
+	}
+</style>
+
+<ion-view>
+	<div style="margin-top: 53px;">
+
+	</div>
+	<ul class="list jy-bg-color-fff jy-margin-vertical-sm ">
+		<li class="relative">
+			<a ui-sref="user-information-img" class="row jy-border-bottom jy-a">
+				<div class="col " style="height: 50px;line-height: 50px;">
+					<span>头像</span>
+				</div>
+				<div class="col jy-text-right" style="height: 60px;">
+					<img ng-show="userData.img" ng-src="{{userData.img.sm_img}}" src="../img/image.jpg" " width="50 " />
+					<img ng-hide="userData.img" src="img/img.jpg" width="50" />
+				</div>
+			</a>
+
+		</li>
+		<li class=" ">
+			<a ui-sref="user-information-name " href=" " class="row jy-border-bottom jy-a ">
+				<div class="col jy-vertical-align ">呢称</div>
+				<div class="col jy-vertical-align jy-text-right ">
+					<span class="jy-description " ng-bind="userData.name ">MyEnglandGirl</span>
+				</div>
+			</a>
+		</li>
+		<li class=" ">
+			<a class="row jy-border-bottom jy-a ">
+				<div class="col jy-vertical-align ">手机号</div>
+				<div class="col jy-vertical-align jy-text-right ">
+					<span class="jy-description " ng-bind="userData.phone ">未设置</span>
+				</div>
+			</a>
+		</li>
+		<li class=" ">
+			<a ui-sref="user-information-RQcode " href=" " class="row jy-border-bottom jy-a ">
+				<div class="col jy-vertical-align ">二维码名片</div>
+				<div class="col jy-vertical-align jy-text-right " style="height: 20px; ">
+					<img src="img/RQcode.png" width="20" />
+				</div>
+			</a>
+		</li>
+	</ul>
+	<ul class="list jy-bg-color-fff jy-margin-top-sm ">
+
+		<li class=" ">
+			<a ng-click="sexShow()" class="row jy-border-bottom jy-a ">
+				<div class="col jy-vertical-align ">性别</div>
+				<div class="col jy-vertical-align jy-text-right ">
+					<span class="jy-description " ng-bind="userData.sex ">男</span>
+				</div>
+			</a>
+		</li>
+		<li class=" ">
+			<a ui-sref="user-information-address " href=" " class="row jy-border-bottom jy-a ">
+				<div class="col jy-vertical-align ">地区</div>
+				<div class="col jy-vertical-align jy-text-right ">
+					<span class="jy-description " ng-bind="userData.address">中国 北京</span>
+				</div>
+			</a>
+		</li>
+		<li class=" ">
+			<a ui-sref="user-information-autograph " href=" " class="row jy-border-bottom jy-a ">
+				<div class="col jy-vertical-align ">个性签名</div>
+				<div class="col jy-vertical-align jy-text-right ">
+					<span class="jy-description " ng-bind="userData.autograph ">真的对不起,爱你,</span>
+				</div>
+			</a>
+		</li>
+
+	</ul>
+</ion-view>

@@ -1,0 +1,170 @@
+@charset "utf-8";
+body {
+	z-index: 1988;
+	font-family: "微软雅黑";
+	background-color: rgb(245,245,245);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.relative {
+	position: relative;
+}
+
+.fed-back {
+	width: 804px;
+	height: 544px;
+	/*background-color: rgba(0,0,0,0.2);*/
+}
+
+.fed-back {
+	position: absolute;
+	top: 0px;
+	left: 271px;
+	width: 804px;
+	height: 544px;
+}
+
+.fed-back-border {
+	width: 782px;
+	height: 524px;
+	background: url(../img/skin_bg.png);
+	position: absolute;
+	top: 40px;
+	left: 10px;
+}
+
+.feedback_c {
+	background-color: #FFFFFF;
+	width: 782px;
+	height: 524px;
+}
+
+.feedback_c_top {
+	height: 34px;
+	font-size: 14px;
+	background-color: #C8A985;
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+.feedback_c_top span {
+	padding-left: 10px;
+}
+
+.fed-back-border i {
+	background: url(../img/feedback_c_top02.jpg) no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 7px;
+	right: 10px;
+}
+
+.feedback_c01 {
+	background-color: #FFFFFF;
+	width: 740px;
+	height: 120px;
+	margin: 10px 20px;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+.feedback_c01 li span {
+	color: #ccaf8e;
+}
+
+.feedback_c01 ul {
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.feedback_c02 {
+	font-size: 12px;
+}
+
+.feedback_c02 .feedback_c02_txt {
+	font-size: 12px;
+	resize: none;
+	margin-left: 22px;
+	width: 720px;
+	height: 112px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.feedback_c02 i {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	top: 3px;
+	left: 28px;
+}
+
+.feedback_c02 span {
+	padding-left: 42px;
+}
+
+.feedback_c02 input {
+	margin-left: 22px;
+	margin-top: 5px;
+	width: 740px;
+	height: 112px;
+}
+
+.feedback_c03 {
+	/*padding-top: 10px;*/
+	font-size: 12px;
+}
+
+.feedback_c03 i {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	top: 3px;
+	left: 28px;
+}
+
+.feedback_c03 span {
+	padding-left: 42px;
+}
+
+.feedback_c03 input {
+	margin-left: 22px;
+	margin-top: 5px;
+	width: 330px;
+	height: 25px;
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+.feedback_c04 {
+	border: 1px solid #c8a985;
+	padding: 5px 35px;
+	background-color: #c8a985;
+	display: inline-block;
+	position: absolute;
+	bottom: 29px;
+	right: 75px;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+
+.feedback_c04:hover {
+	background-color: #FFFFFF;
+}
+
+.feedback_c04:hover a {
+	color: #c8a985;
+}
+

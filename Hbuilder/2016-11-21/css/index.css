@@ -1,0 +1,36 @@
+@charset "utf-8";
+.btn_box{
+	padding: 100px 0;
+	padding-left: 50px;
+	background-color: gray;
+}
+.show_btn{
+	background-color: #1dd2af;
+	font-size: 20px;
+	padding: 20px;
+	
+}
+.info_btn{
+	font-size: 20px;
+	border: 1px solid #FFF;
+	padding: 18px;
+	margin-left: 20px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.test{
+	display: inline-block;
+	padding: 10px;
+	border: 1px #0893E2 solid;
+	/*float:left;*/
+}
+.testCon{
+	text-align: center;
+}

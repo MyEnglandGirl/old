@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index-right.css">
+		<link rel="stylesheet" type="text/css" href="css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+		/* css 重置 */
+			/** {*/
+			
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		body {
+			background: #fff;
+			font: normal 12px/22px 宋体;
+		}
+		img {
+			border: 0;
+		}
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+		a:hover {
+			color: #1974A1;
+		}
+		.js {
+			width: 90%;
+			margin: 10px auto 0 auto;
+		}
+		.js p {
+			padding: 5px 0;
+			font-weight: bold;
+			overflow: hidden;
+		}
+		.js p span {
+			float: right;
+		}
+		.js p span a {
+			color: #f00;
+			text-decoration: underline;
+		}
+		.js textarea {
+			height: 100px;
+			width: 98%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-top: 2px solid #aaa;
+			border-left: 2px solid #aaa;
+		}
+		/* 本例子css */
+		.outBox {
+			width: 450px;
+			border: 1px solid #ddd;
+			text-align: left;
+		}
+		.outBox .hd {
+			height: 30px;
+			line-height: 30px;
+			background: #f4f4f4;
+			padding: 0 20px;
+			border-bottom: 1px solid #ddd;
+			position: relative;
+		}
+		.outBox .hd ul {
+			float: left;
+			position: absolute;
+			left: 20px;
+			top: -1px;
+			height: 32px;
+		}
+		.outBox .hd ul li {
+			float: left;
+			padding: 0 15px;
+			cursor: pointer;
+		}
+		.outBox .hd ul li.on {
+			height: 30px;
+			background: #fff;
+			border: 1px solid #ddd;
+			border-bottom: 2px solid #fff;
+		}
+		.inBox {
+			padding: 15px 15px 0 15px;
+		}
+		.inBox .inHd {
+			height: 24px;
+			line-height: 24px;
+			border-bottom: 1px solid #ccc;
+			padding: 0 10px;
+		}
+		.inBox .inHd ul {
+			overflow: hidden;
+			zoom: 1;
+		}
+		.inBox .inHd ul li {
+			height: 24px;
+			width: 60px;
+			text-align: center;
+			float: left;
+			cursor: pointer;
+		}
+		.inBox .inHd ul li.on {
+			background: #ccc;
+			color: #fff;
+		}
+		.inBox .inBd ul {
+			padding: 15px;
+			zoom: 1;
+			overflow: hidden;
+		}
+		.inBox .inBd li {
+			height: 24px;
+			line-height: 24px;
+			overflow: hidden;
+			zoom: 1;
+		}
+		.inBox .inBd li .date {
+			float: right;
+			color: #999;
+		}
+		</style>
+	</head>
+
+	<body>
+		 <!-- 头部 -->
+    <div class="public-head">
+        <div class="container clearfix">
+            <dl class="go-home fl relative">
+                <img src="img/public/home.png" alt="" width="16" height="14" />
+                <a href="index.html">首页</a>
+                <i></i>
+            </dl>
+            <dl class="phone fl relative">
+                <b></b>
+                <span>贵宾专线:4000-000-000</span>
+            </dl>
+            <div class="header-right fr clearfix">
+                <dl class="login fl">
+                    <a href="loginPage.html">登录</a>
+                </dl>
+                <dl class="register fl clearfix">
+                    <b></b>
+                    <a href="register.html">注册</a>
+                </dl>
+                <dl class="fl personal">
+                    <a href="myorder.html">个人中心</a>
+                </dl>
+                <dl class="fl help">
+                    <a href="">帮助中心</a>
+                </dl>
+                <dl class="fl">
+                    <a href="">手机版下载</a>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="public-logo-con">
+        <div class="container clearfix relative">
+           <a href="index.html">
+				<div class="logo fl">
+				</div>
+			</a>
+            <img src="img/public/yijian.jpg" alt="" width="142" height="80" class="fl" />
+            <div class="search-con fl">
+                <div class="search">
+                    <input type="text" class="search-text" placeholder="雪地靴" />
+                    <input type="button" class="search-btn" value="搜&nbsp;索" />
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="">羽绒服</a>
+                    </li>
+                    <li>
+                        <a href="list.html">围巾</a>
+                    </li>
+                    <li>
+                        <a href="">箱包</a>
+                    </li>
+                    <li>
+                        <a href="">腕表</a>
+                    </li>
+                    <li>
+                        <a href="">YOOX旗舰店</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cartbox fr relative">
+                <img src="img/public/v30cart.png" />
+                <a href="cart.html">
+                <span>购物袋(<span class="red">0</span>)</span>
+                	
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- 右侧边栏 -->
+	 <!--商城head-->
+		<div class="index-head" style="background-color: #000000;border-bottom: 1px solid gainsboro;">
+			<div class="container">
+				<ul class="index-options">
+					<li class="index-classify relative">
+						<a href="#">商品分类</a>
+						<ul class="index-commodity">
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-star"></i> 推荐品牌 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="#">国际高端</a></h2>
+										<div class="showbag fl" style="line-height: 20px;">
+											<a href="#" style="display: inline-block;">Louis Vuitton/LV</a>
+											<a href="#" style="display: inline-block;">Chanel</a>
+											<a href="#" style="display: inline-block;">Prada</a>
+											<a href="#" style="display: inline-block;">Fendi</a>
+											<a href="#" style="display: inline-block;">Versace</a>
+											<a href="#" style="display: inline-block;">Burberry</a>
+											<a href="#" style="display: inline-block;">Hermes</a>
+											<a href="#" style="display: inline-block;">Dior</a>
+											<a href="#" style="display: inline-block;">Gucci</a>
+											<a href="#" style="display: inline-block;">Mont blanc</a>
+											<a href="#" style="display: inline-block;">Armani</a>
+											<a href="#">Calvin Klein CK</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热销品牌</a></h2>
+										<div class="showbag fl">
+											<a href="#" style="display: inline-block;">Sophie &amp; Stephie</a>
+											<a href="#" style="display: inline-block;">Michael Kors</a>
+											<a href="#" style="display: inline-block;">Swarovski</a>
+											<a href="#" style="display: inline-block;">D&amp;G</a>
+											<a href="#" style="display: inline-block;">Coach</a>
+											<a href="#" style="display: inline-block;">Weekender</a>
+											<a href="#" style="display: inline-block;">Rebecca Mincoff</a>
+											<a href="#" style="display: inline-block;">Aviendo</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">最新品牌</a></h2>
+										<div class="showbag fl">
+											<a href="#" style="display: inline-block;">Columbia</a>
+											<a href="#" style="display: inline-block;">Roger Vivier</a>
+											<a href="#" style="display: inline-block;">Troika</a>
+											<a href="#" style="display: inline-block;">Luis onofre</a>
+											<a href="#" style="display: inline-block;">Pull-in</a>
+											<a href="#" style="display: inline-block;">Proenza Schouler</a>
+											<a href="#" style="display: inline-block;">Brosway</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex">
+										<a href="#">进入所有品牌</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-cases"></i> 箱包 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">箱包</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">单肩包</a>
+										<a href="#">手提包</a>
+										<a href="#">手提斜挎包</a>
+										<a href="#">双肩包</a>
+										<a href="#">手拿包</a>
+										<a href="#">钱包</a>
+										<a href="#">小皮件</a>
+										<a href="#">旅行箱/包</a>
+										<a href="#">斜挎包</a>
+										<a href="#">化妆箱/包</a>
+										<a href="#">功能箱包</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">Gucci古琦</a>
+											<a href="#">Burberry巴宝莉</a>
+											<a href="#">Louis Vuitton/LV路易.威登</a>
+											<a href="#">Prada普拉达</a>
+											<a href="#">Dior迪奥</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">铂金包</a>
+											<a href="#">2.55</a>
+											<a href="#">杀手包</a>
+											<a href="#">经典logo</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入所有品牌</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-lipstick"></i> 美妆 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">护肤</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">眼霜</a>
+										<a href="#">眼膜</a>
+										<a href="#">眼精华</a>
+										<a href="#">润唇膏</a>
+										<a href="#">唇霜</a>
+										<a href="#">唇膜</a>
+										<a href="#">卸妆</a>
+										<a href="#">洁面</a>
+										<a href="#">爽肤</a>
+										<a href="#">颈爽</a>
+										<a href="#">精油</a>
+										<a href="#">丰胸</a>
+										<a href="#">紧实</a>
+										<a href="#">瘦脸</a>
+										<a href="#">瘦身</a>
+										<a href="#">瘦腹</a>
+										<a href="#">瘦腿</a>
+										<a href="#">面部护肤套装</a>
+										<a href="#">面膜套装</a>
+										<a href="#">眼部护理套装</a>
+										<a href="#">手足护理套装</a>
+										<a href="#">彩妆套装</a>
+										<a href="#">香水套装</a>
+										<a href="#">洗护套装</a>
+										<a href="#">假睫毛</a>
+										<a href="#">睫毛夹</a>
+										<a href="#">眼影刷</a>
+										<a href="#">腮红刷</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">彩妆</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">眉笔</a>
+											<a href="#">睫毛膏</a>
+											<a href="#">眼影</a>
+											<a href="#">护理液</a>
+											<a href="#">隔离</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">香水</a></h2>
+										<div class="showbag fl">
+											<a href="#">浓香水</a>
+											<a href="#">淡香水</a>
+											<a href="#">香精</a>
+											<a href="#">古龙水</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入美妆频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-clothing"></i> 服装 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">上装</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">卫衣</a>
+										<a href="#">衬衫</a>
+										<a href="#">T恤</a>
+										<a href="#">毛衣</a>
+										<a href="#">羊毛</a>
+										<a href="#">背心</a>
+										<a href="#">西装</a>
+										<a href="#">外套</a>
+										<a href="#">风衣</a>
+										<a href="#">羽绒服</a>
+										<a href="#">大衣</a>
+										<a href="#">马甲</a>
+										<a href="#">棉服</a>
+										<a href="#">polo衫</a>
+										<a href="#">雪纺衫</a>
+										<a href="#">外套</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">裤装</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">牛仔裤</a>
+											<a href="#">西裤</a>
+											<a href="#">休闲裤</a>
+											<a href="#">短裤</a>
+											<a href="#">连体裤</a>
+											<a href="#">打底裤</a>
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">裙装</a></h2>
+										<div class="showbag fl">
+											<a href="#">连衣裙</a>
+											<a href="#">及膝裙</a>
+											<a href="#">婚纱</a>
+											<a href="#">礼服</a>
+											<a href="#">半裙</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">内衣</a></h2>
+										<div class="showbag fl">
+											<a href="#">文胸</a>
+											<a href="#">内裤</a>
+											<a href="#">袜子</a>
+											<a href="#">美体塑身</a>
+											<a href="#">睡衣</a>
+											<a href="#">内衣套装</a>
+											
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl">
+											<a href="#">Armani</a>
+											<a href="#">Versace</a>
+											<a href="#">DKNY</a>
+											<a href="#">Sophie & Stephie (S&S)</a>
+											<a href="#">Calvin Klein</a>
+											<a href="#">Lanvin</a>
+											
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">连衣裙</a>
+											<a href="#">复古</a>
+											<a href="#">欧美</a>
+											<a href="#">修身</a>
+											<a href="#">鱼尾裙</a>
+											<a href="#">雪纺</a>
+											<a href="#">莫代尔</a>
+											
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入服装频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-watch"></i> 腕表 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">腕表</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">时尚</a>
+										<a href="#">瑞士</a>
+										<a href="#">德国</a>
+										<a href="#">限量版</a>
+										<a href="#">法国</a>
+										
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									<hr />
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">Calvin Klein CK卡尔文.克莱恩</a>
+											<a href="#">Armani阿玛尼</a>
+											<a href="#">Dolce&Gabbana（D&G</a>
+											<a href="#">Burberry巴宝莉</a>
+											<a href="#">Tissot天梭</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">机械表</a>
+											<a href="#">石英表</a>
+											<a href="#">三针</a>
+											<a href="#">计时码表</a>
+											<a href="#">瑞士</a>
+											<a href="#">全国联保</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入所有品牌</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-ACC"></i> 配饰 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">配饰</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">首饰</a>
+										<a href="#">腰带</a>
+										<a href="#">手提斜挎包</a>
+										<a href="#">围巾/丝巾</a>
+										<a href="#">帽子</a>
+										<a href="#">手套</a>
+										<a href="#">伞</a>
+										<a href="#">挂饰</a>
+										<a href="#">手杖</a>
+										<a href="#">眼镜/镜架</a>
+										
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									<hr />
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">Vera Wang王薇薇</a>
+											<a href="#">Versace范思哲</a>
+											<a href="#">Prada普拉达</a>
+											<a href="#">Hermes爱马仕</a>
+											<a href="#">Guy Laroche姬龙雪</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">雷朋</a>
+											<a href="#">太阳镜</a>
+											<a href="#">腰带</a>
+											<a href="#">水晶</a>
+											<a href="#">施华洛世奇</a>
+											<a href="#">K金</a>
+											<a href="#">珠宝</a>
+											<a href="#">闪钻</a>
+											
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入所有品牌</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-vivi"></i> 鞋靴 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">女士鞋靴</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">高跟鞋</a>
+										<a href="#">低/中跟鞋</a>
+										<a href="#">平底鞋</a>
+										<a href="#">坡跟鞋</a>
+										<a href="#">内增高</a>
+										<a href="#">运动鞋</a>
+										<a href="#">休闲鞋</a>
+										<a href="#">凉鞋</a>
+										<a href="#">靴子</a>
+										<a href="#">塑身鞋</a>
+										<a href="#">拖鞋</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									<hr />
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">男士鞋靴</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">商务正装鞋</a>
+											<a href="#">商务休闲</a>
+											<a href="#">日常休闲 </a>
+											<a href="#">男士运动鞋</a>
+											<a href="#">男士靴子</a>
+											<a href="#">男士凉鞋</a>
+											<a href="#">棉鞋</a>
+											<a href="#">高端精品</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">高跟</a>
+											<a href="#">红底鞋</a>
+											<a href="#">芭蕾舞鞋</a>
+											<a href="#">平底鞋</a>
+											<a href="#">鱼嘴鞋</a>
+											<a href="#">凉鞋</a>
+											<a href="#">真皮</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl">
+											<a href="#">Gucci古琦</a>
+											<a href="#">Alexander Wang亚历山大.王</a>
+											<a href="#">Versace范思哲</a>
+											<a href="#">Ferragamo菲拉格慕</a>
+											<a href="#">Alexander McQueen亚历山大.麦昆</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入鞋靴频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-mom"></i> 母婴 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">哺育喂养</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">哺育器皿</a>
+										<a href="#">宝宝洗护</a>
+										<a href="#">日常清洁</a>
+										<a href="#">身体护理</a>
+										<a href="#">宝宝玩具</a>
+										<a href="#">蜡笔</a>
+										<a href="#">涂鸦册</a>
+										<a href="#">贴纸/包</a>
+										<a href="#">拼图</a>
+										<a href="#">安抚助眠</a>
+										<a href="#">洗澡玩具</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">宝宝服饰</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">婴幼家纺</a>
+											<a href="#">服饰</a>
+											<a href="#">雨伞</a>
+											<a href="#">Prada普拉达</a>
+											<a href="#">Dior迪奥</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">孕妈专区</a></h2>
+										<div class="showbag fl">
+											<a href="#">孕妈洗护</a>
+											<a href="#">产后护理</a>
+											<a href="#">纤体塑身</a>
+											<a href="#">祛疤</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入母婴频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-wine"></i> 美酒 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">美酒</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">葡萄酒</a>
+										<a href="#">洋酒</a>
+										<a href="#">气泡酒</a>
+										<a href="#">香槟冰酒</a>
+										<a href="#">白兰地</a>
+										<a href="#">Chanson Pere&Fils香颂家族</a>
+										<a href="#">Laurent-Perrier罗兰百悦</a>
+										<a href="#">Ch.DEsclans蝶之兰城堡</a>
+										<a href="#">Rothschild Family罗斯柴尔德</a>
+										<a href="#">Ridgeside Winery维达尔</a>
+										<a href="#">洋酒 </a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">红酒</a>
+											<a href="#">起泡酒</a>
+											<a href="#">拉菲</a>
+											<a href="#">Prada普拉达</a>
+											<a href="#">酒庄</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+								
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入美酒频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-cate"></i> 美食 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">美食</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">糖果/巧克力</a>
+										<a href="#">高端矿泉水</a>
+										<a href="#">保健食品</a>
+										
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">Fillico</a>
+											
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">高端矿泉水 </a>
+											<a href="#">功能饮用水</a>
+											<a href="#">母婴饮用水 </a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入美食频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-home"></i> 家居 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">家居</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">厨具</a>
+										<a href="#">餐具</a>
+										<a href="#">酒具</a>
+										<a href="#">灯具</a>
+										<a href="#">卫浴</a>
+										<a href="#">钱包</a>
+										<a href="#">家纺</a>
+										<a href="#">摆件/挂件/包</a>
+										
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">Bellora贝洛娜</a>
+											<a href="#">ELLE DECO</a>
+											<a href="#">Georg Jensen乔治杰生</a>
+											<a href="#">Philippi斐利比</a>
+											<a href="#">Swarovski施华洛世奇</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">灯具 </a>
+											<a href="#">厨具</a>
+											<a href="#"> 卫浴 </a>
+											<a href="#">酒具</a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入家居频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-electron"></i> 电子 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">电子</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">平板电脑/笔记本</a>
+										<a href="#">电脑配件</a>
+										<a href="#">MP3/MP4</a>
+										<a href="#">手机配件</a>
+										<a href="#">智能穿戴</a>
+										<a href="#">手机</a>
+										<a href="#">Burberry巴宝莉</a>
+										<a href="#">Alexander McQueen亚历山大.麦昆/包</a>
+										<a href="#">Troika拓意卡</a>
+										<a href="#">Fendi芬迪</a>
+										<a href="#">Marc Jacobs马克.雅可布</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">U盘 </a>
+											<a href="#">电脑配件 </a>
+											<a href="#">手机配件 </a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入电子频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-work"></i> 办公 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">办公</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">笔</a>
+										<a href="#">U盘</a>
+										<a href="#">文件夹</a>
+										<a href="#">笔记本</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">Mont blanc万宝龙</a>
+											<a href="#">Parker派克</a>
+											<a href="#">Swarovski施华洛世奇</a>
+											<a href="#">Troika拓意卡</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									<hr />
+									<div class="showshop">
+										<h2 class="fl"><a href="/">热门词</a></h2>
+										<div class="showbag fl">
+											<a href="#">文件夹 </a>
+											<a href="#">笔记本 </a>
+											<a href="#"> 钢笔 </a>
+											<a href="#">原子笔 </a>
+										</div>
+										<div class="clear">
+										</div>
+									</div>
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入办公频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-gift"></i> 礼品 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">礼品</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">礼品卡</a>
+										<a href="#">礼盒</a>
+										<a href="#">打火机</a>
+										<a href="#">储蓄盒</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">推荐品牌</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">S.T.Dupont都彭</a>
+											<a href="#">5LUX</a>
+											<a href="#">Swarovski施华洛世奇</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入礼品频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+							<li class="index-recommend relative">
+								<a href="#"><i class="index-icon index-overseas"></i> 海外馆 <i class="icon index-array"></i></a>
+								<div class="index-brand">
+									<div class="showshop">
+										<h2 class="fl"><a href="/">巴黎直发</a></h2>
+
+									<div class="showbag fl clearfix">
+										<a href="#">箱包</a>
+										<a href="#">服装</a>
+										<a href="#">腕表</a>
+										<a href="#">鞋靴</a>
+										<a href="#">配饰</a>
+										<a href="#">电子</a>
+										<a href="#">母婴</a>
+									</div>
+									<div class="clear">
+										
+									</div>
+									</div>
+									
+									<div class="showshop">
+										<h2 class="fl"><a href="/">米兰直发</a></h2>
+										<div class="showbag fl clearfix">
+											<a href="#">服装</a>
+											<a href="#">鞋靴</a>
+											<a href="#">配饰</a>
+											<a href="#">母婴</a>
+											
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+
+									
+									<hr />
+									<div class="showindex clearfix">
+										<a href="#" class="fl">进入海外馆频道</a>
+										<a href="#" class="fl">闪电发货区</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">品牌</a>
+					</li>
+					<li>
+						<a href="#">最新</a>
+					</li>
+					<li>
+						<a href="#">女士</a>
+					</li>
+					<li>
+						<a href="#">男士</a>
+					</li>
+					<li>
+						<a href="#">生活馆</a>
+					</li>
+					<li>
+						<a href="#">海外馆</a>
+					</li>
+					<li>
+						<a href="#">时尚</a>
+					</li>
+					<li>
+						<a href="#">特惠</a>
+					</li>
+					<li>
+						<a href="#">礼品区</a>
+					</li>
+					<li>
+						<a href="#"><i class="icon place"></i>到店</a>
+					</li>
+					<li class="index-prerogative">
+						<a href="#"><i class="icon zheng"></i><b style="display: none;">品牌授权，官方验真</b></a>
+					</li>
+					<li class="index-prerogative">
+						<a href="#"><i class="icon vip"></i><b style="display: none;">尊享品牌会员服务</b></a>
+					</li>
+					<li class="index-prerogative">
+						<a href="#"><i class="icon credit"></i><b style="display: none;">商务部诚信示范企业</b></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		   
+    
+    
+    
+    <div class="index-bazuo" style="height: 100%;">
+        <dl>
+            <dt>
+                <div class="index-mouyi">
+                    <ul>
+                        <li class="" id="index-men">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-tablog">
+                                </div>
+                                <!--<div class="index-chanzi">
+                                        <!--<div class="index-fang index-fangx">◆</div>-->
+                                <!--</div>-->
+                            </a>
+                            <div class="index-login">
+                            </div>
+                        </li>
+                        <li class="index-zichan" id="index-zic">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-zich"></div>
+                                <div class="index-chanzi">
+                                    我的资产
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                            <div class="index-meun"></div>
+                        </li>
+                        <li class="index-lisk" id="index-geet">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-logolisk"></div>
+                                <div class="index-chanzi">
+                                    我喜欢的商品
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                            <div class="index-meun"></div>
+                        </li>
+                        <li class="index-kefu" id="index-kef">
+                            <a href="#" class="">
+                                <div class="index-tablogo index-kf"></div>
+                                <div class="index-chanzi">
+                                    联系客服
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="index-cart goods_add_popup" id="themenu_carts" style="display: none;">
+                    </div>
+                </div>
+                <div class="index-musan">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="index-tablogo index-erwei"></div>
+                                <div class="index-chanzi index-tipo">
+                                    <img src="img/public/about02.png" width="80px" height="80px" />
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fed-back.html">
+                                <div class="index-tablogo index-fankui" id="fankui_hover"></div>
+                                <div class="index-chanzi">
+                                    意见反馈
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="question.html" target="_blank">
+                                <div class="index-tablogo index-women" id="line_hover"></div>
+                                <div class="index-chanzi">
+                                    联系我们
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="index-tablogo index-shangqu" id="returntop"></div>
+                                <div class="index-chanzi">
+                                    返回顶部
+                                    <div class="index-fang index-fangx">◆</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </dt>
+            <dd>
+                <div class="index-fo">
+                    <div class="assets" style="display: none;">
+                    </div>
+                    <div class="get_collect" style="display: none;">
+                    </div>
+                    <div class="menu_cart" style="display: none; height: 100%;overflow: hidden;">
+                    </div>
+                </div>
+            </dd>
+        </dl>
+    </div>
+		<div class="container">
+			<div class="thumbelina fl">
+				<div class="right-extra fl" style="margin:50px 0 0 96px;">
+					<!--产品参数开始-->
+					<div>
+						<div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="img/14262103235815.png" src="img/14262103235815.png" width="440" height="440"/></span> </div>
+						<!--缩图开始-->
+						<div class="spec-scroll">
+							<a class="prev">&lt;</a>
+							<a class="next">&gt;</a>
+							<div class="items">
+								<ul>
+									<li><img alt="佳能" bimg="img/14262103235815.png" src="img/14262103235815.png" width="80" height="80" onmousemove="preview(this);"></li>
+								</ul>
+							</div>
+						</div>
+						<!--缩图结束-->
+					</div>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<div class="detail-hedr-detail relative fl">
+				<ul>
+					<li>
+						<p class="pierre"><b>Chaumet尚美巴黎</b></p>
+						<p class="pierman"><b>Attrape-moi… si tu m’aimes 18K白金镶钻小号链坠 081249</b></p>
+						<p class="number">货号：35317207GM2</p>
+					</li>
+					<li class="daoshoujia"><strong>￥ 57780 <span class="huiyuan">红卡会员价</span></strong>
+						<img src="img/14637366807607.png" width="68" height="68" /></li>
+					<li class="guonei">市场价：￥66340</li>
+					<li class="privilege"><span class="derail-message"><img src="img/147798675690_560x40.png"/></li>
+							<li class="activity">
+								<span class="detail-activity">活动</span><span class="detail-orde">订单满9999元送价值1199元时尚管家服务<!--<i class="triangular icon5"></i>--><p>翼支付全网折上满减：500减50,1000减100,2000减200</p></span>
+
+					</li>
+					<li>
+						<div class="gd_dt">
+							<span>颜色:</span>
+						</div>
+						<div class="gd_dd">
+							<a class="dd_item">彩色</a>
+						</div>
+						<div class="clear">
+						</div>
+					</li>
+					<li class="clearfixgd">
+						<div class="size fl">
+							<span>尺寸:</span>
+						</div>
+						<div class="black fl">
+							<div>链长38-42cm</div>
+						</div>
+						<div class="clear">
+
+						</div>
+					</li>
+					<li class="detail-quantity">
+						<div class="quantity fl">
+							数量：
+						</div>
+						
+						
+						<div class="buy_num fl">
+							<a><img src="img/gd_jian.jpg" /></a>
+						</div>
+
+						<div class="goods_num fl">
+							<a><img src="img/gd_jia.jpg" /></a>
+						</div>
+						
+						
+						
+						<div class="clear">
+
+						</div>
+						<input type="text" name="" id="" value="" class="text" />
+						<div class="clear">
+						</div>
+					</li>
+					<li class="all-home-info">
+						<dl>
+							<dt>发货门店</dt>
+							<dd>此货品将由<span class="gd30hstore">第五大道奢侈品网</span>为您发货。</dd>
+						</dl>
+						<div class="clear">
+						</div>
+						<dl>
+							<dt>发货地</dt>
+							<dd class="detail-delivery">巴黎直发</dd>
+						</dl>
+						<div class="clear">
+						</div>
+						<dl class="">
+							<dt>发货时效</dt>
+							<dd>预计8-20个工作日发货，延迟发货慢必赔！查看详情 》</dd>
+						</dl>
+						<div class="clear">
+						</div>
+						<dl class="">
+							<dt>温馨提示</dt>
+							<dd>本商品 不支持货到付款 有质量问题支持7天退换货</dd>
+						</dl>
+						<div class="clear">
+						</div>
+						<dl class="">
+							<dt>包邮政策</dt>
+							<dd>白金钻石顺丰包邮，注册用户满99元免邮（稀奇艺术品牌及货到付款除外）</dd>
+						</dl>
+						<div class="clear">
+						</div>
+					</li>
+					<li class="mtop15">
+						<div class="detail-buy fl">
+							<a href="#"><b>立即购买</b></a>
+						</div>
+						<div class="detail-buy-cir fl">
+							<b class="icon5"></b><span class="detail-buy-cart">加入购物车</span>
+						</div>
+						<div class="clear">
+						</div>
+					</li>
+					<li class="commitment relative" id="gd30_honor">
+						<dl class="gd30_favor fl add_collect_bt" style="cursor:pointer;" title="61093">
+							<dt class="icon5"></dt>
+							<dd class="detail-collection">收藏</dd>
+						</dl>
+						<dl class="gd30_share fl" style="cursor:pointer;">
+							<dt class="icon5"></dt>
+							<dd class="detail-partake">分享</dd>
+						</dl>
+						<dl class="gd30_right fl" style="cursor:pointer;">
+							<dt class="icon5"></dt>
+							<dd class="detail-partake">品牌官方授权</dd>
+						</dl>
+						<dl class="gd30_quick fl" style="cursor:pointer;">
+							<dt class="icon5"></dt>
+							<dd class="detail-partake">全球速递</dd>
+						</dl>
+						<dl class="gd30_integrity fl" style="cursor:pointer;">
+							<dt class="icon5"></dt>
+							<dd class="detail-partake">商务部诚信企业</dd>
+						</dl>
+						<div class="clear">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="detail-container">
+			<div class="gd30tmb_head fl">
+				第五大道奢侈品网
+			</div>
+			<div class="gd30tbm-i fl">
+				<ul class="gd30btmi-swith">
+					<li class="-ed">商品详情<b class="icon5"></b></li>
+					<li class="detail-ed">尺寸参照<b></b></li>
+					<li class="detail-ed-com">商品评价<b></b></li>
+				</ul>
+				<div class="gd30tbmi-qrcode">
+					<span>手机购买</span>
+					<i class="icon5"></i>
+					<b class="icon5"></b>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="tadeil-rank fl">
+				<dl class="border">
+					<dt>热销排行</dt>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14459999595453.jpg" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>1</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14223440003066.jpg" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>2</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14262103235815.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>3</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279417879461_200x200.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>4</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279418191718_200x200.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>5</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279418927213_200x200.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>6</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279419255598_200x200.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>7</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279419589813_200x200.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>8</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279657114642_200x200.png" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>9</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd class="tadeil-pic">
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 0px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14328915038490_200x200.jpg" width="136" height="136" />
+										<div class="tadeil-picture">
+											<img src="img/147971379779_30x30 (1).png" width="30" height="30" />
+											<p><b>10</b></p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="border">
+					<dt>同品牌推荐</dt>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14459999595453.jpg" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14223440003066.jpg" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14262103235815.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279417879461_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279418191718_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279418927213_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279419255598_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279419589813_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279657114642_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd class="tadeil-pic">
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 0px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14328915038490_200x200.jpg" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="border">
+					<dt>浏览记录</dt>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14459999595453.jpg" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14223440003066.jpg" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14262103235815.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 20px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279417879461_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul style="border-bottom: solid #e5e5e5 1px;margin: 0px 20px; text-align:left;padding-bottom: 20px;">
+							<li>
+								<a href="" class="tadeil-picture-p relative">
+									<div class="position:relative;">
+										<img src="img/14279418191718_200x200.png" width="136" height="136" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.5lux.com/good/detail/29268" style="font-family: '微软雅黑';" title="Swan系列 小天鹅造型水晶项链 5007735">Swan系列 小天鹅造型水晶项链 5007735</a>
+							</li>
+							<li style="color:#c8a985; font-family: '微软雅黑';">¥ 526</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="tadeil-advertise fl">
+				<div class="goodsContent-right relative trans3">
+					<img src="img/148464551954_1440x520.jpg" / width="815" height="312">
+					<a href=""><i><img src="img/top_bg.png"/ width="815" height="312"></i></a>
+				</div>
+				<div class="goods-popularize-in fl">
+					<div class="goodsContent-left relative trans3">
+						<img src="img/148360032970_431x254.jpg" / width="403" height="237">
+						<div class="goodsContent-text">
+							<p class="txt_top">春节囤货不怕晚</p>
+							<p class="txt_bottom">现货24h秒发</p>
+						</div>
+						<a href=""><img src="img/bottom_bg.png" / width="403" height="237"></a>
+					</div>
+					<div class="goodsContent-top relative trans3">
+						<img src="img/148360008660_431x254.jpg" / width="403" height="237">
+						<div class="goodsContent-text-txt">
+							<p class="txt_top">新年专场</p>
+							<p class="txt_bottom">洋货提前购 低至3折起</p>
+						</div>
+						<a href=""><img src="img/bottom_bg.png" / width="403" height="237"></a>
+					</div>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<div class="advertisement">
+				<img src="img/14025681786341 (1).jpg" />
+				<img src="img/147330324335_780x978.jpg" />
+				<p>&nbsp;</p>
+				<img src="img/14025681781664.jpg" />
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td>商品品牌&nbsp;</td>
+						<td>Chaumet尚美巴黎 </td>
+					</tr>
+					<tr>
+						<td>参考型号&nbsp;</td>
+						<td>081249</td>
+					</tr>
+					<tr>
+						<td>产品尺寸&nbsp;</td>
+						<td>小号/td>
+					</tr>
+					<tr>
+						<td>产品材质&nbsp;</td>
+						<td>镶钻，紫晶，绿玉髓，粉红色碧玺和黄晶，配闪烁耀眼白金双层锁链</td>
+					</tr>
+					<tr>
+						<td>产品颜色&nbsp;</td>
+						<td>彩色</td>
+					</tr>
+					<tr>
+						<td>产品细节&nbsp;</td>
+						<td>镶彩色钻石</td>
+					</tr>
+					<tr>
+						<td>产品来源&nbsp;</td>
+						<td>Chaumet尚美巴黎&nbsp;海外经销商直接供货</td>
+					</tr>
+					<tr>
+						<td>产品提示&nbsp;</td>
+						<td> 海外发货时间为预估时间，可能受特殊情况影响而有所延迟，请购买时与客服协商</td>
+					</tr>
+				</table>
+				<div class="deta-compiler relative">
+					<img src="img/14025681797042.jpg" />
+					<div class="detail-compiler">
+						<img src="img/14025681816356.jpg" />
+					</div>
+					<div class="deta-compil">
+						<img src="img/14262138061746.png" />
+					</div>
+					<div class="deta-text">
+						约瑟芬是拿破仑·波拿巴皇帝的位皇后 。 约瑟芬是位高权重又品味超群的女人，是 尚美巴黎的创始人尼铎（Marie-Etienne Nitot）初的重要主顾。尼铎在 1780 年创建了尚美巴黎品牌。1804 年 12 月 2 日，尚美巴黎为约瑟芬皇后定制全套发饰珠宝，凝结着拿破仑皇帝的浓情深意。今年，为了纪念这位崇尚自由勇敢的现代女性，尚美巴黎推出约瑟芬珠宝系列。
+					</div>
+				</div>
+				<div class=" tadeil-advertisement">
+					<img src="img/14025681792236.jpg" />
+					<img src="img/14262103235815.png" / width="680" height="750" class="tadeil-picher">
+				</div>
+				<div class="" style="margin-bottom: 20px;">
+					<img src="img/14104917061020 (1).jpg" />
+					<img src="img/14262160935661.jpg" / width="750" height="894">
+					<img src="img/14262095903913.jpg" />
+					<img src="img/14262166116205 (1).jpg" />
+					<img src="img/14262177314570.jpg" />
+				</div>
+
+			</div>
+			<div class="clear">
+
+			</div>
+		</div>
+		<!-- 底部 -->
+    <div class="public-footer">
+        <div class="container">
+            <div class="footer-message-top">
+                <ul class="clearfix">
+                    <li class="footer-message-top01">
+                        <a href="" target="_blank"><img src="img/public/footer_message01.jpg"></a>
+                        <div class="footer-message-top01-r">
+                            <p class="p1">正品保障</p>
+                            <p class="p2"><a href="" target="_blank">品牌授权,官方验真</a></p>
+                        </div>
+                    </li>
+                    <li class="footer-message-top01">
+                        <a href="" target="_blank"><img src="img/public/footer_message02.jpg"></a>
+                        <div class="footer-message-top01-r">
+                            <p class="p1">专柜发货</p>
+                            <p class="p2"><a href="" target="_blank">专柜直接或到店自提</a></p>
+                        </div>
+                    </li>
+                    <li class="footer-message-top01">
+                        <a href="" target="_blank"><img src="img/public/footer_message03.jpg"></a>
+                        <div class="footer-message-top01-r">
+                            <p class="p1">无忧售后</p>
+                            <p class="p2"><a href="" target="_blank">7天无理由退换货</a></p>
+                        </div>
+                    </li>
+                    <li class="footer-message-top01">
+                        <a href="" target="_blank"><img src="img/public/footer_message04.jpg"></a>
+                        <div class="footer-message-top01-r">
+                            <p class="p1">VIP服务</p>
+                            <p class="p2"><a href="" target="_blank">享品牌会员售前售后服务</a></p>
+                        </div>
+                    </li>
+                    <li class="footer-message-top01">
+                        <a href="" target="_blank"><img src="img/public/footer_message05.jpg"></a>
+                        <div class="footer-message-top01-r">
+                            <p class="p1">权威荣誉</p>
+                            <p class="p2"><a href="" target="_blank">商务部授予诚信示范企业</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-message-ctr">
+                <div class="footer-message-ctr-l">
+                    <ul style="padding-left: 20px;" class="clearfix">
+                        <li>
+                            <span class="sp01">服务保障</span>
+                            <span><a href="" target="_blank">品牌授权正品</a></span>
+                            <span><a href="" target="_blank">品牌客服</a></span>
+                            <span><a href="" target="_blank">预约到店体验</a></span>
+                            <span><a href="" target="_blank">7天无理由退换</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">使用帮助</span>
+                            <span><a href="" target="_blank">常见问题</a></span>
+                            <span><a href="" target="_blank">会员制度</a></span>
+                            <span><a href="" target="_blank">集团采购</a></span>
+                            <span><a href="" target="_blank">礼品卡</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">支付方式</span>
+                            <span><a href="" target="_blank">到店付款</a></span>
+                            <span><a href="" target="_blank">货到付款</a></span>
+                            <span><a href="" target="_blank">在线支付</a></span>
+                            <span><a href="" target="_blank">余额支付</a></span>
+                            <span><a href="" target="_blank">分期付款</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">配送方式</span>
+                            <span><a href="" target="_blank">配送说明</a></span>
+                            <span><a href="" target="_blank">专柜自提</a></span>
+                            <span><a href="" target="_blank">运费说明</a></span>
+                            <span><a href="" target="_blank">验货签收</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">售后服务</span>
+                            <span><a href="" target="_blank">品牌售后</a></span>
+                            <span><a href="" target="_blank">售后咨询</a></span>
+                            <span><a href="" target="_blank">退换政策</a></span>
+                            <span><a href="" target="_blank">发票保障</a></span>
+                        </li>
+                        <li class="pht-app">
+                            <span class="sp01">关注微信</span>
+                            <span><img src="img/public/about.png" width="80" height="80"></span>
+                        </li>
+                        <li class="pht-weibo">
+                            <span class="sp01">赞助我们</span>
+                            <span><img src="img/public/about02.png" width="80" height="80"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-message-btm">
+                <div class="footer-message-btm-t">
+                    <a href="" target="_blank">箱包</a> 丨
+                    <a href="" target="_blank">美妆</a> 丨
+                    <a href="" target="_blank">服饰</a> 丨
+                    <a href="" target="_blank">腕表</a> 丨
+                    <a href="" target="_blank">配饰</a> 丨
+                    <a href="" target="_blank">鞋靴</a> 丨
+                    <a href="" target="_blank">特惠</a> 丨
+                    <a href="" target="_blank">名品闪购</a> 丨
+                    <a href="" target="_blank">礼品区</a>
+                </div>
+                <div class="">
+                    <a href="" target="_blank">关于</a> 丨
+                    <a href="" target="_blank">网站地图</a> 丨
+                    <a href="" target="_blank">品牌合作专区</a> 丨
+                    <a href="" target="_blank">媒体聚焦</a> 丨
+                    <a href="" target="_blank">商务合作</a> 丨
+                    <a href="" target="_blank">商家合作</a> 丨
+                    <a href="" target="_blank">加入我们</a> 丨
+                    <a href="" target="_blank">友情链接</a> 丨
+                    <a href="" target="_blank">奢尚志</a> 丨
+                    <a href="" target="_blank">联系我们</a> 丨
+                    <a href="" target="_blank">投诉建议</a>
+                    <p>Copyright © 2008-2016 瑞美嘉信国际信息技术（北京）有限公司&nbsp; 版权所有京ICP备09012701号-1 京公网安备110105007400号 食品经营许可证号：
+                    </p>
+                </div>
+                <div class="footer-message-btm-b">
+                    <a href=""><img src="img/public/14567178388519.jpg" alt=""></a>
+                    <a href=""><img src="img/public/footer_message10.jpg" alt=""></a>
+                    <a href=""><img src="img/public/footer_message11.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.jqzoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													/* 内层inBox渐显切换，注意titCell、mainCell等不能与外层相同 */
+			jQuery(".inBox").slide({
+				titCell: ".inHd li",
+				mainCell: ".inBd"
+			});
+			/* 外层outBox左滚动切换 */
+			jQuery(".outBox").slide({
+				effect: "left"
+			});
+		</script>
+		<!--<div class="js">
+			<p>SuperSlide组合注意：</br>
+				1、内外层mainCell、targetCell、prevCell、nextCell等对象不能相同，除非特殊应用；</br>
+				2、注意书写顺序，通常先写内层js调用，再写外层js调用</p>
+			<textarea>
+/* 内层inBox渐显切换，注意titCell、mainCell等不能与外层相同 */
+jQuery(".inBox").slide({ titCell:".inHd li",mainCell:".inBd" });
+/* 外层outBox左滚动切换 */
+jQuery(".outBox").slide({ effect:"left" });
+			</textarea>
+		</div>-->
+
+	</body>
+
+</html>

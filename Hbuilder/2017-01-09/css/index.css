@@ -1,0 +1,179 @@
+html body {
+	height: 100%;
+}
+
+.section {
+	width: 100%;
+	height: 100%;	
+	height: 1000px;
+	overflow: hidden;
+}
+
+.slide {
+	height: 600px;
+	width: 1000px;
+	background-image: url(images/login_background.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*margin: 0px auto;*/
+	+position: relative;
+	top: -50%;
+	left: -50%;
+}
+
+.font_box h1 {
+	border-left: 3px solid #d00b00;
+	display: block;
+	height: 26px;
+	line-height: 22px;
+	font-size: 28px;
+	margin: 0 2px 31px 0;
+	padding-left: 11px;
+	font-weight: normal;
+}
+
+.font_box {
+	width: 650px;
+	position: absolute;
+	top: 800px;
+	left: 260px;
+}
+
+.font_box p {
+	margin-bottom: 25px;
+	line-height: 25px;
+}
+
+.flower {
+	background: url(../img/flower.png) repeat-y;
+	position: relative;
+	top: 0;
+	left: -230px;
+	display: inline-block;
+	height: 100%;
+	width: 230px;
+	background-size: 100% auto;
+}
+
+.section2 .about_ftbg {
+	top: 90px;
+	right: -300px;
+	width: 273px;
+	height: 63px;
+	position: absolute;
+	display: inline-block;
+	background: url(../img/aboutfont.jpg) no-repeat center;
+}
+
+.right_menu {
+	width: 1100px;
+	height: 75px;
+	position: absolute;
+	top: 0px;
+	left: 250px;
+	border-bottom: 1px solid #e8e8e8;
+	margin: 90px 0 0 auto;
+	float: right;
+}
+.section3 .right_menu{
+	top: -200px;
+}
+
+/*.nav{
+	position: absolute;
+	top: 120px;
+	left: 250px;
+}*/
+
+.nav li a,
+.nav li {
+	color: #333;
+	font-size: 12px;
+}
+
+.nav li {
+	float: left;
+	margin: 10px;
+}
+
+.section3 .nav li a,
+.nav li {
+	color: rgb(107, 107, 107);
+	font-size: 12px;
+}
+
+.section3 .about_ftbg {
+	top: 90px;
+	right: -300px;
+	width: 273px;
+	height: 63px;
+	position: absolute;
+	display: inline-block;
+	background: url(../img/anfont.jpg) no-repeat center;
+}
+
+.case-imgs-box {
+	width: 1000px;
+	height: 445px;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	background-size: auto 100%;
+	overflow: hidden;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+/*.section4{
+	height: 600px!important;
+	overflow: hidden;
+}*/
+.section4 p{
+	position: absolute;
+	bottom: 250px;
+	left: -500px;
+	line-height: 20px;
+	
+}
+.section4 span{
+	position: absolute;
+	bottom: 250px;
+	right: -500px;
+	text-align: right;
+	line-height: 20px;
+}
+.section4 img{
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left:-48px ;
+	bottom: 250px;
+}
+.foot_logo {
+    width: 100%;
+    height: 132px;
+    position: absolute;
+    top: 206px;
+    left: 0;
+
+}
+hr{
+
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.foot_logo img{
+	margin-left:-133px ;
+	position: absolute;
+	top: -98px;
+	left: 50%;
+	z-index: 10;
+}
+.section4{
+	height: 500px;
+	overflow: hidden;
+	margin-bottom: -200px;
+}

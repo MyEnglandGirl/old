@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<a class="title">
+				播放列表
+				<img src="img/up.gif" />
+			</a>
+			<ul>
+				<li>
+					<a href="">玩爱之徒 - 蔡依林</a>
+				</li>
+				<li>
+					<a href="">原谅我就是这样的女生 - 戴佩妮</a>
+				</li>
+				<li>
+					<a href="">猜不透 - 丁当</a>
+				</li>
+				<li>
+					<a href="">自导自演 - 周杰伦</a>
+				</li>
+				<li>
+					<a href="">浪漫窝 - 弦子</a>
+				</li>
+				<li>
+					<a href="">流年 - 王菲</a>
+				</li>
+			</ul>
+		</div>
+		<!--<script>//方法一
+			var $a = $("ul li a");
+			$(".title").click(function() {
+				if($a.css("display") == "block") {
+					$a.css("display", "none");
+					$("img").attr("src", "img/down.gif");
+				} else {
+					$a.css("display", "block");
+					$("img").attr("src", "img/up.gif");
+				}
+			});
+			$a.hover(function() {
+				$(this).css({
+					"background-color": "#FFF",
+					"text-decoration": "underline"
+				});
+			}, function() {
+				$(this).css({
+					"background-color": "rgb(239,238,237)",
+					"text-decoration":"none"
+				});
+			});
+		</script>-->
+		<script>//方法二
+			$(".title").click(function () {
+				var flag = $("ul").is(":hidden");
+			console.log(flag);//flase
+			if(flag){
+				$("ul").slideDown();
+				$("img").attr("src", "img/up.gif");
+			}else{
+				$("ul").slideUp();
+				$("img").attr("src", "img/down.gif");
+			} 
+			});
+			var $a = $("ul li a");
+			$a.hover(function() {
+				$(this).css({
+					"background-color": "#FFF",
+					"text-decoration": "underline"
+				});
+			}, function() {
+				$(this).css({
+					"background-color": "rgb(239,238,237)",
+					"text-decoration":"none"
+				});
+			});
+		</script>
+	</body>
+
+</html>

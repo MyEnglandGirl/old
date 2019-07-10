@@ -1,0 +1,125 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+body{
+	background-color: rgb(247,248,248);
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+
+}
+img{
+	border: none;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	_zoom:1;/*处理ie兼容性问题*/
+	clear:both;
+}
+.container{
+	width: 1240px;
+	margin: 0 auto;
+}
+.container>.fl{
+	width: 780px;
+}
+.container>.fr{
+	width: 400px;
+}
+.relative{
+	position: relative;
+}
+.overflow{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.fz16{
+	font-size: 16px;
+}
+.fz14{
+	font-size: 14px;
+}
+.white{
+	color: #FFFFFF;
+	line-height: 20px;
+}
+h2{
+	float: left;
+	font-size: 25px;
+	color: #555555;
+	font-weight: bold;
+	
+}
+h2 a{
+	margin-left:40px;
+	color: #555555;
+	padding-top: 5px;
+}
+h3{
+	display: inline-block;
+	font-size: 14px;
+	color: #404040;
+	line-height: 25px;
+}
+.index-public-title{
+	margin: 50px 0 20px 0;
+}
+.index-public-title>a{
+	font-size: 14px;
+	border-radius:25px;
+	background-color:rgb(235,235,235) ;
+	border: 2px solid rgb(235,235,235);
+	padding: 2px 10px;
+	margin: 6px 0 0 10px;
+	float: right;
+	color: #777777;
+	line-height: 24px;
+}
+.index-public-title>a:hover{
+	border: 2px solid #00ab88;
+	color: #00AB88;
+}
+.index-public-nav li{
+	float: left;
+}
+.index-public-nav li a{
+	margin: 0px 0 30px 0;
+	font-size: 16px;
+	color: #666666;
+	padding: 10px 0px;
+	border-bottom: 4px solid #ebecec;
+	width: 130px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.index-public-nav li a:hover{
+	font-weight: bold;
+	color: #00ab88;
+	border-bottom: 4px solid #00ab88;
+}
+/*雪碧图*/
+.icon{
+	background: url(http://ossweb-img.qq.com/images/lol/v1/public-spr.png) no-repeat;
+	
+}

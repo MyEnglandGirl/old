@@ -1,0 +1,133 @@
+@charset "utf-8";
+.login-banner{
+	background: url(../img/bai-bg.jpg) no-repeat top center;
+	height: 570px;
+}
+.login-icon{
+    position: absolute;
+	left: 0;
+	top: 0;
+    z-index: 5;
+}
+.login-write{
+	background-color: #FFFFFF;
+	margin-top: 1px;
+	height: 500px;
+	width: 400px;
+	font-family: "微软雅黑";
+}
+.login-box{
+	padding: 27px 0px 24px 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #e0e0e0;
+}
+.login-one{
+	color: #666666;
+	margin: 5px 20px 5px 40px;
+	font-size: 25px;
+	border-right: 1px solid #CCCCCC;
+	padding-right: 40px;
+}
+.login-two{
+	color: #666666;
+	margin: 5px 20px 5px 15px;
+	font-size: 25px;
+}
+.login-eamil p{
+	 width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #FF0000;
+    
+}
+input{
+	width: 308px;
+	height: 50px;
+	border: 1px solid #CCCCCC;
+	padding-left: 10px;
+	margin-left: 10px;
+	color: #666666;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	outline: none;
+}
+input.error{
+	border: 1px solid #f00;
+}
+#mail-error{
+	text-align: left;
+     	margin-left: 10px;
+}
+#psword-error{
+     	text-align: left;
+     	margin-left: 10px;
+}
+.error{
+	margin-top: -10px;
+	text-align: left;
+	
+}
+.login-eamil{
+	margin-top: 25px;
+}
+.login-eamil span input{
+	width: 320px;
+	height: 50px;
+	border: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	font-size: 20px;
+    background-color: #f56600;
+    margin-top: 20px;
+    font-family: "微软雅黑";
+}
+.login-enroll{
+	text-align: center;
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+.login-enroll a{
+	margin: 20px 10px 20px 10px;
+	color: #999999;
+}
+.login-way{
+	border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+.login-way p{
+	font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-mail{
+	display: none;
+}
+.login-size li{
+	display: inline-block;
+	padding: 20px 5px;
+}
+.login-size b{
+	padding-left: 5px;
+}
+.login-size li a{
+	display: inline-block;
+	color: #757575;
+}
+.login-size li:hover a{
+	color: #000000;
+}
+.login-size{
+	margin-top: 70px;
+}
+.login-size {
+    margin-top: 40px;
+}
+.login-end{
+	margin-bottom: 10px;
+}

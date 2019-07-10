@@ -1,0 +1,40 @@
+.user-info{
+	background: url(../img/user/info_bg.jpg);
+	width: 825px;
+	height: 550px;
+	margin-bottom: 25px;
+}
+.user-level .header{
+	width: 102px;
+	height: 102px;
+	overflow: hidden;
+	border-radius: 100%;
+	margin: 50px;
+}
+.user-level a{
+	width: 142px;
+	text-align: center;
+}
+.user-info ul {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.user-info-hr{
+	height: 5px;
+	overflow: hidden;
+	background: url(../img/user/user_level.png) 135px -267px no-repeat;
+}
+.rank1{
+	background: url(../img/user/user_level.png) -8px -83px no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.grade{
+	width: 95px;
+	display: inline-block;
+	float: left;
+	
+}

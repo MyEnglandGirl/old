@@ -1,0 +1,38 @@
+.comment{
+	
+	width: 600px;
+	margin: 100px auto;
+	height: 100px;
+	border: 1px #666666 solid;
+}
+ul li{
+	float: left;
+}
+ul{
+	height: 24px;
+	margin-left: 100px;
+	margin-top:40px;
+}
+ul li{
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
+.test{
+	margin-top:-24px;
+}
+.one-star{
+	left: 0;
+}
+.two-star{
+	left: 24px;
+}
+.three-star{
+	left: 48px;
+}
+.four-star{
+	left: 72px;
+}
+.five-star{
+	left: 96px;
+}

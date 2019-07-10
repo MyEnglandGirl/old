@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<body>
+		<form action="" method="post">
+			<label for="">用户名:</label>
+			&nbsp;<input type="text" id="nameTxt" value="name"/>
+			<p/><br />
+			<label for="">邮&nbsp;&nbsp;&nbsp;箱:</label>
+			&nbsp;<input type="text" id="eMailTxt" value="fcufnb@163.com" />
+			<p/><br />
+			<label for="">密&nbsp;&nbsp;&nbsp;码:</label>
+			&nbsp;<input type="password" id="passwordTxt" value="www.baidu.com" />
+			<p/><br />
+			<lebal for="">年&nbsp;&nbsp;&nbsp;龄:</lebal>
+			&nbsp;<input type="text" id="ageTxt" value="18"/>
+			<p/><br />
+			<label for="">爱&nbsp;&nbsp;&nbsp;好：</label>
+			<label for="jizi"><input type="checkbox" name="fruit" id="" value="橘子" />橘子 
+			</label>
+			<label for="apple"><input type="checkbox" name="fruit" id="" value="苹果" />苹果
+			</label>
+			<label for="banana"><input type="checkbox" name="fruit" id="" value="香蕉" />香蕉
+			</label>
+			<label for="pineapple"><input type="checkbox" name="fruit" id="" value="菠萝" />菠萝
+			</label>
+			<p/><br />
+			<label for="">性&nbsp;别:</label>
+			<label for="man"><input type="radio" name="sex" id="man" value="男" />男
+			</label>
+			<label for="woman"><input type="radio" name="sex" id="woman" value="女" />女
+			</label>
+			<p/><br />
+			<label for="">学&nbsp;&nbsp;&nbsp;历:</label>
+			<select name="" id="education">
+				<option value="请选择一项">请选择一项</option>
+				<option value="高中">高中</option>
+				<option value="大专">大专</option>
+				<option value="本科">本科</option>
+				<option value="小学">小学</option>
+			</select>
+			<p/><br />
+			<label for="">意见</label>
+			<textarea name="" rows="" cols="" id='view'></textarea>
+			<br />
+			<input type="button" name="" id="regedit" value="注册" />
+			<input type="button" name="" id="" value="登陆" />
+		</form>
+		<script type="text/javascript">
+		window.onload = function() {
+			var obj = new Object();
+			var oReg = document.getElementById('regedit');
+			var oName = document.getElementById('nameTxt');
+			var oEmail = document.getElementById('eMailTxt');
+			var oPassword = document.getElementById('passwordTxt');
+			var oAge = document.getElementById('ageTxt');
+			var oFruit = document.getElementsByName('fruit');
+			var oSex = document.getElementsByName('sex');
+			var oEducation = document.querySelectorAll('#education option');
+			var oView = document.getElementById('view');
+			
+			oReg.onclick = function () {
+				obj.name = oName.value;
+				obj.email = oEmail.value;
+				obj.password = oPassword.value;
+				obj.age = oAge.value;
+				var fruit = [];
+				for (var i = 0; i < oFruit.length; i++) {
+					if(oFruit[i].checked == true){
+						fruit.push(oFruit[i].value);
+					}
+				}
+				strFruit = fruit.join(',');
+				obj.fruit = strFruit;
+				for (var i = 0; i < oSex.length; i++) {
+					if(oSex[i].checked){
+						obj.sex = oSex[i].value;
+					}
+				}
+//				for (var i = 0; i < oEducation.length; i++) {
+//					if(oEducation[i].selected == true){
+//						obj.education = oEducation[i].value;
+//					}
+//				}
+				var oSelect = document.getElementsByTagName('select')[0];
+				console.log(oSelect);
+				var index = oSelect.selectedIndex;
+				console.log(index);
+//				var education = oSelect.options[index].value;
+				var education = oEducation[index].value;
+				console.log(education);
+				obj.education = education;
+				
+				obj.view = oView.value;
+//				return obj;
+				console.log(obj);
+			};
+			
+		}
+		</script>
+		<!--var oProvince = aSelect[0];
+		var index  =oProvince.selectedIndex;
+		var oCity = oCity.options[index].value;-->
+	</body>
+</html>

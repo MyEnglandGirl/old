@@ -1,0 +1,105 @@
+@charset "utf-8";
+.clear{
+	clear: both;
+}
+.index-you .collect-zhengkuang .collect-listt {
+	margin-bottom: 15px;
+}
+
+.index-you .collect-zhengkuang .collect-listt th {
+	color: #000;
+	text-align: center;
+	line-height: 32px;
+	font-weight: bold;
+	background: url(../img/public/user_level.png) -1px -215px;
+}
+
+.collect-zhengkuang table {
+	border: none;
+	text-align: left;
+}
+
+.collect-zhengkuang tr {
+	border: none;
+	text-align: left;
+}
+
+.collect-zhengkuang td {
+	border: none;
+	text-align: left;
+}
+
+.collect-zhengkuang th {
+	border: none;
+	text-align: left;
+}
+
+.index-you .collect-zhengkuang .collect-listt td {
+	border: #e1e1e1 solid 1px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.collect-goods .collect-item-pic {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+	float: left;
+	overflow: hidden;
+	margin-left: 7px;
+}
+
+.collect-item-pic a img {
+	border: none;
+}
+
+.collect-goods .collect-item-info {
+	margin-left: 91px;
+	padding-right: 25px;
+}
+.collect-item-info a{
+	color: #000000;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	margin-left: 10px;
+	margin-top: 7px;
+}
+.collect-item-info a:hover{
+	color: #C69C6D;
+}
+.collect-goods_table_oper a{
+	color: #000000;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+.collect-goods_table_oper a:hover{
+	color: #C69C6D;
+}
+.collect-order .collect-all_btn {
+	background: #d00000;
+	color: #fff;
+	text-decoration: none;
+}
+
+.collect-all_btn {
+	display: inline-block;
+	padding: 0px 17px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	border: 0px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.collect-zhengkuang{
+	margin-top: 20px;
+}
+.collect-zhengkuang{
+	margin-bottom: 20px;
+}

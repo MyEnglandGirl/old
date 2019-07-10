@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/dajuyuan.css" />
+</head>
+
+<body>
+    <div class="head">
+        <div class="container">
+            <h1 class="logo fl">豆瓣同城</h1>
+            <input type="text" name="" id="" value="" placeholder="活动名称" class="fr" />
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="details" id="details">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $.getJSON('/getEvent?acid=28045003', function(data) {
+        console.log(data);
+        var html = "";
+        var pic = data.events;
+        html += '<div class="picture fl">';
+        html += '<img src="' + pic.image_hlarge + '" width="175px" height="260px" />';
+        html += '</div>';
+        html += '<div class="message fl">';
+        html += '<h2 class="msg_title">' + pic.title + '</h2>';
+        html += '<ul class="msg_content">';
+        html += '<li>时间:' + pic.begin_time + '</li>';
+        html += '<li>地点:' + pic.address + '</li>';
+        html += '<li>费用:' + pic.price_range + '</li>';
+        html += '<li>类型:' + pic.subcategory_name + '</li>';
+        html += '<li>主办方:' + pic.owner.name + '</li>';
+        html += '</ul>';
+        html += '</div>';
+        html += '<div class="clear"></div>';
+        html += '<div class="details_mid">';
+        html += '<a href=""><span>' + '活动详情' + '</span></a>';
+        html += '<hr />';
+        html += '<p>' + '☞　☞ 配送方式：购票满300元在北京五环以内免费送票。购票不足300元或不在北京五环内将收取一定的费用快递，非北京地区订票请提前联系，确保门票可以顺利寄到。' + '</p>';
+        html += '<p>' + '☞　☞位置：我们将按照您订购价位在当日系统所在的区域以最优的位置出票。' + '</p>';
+        html += '<p>' + '☞　☞ 咨询电话：010-65518055。' + '</p>';
+        html += '<p>' + '☞　☞ 注意：豆瓣票品出票后，不可退换。。' + '</p>';
+        html += '<hr />';
+        html += '	<div class="msg_word">' + pic.content + '</div>';
+        $('#details').html(html);
+    });
+});
+</script>
+
+</html>

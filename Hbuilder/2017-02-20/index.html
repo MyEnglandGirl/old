@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="540" height="530"></canvas>
+	</body>
+
+	<script type="text/javascript">
+		var oCanvas = document.getElementById("canvas");
+		var context = oCanvas.getContext("2d");
+
+		context.beginPath();
+		context.strokeStyle = "#2eb17f";
+		context.fillStyle = "#5acd96";
+		context.fillRect(0, 0, 540, 530);
+		context.closePath();
+
+		//		树1
+		context.moveTo(91, 357);
+		context.lineTo(91, 368);
+		context.stroke();
+		context.beginPath();
+		context.arc(91, 343, 13, 0, 2 * Math.PI);
+		context.fillStyle = "#30ba87";
+		context.strokeStyle = "#2eb17f";
+		context.fill();
+		context.closePath();
+		//		树2
+		context.moveTo(147, 364);
+		context.lineTo(147, 375);
+		context.stroke();
+		context.beginPath();
+		context.arc(147, 358, 8, 0, 2 * Math.PI);
+		context.strokeStyle = "#2eb17f";
+		context.fillStyle = "#30ba87";
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.moveTo(0, 358);
+		context.quadraticCurveTo(150, 370, 255, 400);
+		context.lineTo(255, 530);
+		context.lineTo(0, 530);
+		context.lineTo(0, 358);
+		context.fillStyle = "#47c08b";
+		context.fill();
+		//		context.stroke();
+		context.closePath();
+
+		context.beginPath();
+		context.fillStyle = "#2db182";
+		context.moveTo(0, 445);
+		context.bezierCurveTo(200, 440, 250, 360, 540, 372);
+		context.lineTo(540, 530);
+		context.lineTo(0, 530);
+		context.fill();
+		context.closePath();
+
+		//		树3
+
+		context.beginPath();
+		context.moveTo(399, 368);
+		context.lineTo(375, 355);
+		context.stroke();
+		context.closePath();
+		context.strokeStyle = "#2eb17f";
+		context.fillStyle = "#30ba87";
+		context.beginPath();
+		context.arc(375, 355, 14, 0, 2 * Math.PI);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.strokeStyle = "#249a66";
+		context.fillStyle = "#30ba87";
+
+		context.moveTo(399, 350);
+		context.lineTo(399, 385);
+		context.stroke();
+		context.closePath();
+		context.beginPath();
+		context.arc(399, 330, 30, 0, 2 * Math.PI);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.moveTo(399, 368);
+		context.lineTo(420, 355);
+		context.stroke();
+		context.closePath();
+		context.beginPath();
+		context.arc(420, 355, 10, 0, 2 * Math.PI);
+		context.fill();
+		context.closePath();
+
+		//		三角
+		context.beginPath();
+		context.fillStyle = "#2cb081";
+		context.moveTo(270, 395);
+		context.lineTo(275, 380);
+		context.lineTo(280, 392);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.fillStyle = "#2cb081";
+		context.moveTo(475, 375);
+		context.lineTo(485, 356);
+		context.lineTo(490, 375);
+		context.lineTo(495, 362);
+		context.lineTo(500, 375);
+		context.fill();
+		context.closePath();
+
+		//		鸟
+		context.beginPath();
+		context.fillStyle = "#2cb081";
+		context.moveTo(190, 136);
+		context.lineTo(210, 126);
+		context.lineTo(205, 136);
+		context.lineTo(190, 136);
+		context.fill();
+		context.closePath();
+
+		context.beginPath();
+		context.fillStyle = "#2cb081";
+		context.moveTo(220, 146);
+		context.lineTo(230, 136);
+		context.lineTo(235, 146);
+		context.lineTo(220, 146);
+		context.fill();
+		context.closePath();
+		context.beginPath();
+		context.fillStyle = "#2cb081";
+		context.moveTo(240, 126);
+		context.lineTo(250, 116);
+		context.lineTo(265, 126);
+		context.lineTo(240, 126);
+		context.fill();
+		context.closePath();
+	</script>
+
+</html>

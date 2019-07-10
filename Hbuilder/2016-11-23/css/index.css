@@ -1,0 +1,284 @@
+body {
+	background-image: url(../img/background.png);
+}
+
+.index-header-top {
+	background-color: #25252c;
+	height: 9px;
+	border-bottom: 1px solid #7a7a7e;
+}
+
+.index-header01 {
+	margin-top: -1px;
+}
+
+.index-header01 .container {
+	background-color: #25252c;
+	color: #fff;
+}
+
+.index-header01-left {
+	padding: 9px 0 9px 10px;
+}
+
+.index-header01-right {
+	padding-right: 10px;
+	padding-top: 7px;
+}
+
+.index-header01-right ul li {
+	margin-left: 5px;
+}
+
+.index-header01-right p {
+	display: inline-block;
+	font-size: 11px;
+	padding-top: 2px;
+}
+
+.index-header-logo {
+	padding: 20px 0 11px 10px;
+}
+
+.index-header-nav li {
+	padding-left: 30px;
+	padding-top: 36px;
+	padding-bottom: 23px;
+	color: #2e2d2d;
+	font-size: 11px;
+	line-height: 20px;
+	position: relative;
+}
+
+.index-header-nav a {
+	display: block;
+	color: #2e2d2d;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.index-header-nav span {
+	display: none;
+	position: absolute;
+	margin-top: 43px;
+}
+
+.index-header-nav li:hover span {
+	display: block;
+}
+
+.index-header-nav a div {
+	width: 100%;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	font-weight: 400;
+	padding: 10px 30px 10px 10px;
+	border: 1px #cac8c8 solid;
+	background-color: #e7e7e7;
+}
+
+.pro02 .pro03 {
+	margin-top: -1px;
+}
+
+.index-banner {
+	background-image: url(../img/banner_03.jpg);
+	background-repeat: no-repeat;
+	/*不重复图像*/
+	background-position: top center;
+	height: 180px;
+	margin: 0 auto;
+	padding-top: 219px;
+}
+
+.index-banner-text {
+	height: 160px;
+	width: 610px;
+	background-image: url(../img/75.png);
+	background-repeat: repeat;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.index-banner-text h1 {
+	font-size: 24px;
+	line-height: 48px;
+	color: #555555;
+}
+
+.index-banner-text p {
+	line-height: 20px;
+	color: #424141;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.index-banner img {
+	display: inline-block;
+	margin-left: 18px;
+	margin-top: 110px;
+}
+
+.index-list-one {
+	margin-top: 20px;
+}
+
+.index-list-one li {
+	background-image: url(../img/list-background.png);
+	text-align: center;
+	width: 230px;
+	height: 210px;
+	padding-top: 20px;
+	margin-left: 13px;
+}
+.index-list-one li:hover{
+	background:url(../img/list-background-hover.png);
+}
+.index-list-one li:hover h2{
+	color: #fff;
+}
+.index-list-one li:hover p{
+	color: #fff;
+}
+
+
+.index-list-one li:first-child {
+	margin: 0;
+}
+
+.index-list-one h2 {
+	color: #4b4a4a;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+.index-list-one p {
+	display: inline-block;
+	padding: 0 30px;
+	color: #6b6a6a;
+	line-height: 20px;
+}
+
+.index-welcome .container {
+	margin: 36px auto;
+	padding: 10px 0;
+	background-color: #eae8e8;
+}
+
+.index-welcome p {
+	color: #4b4a4a;
+	font-size: 18px;
+	line-height: 18px;
+}
+.index-list-two li {
+	width: 230px;
+	height: 270px;
+	margin-left: 13px;
+}
+
+.index-list-two li:first-child {
+	margin: 0;
+}
+
+.index-list-two h2 {
+	color: #4b4a4a;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+	padding-left: 10px;
+}
+
+.index-list-two p {
+	display: inline-block;
+	color: #5c5c5c;
+	line-height: 20px;
+	padding-left: 10px;
+	letter-spacing: -0.5px;
+}
+.index-footer{
+	background-color: #1c1c20;
+	margin-top: 36px;
+	padding-top: 30px;
+}
+.flickr-gallery{
+	width: 332px;
+}
+.flickr-gallery li{
+margin-right: 7px;
+
+}
+.index-footer h2{
+	line-height: 36px;
+}
+.flickr-gallery p{
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.get-in-touch{
+	margin-left:60px;
+}
+.get-in-touch input{
+	display:block;
+	width: 220px;
+	height: 36px;
+	background-color: #29292c;
+	border: 0;
+	margin-top: 4px;
+	margin-bottom: 6px;
+	color: #bdbdbd;
+}
+input[placeholder], [placeholder], *[placeholder] { 
+color:red !important; 
+} 
+.get-in-touch textarea{
+	width: 220px;
+	height: 116px;
+	background-color: #29292c;
+	border: 0;
+}
+.get-in-touch input:last-child{
+	width: 120px;
+	margin-left: 50px;
+}
+.latest-posts li{
+	padding-bottom: 10px;
+	border-bottom: 2px #303030 dashed;
+	margin-bottom: 10px;
+}
+.latest-posts{
+	width: 272px;
+}
+.latest-posts img{
+	display: inline;
+	margin-right: 6px;
+}
+.latest-posts h3{
+	font-size: 14px;
+	color: #3783a3;
+	line-height: 14px;
+	margin-bottom: 6px;
+}
+.latest-posts p{
+	font-size: 12px;
+	color: #646464;
+	line-height: 18px;
+}
+.overflow{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.index-copyright{
+	background-color: #121212;
+}
+.index-copyright{
+	line-height: 12px;
+	padding: 9px 0;
+	color: #FFFFFF;
+	
+}
+.index-copyright-right li a{
+margin-left: 10px;
+	color: #FFFFFF;
+}

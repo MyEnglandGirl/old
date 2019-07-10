@@ -1,0 +1,127 @@
+@charset "utf-8";
+.fl{
+	float:lift;
+}
+.clearfix{float:lift
+	clean:both;
+	/*清除浮動紧跟在浮动元素后面*/
+}
+.title{
+	
+	font-size: 42px;
+	color: red;
+	font: "微软雅黑";
+	text-align: center;
+	line-height: 72px;
+	/*d定义行高*/
+}
+#user {
+	font-size: 24px;
+	color: #333;
+	line-height: 72px;
+}
+.content{
+	/*padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;*/
+	
+	padding: 20px;
+	/*與邊框的距離全部區域都是20（內邊距）*/
+	padding: 20px 10px;
+	/*上下是20，左右是10*/
+	margin: 30px;
+	/*外邊距都是30像素*/
+	border: 4px solid #00ACFF;
+	background-color: gainsboro;
+}
+.content .name{
+	color: #FFF;
+	font-size: 20px;
+	/*代表了content裡面包含的name值
+	 有一個空格代表分級*/
+}
+.navbar{
+	background-color: rgba(0,0,0,0.3);
+	/*30%的透明度*/
+}
+.navbar a { 
+font-size: 16px;
+color: #FF0;
+padding: 20px 25px;
+display: block;
+/*display: inline  强制改变内敛元素，为了让padding值生效*/
+
+}
+
+.navbar li {
+	float: left;
+	/*横向排列！*/
+}
+
+.navbar a:hover {
+	/*伪类，鼠标移上变色*/
+	background-color: #E80808;
+}
+
+.container{
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.news_box li {
+	float: left;
+	width: 500px;
+	margin: 0px 25px 70px 25px;
+	
+}
+.relative {
+	position: relative;
+	/*top/bottom取其一
+	 lift/right取其一
+	 一般不和margin一起使用*/
+	/*position: relative----相对定位
+	 * 参照物；自身    不脱离DOM流
+	 * position:absolute----绝对定位
+	 * 参照物：所有定义了position的元素
+	 * 
+	 */
+	
+}
+.news_box .news_date {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 89px;
+	 height: 89px;
+	 text-align: center;
+	 /*下層繼承*/
+	 color: #FFFFFF;
+	 background-color: rgba(255,150,0,0.75);
+}
+.news_date .day {
+	font-size: 42px;
+	line-height: 42px;
+	margin-top: 12px;
+	
+}
+
+.news_article {
+	width: 308px;/*定義寬度*/
+	margin-left: 16px;
+}
+.news_article .news_title {
+	color: #00ACFF;
+	font-size: 18px;
+	text-align: left;
+	white-space: nowrap;/*強制在一條線上*/
+	text-overflow: ellipsis;/*出現三個小點*/
+	overflow: hidden;
+	padding-bottom: 12px;
+	border-bottom: 1px dashed #BBBBBB;/*分割線*/
+}
+.news_article .news_des {
+	overflow: hidden;
+	height: 46px;
+	margin-top: 9px;
+}

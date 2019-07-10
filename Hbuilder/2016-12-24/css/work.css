@@ -1,0 +1,37 @@
+.nav{
+	width: 135px;
+	height: 22px;
+	border-bottom: 1px solid #666666;
+	border-top: 1px solid #d1d1d1;
+	/*background: url(../img/navLink.gif);*/
+	background: rgb(140,157,181);
+	cursor: pointer;
+	color: #fff;
+}
+
+.navLink img{
+	padding: 5px 6px 5px 6px;
+	float: left;
+}
+.navLink span{
+	line-height: 22px;
+	text-align: center;
+	float: left;
+}
+.menu li{
+	cursor: pointer;
+	width: 135px;
+	height: 22px;
+	background: url(../img/menu.gif);
+	/*display: none;*/
+}
+.menu img{
+	padding: 5px 6px 5px 20px;
+}
+.menu a{
+	color: rgb(102, 102, 102);
+} 
+
+.menu{
+	display: none;
+}

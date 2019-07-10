@@ -1,0 +1,25 @@
+.container{
+	width: 1190px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.cate_menu{
+	width: 190px;
+	background: rgb(110,101,104);
+	padding: 12px 0;
+}
+.cate_menu a{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.cate_menu li{
+	margin-left: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.cate_menu span{
+	padding: 0 4px;
+	font-size: 12px;
+	color: #FFFFFF;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body ng-controller="app">
+		<input type="num" min="0" ng-model="text" name="" id="" value="" />
+		<input type="button" ng-click="expression()" name="" id="" value="开始" />
+		<p>
+			Hello, {{text}} Hello, {{tick}}
+		</p>
+
+		<input type="" ng-model="tick" name="" id="" value="" />
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module("myapp", []);
+			app.controller("app", function($scope, $interval) {
+				$scope.text = "0";
+				$scope.tick = "0";
+				console.log(app);
+				var clock;
+				$scope.expression = function() {
+					$interval.cancel(clock);
+					$scope.tick = $scope.text;
+					if($scope.tick <= 0) {
+						$scope.tick = 0
+					} else {
+						clock = $interval(function() {
+							$scope.tick = $scope.tick - 1;
+//							$scope.expression();\
+							clock;
+						}, 1000);
+
+					}
+
+				};
+
+			})
+		</script>
+	</body>
+
+</html>

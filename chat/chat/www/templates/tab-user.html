@@ -1,0 +1,57 @@
+<ion-header-bar align-title="left" class="bar-dark">
+	<div class="h1 title">微信(16)</div>
+	<div class="buttons">
+		<!--<a ui-sref="search" class="header-icon"><img src="img/png/search.png" / width="30"></a>-->
+		<a ng-click="modal.show()" class="header-icon"><img src="img/png/search.png" / width="30"></a>
+		</button>
+		<a ui-sref="add" class="header-icon"><img src="img/png/plus.png" / width="30"></a>
+		</button>
+	</div>
+</ion-header-bar>
+<ion-view>
+
+	<ion-content on-swipe-right="onSwipeRight()">
+
+		<div id="">
+			<a ui-sref="user-information" class="item jy-border-0 jy-padding-top-sm" href="#">
+				<img ng-show="userData.img" ng-src="{{userData.img.sm_img}}" width="50" class="jy-vertical-align fl" />
+				<img ng-hide="userData.img" src="img/img.jpg" width="50" class="jy-vertical-align fl" />
+				<div class="jy-vertical-align jy-margin-left-sm fl" style="margin-top: 5px;">
+					<span class="my-name">MY</span><br />
+					<span class="my-nameID">微信号：giiw</span>
+				</div>
+				<img ng-show="userData.img" ng-src="{{userData.img.sm_img}}" width="20" class="jy-vertical-align fr jy-margin-top-sm" />
+				<img ng-hide="userData.img" src="img/img.jpg" width="20" class="jy-vertical-align fr jy-margin-top-sm" />
+
+			</a>
+			<a ui-sref="user-photo" class="item jy-border-bottom-d1 jy-margin-top-sm" href="#">
+				<img src="img/png/user-photo.png" width="30" class="jy-vertical-align" />
+				<span class="jy-vertical-align jy-margin-left-sm">相册</span>
+			</a>
+			<a ui-sref="user-collect" class="item jy-border-bottom-d1" href="#">
+				<img src="img/png/user-collect.png" width="30" class="jy-vertical-align" />
+				<span class="jy-vertical-align jy-margin-left-sm">收藏</span>
+			</a>
+			<a class="item jy-border-bottom-d1 jy-margin-top-sm">
+				<img src="img/png/user-wallet.png" width="30" class="jy-vertical-align" />
+				<span class="jy-vertical-align jy-margin-left-sm">钱包</span>
+			</a>
+			<a ui-sref="user-card" class="item jy-border-bottom-d1" href="#">
+				<img src="img/png/user-card.png" width="30" class="jy-vertical-align" />
+				<span class="jy-vertical-align jy-margin-left-sm">卡包</span>
+			</a>
+			<a class="item jy-border-bottom-d1 jy-margin-top-sm" href="#">
+				<img src="img/png/user-photo.png" width="30" class="jy-vertical-align" />
+				<span class="jy-vertical-align jy-margin-left-sm">表情</span>
+			</a>
+			<a ui-sref="user-setting" class="item jy-border-bottom-d1" href="#">
+				<img src="img/png/user-setting.png" width="30" class="jy-vertical-align" />
+				<span class="jy-vertical-align jy-margin-left-sm">设置</span>
+			</a>
+			<!--<a class="item jy-border-bottom-d1" href="#">
+			</a>-->
+
+		</div>
+
+	</ion-content>
+</ion-view>

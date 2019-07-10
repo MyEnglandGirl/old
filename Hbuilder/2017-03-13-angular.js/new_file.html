@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="Helloangular">
+
+	<body>
+		<div ng-controller="helloAngular">
+		<!--app.controller("helloAngular ", ['$scope', '$http', function() {
+		}]);-->
+			<p><span ng-bind="text"></span>,angular</p>
+
+			<div ng-repeat="u in friends>
+
+				
+				<!--<p>Name:{{u.name}}</p>
+				<p>Age:{{u.age}}</p>-->
+			</div>
+		</div>
+		
+		<script src="js/angular.min.js " type="text/javascript " charset="utf-8 "></script>
+		<script type="text/javascript ">
+			var app = angular.module('Helloangular', []);
+			app.controller('helloAngular', function($scope) {
+				$scope.text = 'Hello';
+				$scope.lastName = 'Doe';
+				
+			});
+
+		</script>
+	</body>
+
+</html>

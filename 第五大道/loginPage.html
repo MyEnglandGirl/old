@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/loginPage.css" />
+	</head>
+
+	<body style="background-color:#ffffff;">
+		<div class="login-head">
+			<div class="container">
+				<a href="index.html">
+			<img src="img/public/logo.PNG"/>
+					
+				</a>
+
+			</div>
+
+		</div>
+        <!--banner-->
+		<div class="login-banner">
+			<div class="container relative">
+				<div class="login-icon fl">
+					<img src="img/baijin-icon.png" />
+				</div>
+				<div class="login-write fr">
+					<div class="login-box" id="index-box">
+						<a href="#" class="login-one fl">账号登录</a>
+						<span class="login-line"></span>
+						<a href="#" class="login-two fl">扫码登录</a>
+						<div class="clear">
+
+						</div>
+
+						<div class="login-eamil">
+							<form action="" method="post" id="commentForm">
+								<p><input type="text" name="mail" id="mail" value="" placeholder="邮箱/手机号码" /></p>
+								<p><input type="password" name="psword" id="psword" value="" placeholder="密码" /></p>
+								<p><span><input type="submit" name="login" id="" value="立即登录" /></span></p>
+							</form>
+							<div class="login-enroll">
+								<a href="register.html" style="display: inline-block;"><b>注册账号</b> </a>|
+								<a href="#" style="display: inline-block;"> <b>忘记密码？</b></a>
+							</div>
+							<div class="login-way">
+								<p>其他登录方式</p>
+							</div>
+						</div>
+						<div class="login-mail" style="margin: 80px 100px;">
+							<img src="img/about02.png" width="150px" height="150px" />
+							<b style="margin:100px -35px 0px -70px;">使用手机APP扫码登录</b>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="clear">
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="container" style="text-align: center;">
+			<div class="login-font">
+						<ul class="login-size">
+							<li>
+								<a href="#"> 简体 </a> <b>|</b></li>
+							<li>
+								<a href="#"> 繁体 </a><b>|</b></li>
+							<li>
+								<a href="#"> English </a><b>|</b></li>
+							<li>
+								<a href="#"> 常见问题 </a>
+							</li>
+						</ul>
+					</div>
+					<p class="login-end"><span>本公司版权所有-京ICP备10046444-<span><a href="#"style="display: inline-block;"><img src="img/ghs.png"style="display: inline-block;"/></a>京公网安备11010802020134号-京ICP证110507号</span>
+					</p>
+		</div>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/additional-methods.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/messages_zh.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.login-one').click(function() {
+					$(this).siblings('.login-eamil').css('display', 'block');
+					$(this).siblings('.login-mail').css('display', 'none');
+					$(this).css('color', '#f56600');
+					$(this).siblings('.login-two').css('color', '#666666')
+				});
+				$('.login-two').click(function() {
+					$(this).siblings('.login-eamil').css('display', 'none');
+					$(this).siblings('.login-mail').css('display', 'block');
+					$(this).css('color', '#f56600');
+					$(this).siblings('.login-one').css('color', '#666666')
+				});
+			});
+			$(document).ready(function() {
+				$.validator.setDefaults({
+					submitHandler: function() {
+						alert("登录成功!");
+					}
+				});
+				$('#commentForm').validate({
+					rules: {
+						/* 商家货号 */
+						mail: {
+							required: true,
+							minlength: 6,
+							isTel: true,
+
+						},
+						psword: {
+							required: true,
+							minlength: 6
+						},
+
+					},
+					errorPlacement: function(error, element) {
+						error.appendTo(element.parent());
+					},
+					errorElement: "span",
+					messages: {
+						mail: {
+							required: "请输入用户名",
+							minlength: "用户名必需6个以上字符组成"
+						},
+						psword: {
+							required: "请输入密码",
+							minlength: "密码长度不能小于 6 个字母"
+						},
+
+					},
+					errorElement: 'p',
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

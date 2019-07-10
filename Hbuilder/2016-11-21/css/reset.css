@@ -1,0 +1,30 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font: "微软雅黑";
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+img{
+	border: none;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	clear: right;
+}
+.clear{
+	clear:both;
+}
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<!--1024，670-->
+		<canvas id="canvas" width="1024" height="620"></canvas>
+
+		<script type="text/javascript">
+			var oCanvas = document.getElementById("canvas");
+			var context = oCanvas.getContext("2d");
+
+			context.font = "bold 30px 微软雅黑";
+			context.fillText("Canvas五子棋", 130, 50);
+
+			//			context.lineWidth = 1;
+			context.moveTo(140, 80);
+			context.lineTo(560, 80);
+			context.stroke();
+
+			context.moveTo(140, 80);
+			context.lineTo(140, 560);
+			context.stroke();
+
+			context.beginPath();
+			context.arc(70, 200, 15, 0, 2 * Math.PI, true);
+			context.fillStyle = "#000000";
+			context.fill();
+			context.closePath();
+
+			//			context.beginPath();
+			//			context.moveTo(300,300);
+			//			context.arcTo(300,400,1000,400,30)
+			//			context.stroke();
+			//			context.closePath();
+
+			//			context.beginPath();
+			//			context.moveTo(200,200);
+			//			context.quadraticCurveTo(20,100,200,20);
+			//			context.stroke();
+			//			context.closePath();
+
+			//			线性渐变
+			//			var grd = context.createLinearGradient(300,200,1000,400);
+			//			grd.addColorStop(0,"#239372");
+			//			grd.addColorStop(0.46,"#749372");
+			//			grd.addColorStop(1,"#345678");
+			//			context.fillStyle=grd;
+			//			context.fillRect(0,0,1024,650);
+			//			径向渐变
+			//			var grd = context.createRadialGradient(300,300,1,300,300,300);
+			//			grd.addColorStop(0,"#239372");
+			//			grd.addColorStop(0.46,"#749372");
+			//			grd.addColorStop(1,"#345678");
+			//			context.fillStyle=grd;
+			//			context.fillRect(0,0,1024,650);
+
+			//			context.beginPath();
+			//			context.fillStyle = "#47a0d1"
+			//			context.fillRect(0,0,1024,650);
+			//			context.fill();
+			//			context.closePath();
+			//			
+			//			context.translate(500,100);
+			//			for(var i = 0; i<40;i++){
+			//				context.translate(40,40);
+			//				context.scale(0.95,0.95);
+			//				context.rotate(Math.PI/15);
+			//				context.fillStyle = "rgba(255,0,0,0.5)";
+			//				context.fillRect(0,0,180,60);
+			//			}
+			//			绘制图片
+			var img = new Image();
+			img.src = "img/1.jpg";
+			img.onload = function() {
+				context.drawImage(img, 0, 0);
+//				图片平铺
+				var pat = context.createPattern(img, "repeat");
+				context.fillStyle = pat;
+				context.fillRect(0,0,1024,650);
+			};
+
+
+			context.arc(200,300,80,0,2*Math.PI);
+			context.clip();
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div id="dowebok">
+			<div class="section section1">
+				<div style="+position: absolute; top: 50%;">
+					<div class="slide" style="background-image: url(img/57c3f829166ac.jpg); width: 100%;">
+					</div>
+					<div class="slide" style="background-image: url(img/57c3f83679b9a.jpg); width: 100%;">
+					</div>
+					<div class="slide" style="background-image: url(img/57c3f9466ea15.jpg); width: 100%;">
+					</div>
+				</div>
+			</div>
+			<div class="section section2 relative">
+				<div class="right_menu">
+					<ul class="nav clearfix">
+						<li>
+							<a href="">公司介绍</a>
+						</li>
+						<li>/</li>
+						<li>
+							<a href="">区域划分</a>
+						</li>
+						<li>/</li>
+
+						<li>
+							<a href="">服务与支持</a>
+						</li>
+						<li>/</li>
+
+						<li>
+							<a href="">工作机会</a>
+						</li>
+						<li>/</li>
+
+					</ul>
+				</div>
+				<div class="flower" style=""></div>
+				<div class="font_box" style="">
+					<h1>专业品质 • 专注科技</h1>
+					<p>北京柏莱特科技有限公司是一家致力于提供专业视听解决方案服务的创新型高科技企业，拥有技术实力雄厚、实践经验丰富的资深工程师和专业技术人员组成的核心团队。</p>
+					<p>目前，柏莱特科技以北京为总部，在全国拥有12家办事机构和覆盖中国大陆重要经济区的专业代理及服务网络。从积极服务于多个行业的领先客户，到成功执行众多高端视觉创意项目，柏莱特科技正逐步成为视听行业领导者。</p>
+					<a href="index.php?m=Article&amp;a=index&amp;id=20" class="more_a s4"><i></i>MORE</a>
+
+				</div>
+				<div class="about_ftbg" style=""></div>
+
+			</div>
+			<div class="section section3">
+				<div class="right_menu">
+					<ul class="nav clearfix">
+						<li>
+							<a href="">公司介绍</a>
+						</li>
+						<li>/</li>
+						<li>
+							<a href="">区域划分</a>
+						</li>
+						<li>/</li>
+
+						<li>
+							<a href="">服务与支持</a>
+						</li>
+						<li>/</li>
+
+						<li>
+							<a href="">工作机会</a>
+						</li>
+						<li>/</li>
+
+					</ul>
+				</div>
+				<div class="about_ftbg" style=""></div>
+				<div class="case-imgs-box" style="background-image: url(img/57ecdef876c0a.jpg);"></div>
+			</div>
+			<div class="section section4 relative">
+				<div class="foot_logo">
+					<img src="img/foot_logo.jpg">
+					<hr class="twohr">
+				</div>
+				<p>每周一至周五，9:00-17:00<br /> 柏莱特科技服务热线：010-57626328
+					<br /> 在线支持：一年365天随时的快速自助服务。
+					<br /> 我们的热线将为您提供即时
+					<br /> 的电话支持，有一支经验丰富的支持团队为您提供专业帮助。
+					<br /></p>
+				<span>
+					关于我们 | 新闻热点 | 工作机会 | 联系我们<br />北京柏莱特科技有限公司 Beijing Bright Technology Co.,Ltd<br />地址：北京朝阳区798艺术中心七星西街E-01邮编：100015 电话：010-57626328
+				</span>
+				<img src="img/code.jpg" class="code_img">
+
+			</div>
+
+			<div style="height:200px; background:blue"></div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script>
+			$(function() {
+				$('#dowebok').fullpage({
+					sectionsColor: ['#1bbc9b', '#fff', '#000', 'rgb(34,34,34)'],
+					loopBottom: true,
+					afterLoad: function(anchorLink, index) {
+						if(index == 2) {
+							//							alert(1);
+							$(".flower").animate({
+								left: "0"
+							}, 500);
+							$('.section2 .about_ftbg').animate({
+								right: "100px"
+							}, 500);
+							$('.font_box').animate({
+								top: "200px"
+							}, 500);
+						}
+						if(index == 3) {
+							$('.section3 .about_ftbg').animate({
+								right: "100px"
+							}, 500);
+							$('.section3 .right_menu').animate({
+								top: "0px"
+							}, 500);
+						}
+						if(index == 4) {
+							$('.section4 span').animate({
+								right: "120px"
+							}, 500);
+							$('.section4 p').animate({
+								left: "120px"
+							}, 500);
+							
+							$("#dowebok").css({
+								"margin-top":"150px",
+							});							
+						}
+					},
+					onLeave: function(index, nextIndex, anchorLink) {
+						if(index == 2) {
+							//							alert(1);
+							$(".flower").animate({
+								left: "-230px"
+							}, 500);
+							$('.section2 .about_ftbg').animate({
+								right: "-300px"
+							}, 500);
+							$('.font_box').animate({
+								top: "800px"
+							}, 500);
+						}
+						if(index == 3) {
+							$('.section3 .about_ftbg').animate({
+								right: "-300px"
+							}, 500);
+							$('.section3 .right_menu').animate({
+								top: "-200px"
+							}, 500);
+						}
+						if(index == 4) {
+					
+							$('.section4 span').animate({
+								right: "-500px"
+							}, 500);
+							$('.section4 p').animate({
+								left: "-500px"
+							}, 500);
+							
+							$("#dowebok").css({
+								"margin-top":"",
+								
+							})
+							
+						}
+					}
+				});
+
+				setInterval(function() {
+					$.fn.fullpage.moveSlideRight();
+				}, 3000);
+
+				//回调函数
+
+			});
+		</script>
+	</body>
+
+</html>

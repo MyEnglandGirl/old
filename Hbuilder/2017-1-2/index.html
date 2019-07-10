@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div class="relative desktop">
+        <!-- 桌面图标 -->
+        <div class="desk-continer relative" id="deskContiner">
+            <!--<div class="file" id="garbage" style="left: 10px; top: 10px;">
+                <i class="icon garbage"></i>
+                <p class="fileName">回收站</p>
+            </div>
+            <div class="file" id="music" style="left: 10px; top: 110px;">
+                <i class="icon music"></i>
+                <p class="fileName">音乐</p>
+            </div>
+            <div class="file" id="picture" style="left: 10px; top: 210px;">
+                <i class="icon picture"></i>
+                <p class="fileName">照片墙</p>
+            </div>
+            <div class="file" id="kalendar" style="left: 10px; top: 310px;">
+                <i class="icon kalendar"></i>
+                <p class="fileName">日历</p>
+            </div>-->
+        </div>
+        <!-- 时间 -->
+        <div class="smallData" id="smallData">
+            <div class="data_main">
+                <div class="data_left">
+                    <ul class="clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="main">
+                        <p class="mouth"></p>
+                        <p class="day"></p>
+                    </div>
+                </div>
+                <div class="data_right">
+                    <p class="time"></p>
+                    <p class="data">2017年01</p>
+                    <p class="week">星期</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 日历 -->
+        <div id="calendarCon">
+        	<div class="calendarConTime">
+                    <p class="time">17:12</p>
+                     <span class="" id="close">
+                    	X
+                    </span>
+                    <p class="data fl">2017年01</p>
+                    <p class="week fl">星期</p>
+                    <p class="clear"></p>
+                   
+        	</div>
+            <div id="ca"></div>
+        </div>
+        <!-- 右键菜单 -->
+        <div class="menu">
+            <div class="menu-panel">
+                <ul class="menuList">
+                    <li>
+                        <i class="icon view"></i>
+                        <span>查看(V)</span>
+                        <em class="arrow icon"></em>
+                        <div class="smallMenu">
+                            <a href="javascript:;">小图标</a>
+                            <a href="javascript:;">大图标</a>
+                            <a href="javascript:;">中等图标</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon sort"></i>
+                        <span>排序方式(V)</span>
+                        <em class="arrow icon"></em>
+                        <div class="smallMenu">
+                            <a href="javascript:;">修改日期</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="icon refresh"></i>
+                        <span>刷新(V)</span>
+                    </li>
+                    <li>
+                        <i class="icon newFolder"></i>
+                        <span>新建文件夹(V)</span>
+                    </li>
+                    <li>
+                        <i class="icon setting"></i>
+                        <span>显示设置(V)</span>
+                    </li>
+                    <li>
+                        <i class="icon individuation"></i>
+                        <span>个性化(V)</span>
+                    </li>
+                    <li>
+                        <i class="icon control"></i>
+                        <span>控制面板(V)</span>
+                    </li>
+                    <li>
+                        <i class="icon clearCache"></i>
+                        <span>清楚本地缓存(V)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="js/calendarDemo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/smallData.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/Dargs1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/desk.js"></script>
+    <script src="js/localStorage.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

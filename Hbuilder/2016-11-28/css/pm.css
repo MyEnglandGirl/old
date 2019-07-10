@@ -1,0 +1,113 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	
+}
+img{
+	border: none;
+}	
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear:both;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+.J_dynamic_img img{
+	width: 585px;
+	height: 211px;
+	background-color: rgb(116,119,225);
+	display: block;
+}
+.gj_listBanner_label{
+	position: absolute;
+	width: 62px;
+	height: 30px;
+	padding: 0 10px;
+	background-color: rgb(255,87,119);
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 30px;
+	top: 0;
+	left: 20px;
+}
+.gj_listBanner_info{
+	width: 225px;
+	height: 124px;
+	background-color: rgb(228,228,255);
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	right: 30px;
+	top: 36px;
+}
+
+h2{
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: bold;
+}
+span{
+	font-size: 18px;
+	line-height: 20px;
+	color: #666666;
+}
+.gj_listBanner_info_cut{
+	background-color: rgb(255,172,13);
+	padding: 4px 30px;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-top: 6px;
+}
+.J_dynamic_text{
+	width: 545px;
+	height: 36px;
+	padding: 14px 20px 0 20px;
+	background-color: rgb(244,244,244);
+}
+.J_dynamic_text p{
+	display: inline;
+
+}
+.orange{
+	font-size: 20px;
+	color: #ffac0d;
+	font-weight: bold;
+}
+.qi{
+	font-size: 20px;
+	color: #999;
+}
+.num{
+	color: #333;
+	font-size: 16px;
+}
+.buy{
+	color: #999999;
+	font-size: 16px;
+}
+.clear{
+	margin-bottom: 30px;
+}

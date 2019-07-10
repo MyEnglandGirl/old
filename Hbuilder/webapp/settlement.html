@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>结算中心</title>
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="am-g public-head  color-fff am-padding-vertical-sm am-text-lg">
+			<div class="am-u-sm-2">
+				<a href="javascript:history.go(-1);" class="color-fff">
+					<i class="am-icon-angle-left am-icon-sm"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-8 am-text-center">结算中心</div>
+			<div class="am-u-sm-2"></div>
+		</div>
+
+		<div class="select-address am-margin-horizontal-sm am-margin-top-sm bg-color-fff">
+			<div class="am-margin-horizontal-xs ">
+				<div class="am-g jy-border-bottom  am-padding-vertical-sm color-333">
+					<div class="fl am-padding-left-xs" style="padding-top: 2px;">
+						<img src="img/png/settlement/settlement-01.png" width="17" />
+					</div>
+					<div class="am-u-sm-11 am-text-middle am-padding-right-xs">
+						选择配送地址
+					</div>
+				</div>
+			</div>
+
+			<a href="address.html" class="am-g am-padding-vertical-xs color-666">
+				<div class="am-u-sm-1">
+				</div>
+				<div class="am-u-sm-10 am-u-sm-offset-1 am-padding-bottom-xs">
+					<span class="">赵道</span><br />
+					<span class="">18832758081</span><br />
+					<span class="address-truncate am-block am-text-xs">山东省 青岛市 崂山区 中韩街道松岭路169号  青岛国际创新园B座4层B3室   速普商城</span>
+				</div>
+				<div class="am-u-sm-1 am-margin-top-xl">
+					<i class="am-icon-angle-right"></i>
+				</div>
+			</a>
+		</div>
+		<div class="bg-color-fff am-margin-horizontal-sm am-margin-top-sm ">
+			<div class="am-margin-horizontal-xs">
+				<div class="am-g jy-border-bottom  am-padding-vertical-sm color-333">
+					<div class="fl am-padding-left-xs" style="padding-top: 2px;">
+						<img src="img/png/settlement/settlement-02.png" width="17" />
+					</div>
+					<div class="am-u-sm-11 am-text-middle am-padding-right-xs">
+						支付信息
+					</div>
+				</div>
+			</div>
+
+			<div class="am-g am-padding-vertical-sm" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0}">
+				<div class="am-u-sm-6">
+					支付方式
+				</div>
+				<div class="am-u-sm-6 am-text-right" id="pay">
+					<span>支付宝钱包支付</span>
+					<i class="am-icon-angle-right"></i>
+				</div>
+			</div>
+			<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+				<div class="am-modal-dialog am-padding-horizontal-xs am-text-left">
+					<div class="am-modal-hd">选择支付方式
+					</div>
+					<div class="am-modal-bd am-text-left am-padding-bottom-0 am-margin-bottom-xs">
+						<div class="pay clearfix am-margin-top-xs am-padding-bottom-xs jy-border-bottom" data-am-modal-close>
+							<div class="fl" style="margin-top: 3px;">
+								<img src="img/jpg/settlement01.jpg" width="43" />
+
+							</div>
+							<div class="fl am-margin-left-sm">
+								<p class="jy-font-weight color-333">支付宝钱包支付</p>
+								<p>推荐支付宝用户使用</p>
+							</div>
+						</div>
+						<div class="pay clearfix am-margin-top-xs am-padding-bottom-xs jy-border-bottom" data-am-modal-close>
+							<div class="fl" style="margin-top: 3px;">
+								<img src="img/jpg/settlement02.jpg" width="43" />
+
+							</div>
+							<div class="fl am-margin-left-sm">
+								<p class="jy-font-weight color-333">中国银联支付</p>
+								<p>支持多家银联卡支付</p>
+							</div>
+						</div>
+						<div class="pay clearfix am-margin-top-xs " data-am-modal-close>
+							<div class="fl" style="margin-top: 3px;">
+								<img src="img/jpg/settlement03.jpg" width="43" />
+
+							</div>
+							<div class="fl am-margin-left-sm">
+								<p class="jy-font-weight color-333">微信支付</p>
+								<p>支持微信钱包快捷支付</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="am-g am-padding-vertical-sm" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0}">
+				<div class="am-u-sm-6">
+					配送方式
+				</div>
+				<div class="am-u-sm-6 am-text-right" id="express">
+					<span>顺丰快递</span>
+					<i class="am-icon-angle-right"></i>
+				</div>
+			</div>
+			
+			<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+				<div class="am-modal-dialog am-text-left">
+					<div class="am-modal-hd">选择配送方式
+					</div>
+					<div class="am-modal-bd am-padding-bottom-0 am-margin-bottom-xs am-text-left">
+						<p class="am-padding-xs express" data-am-modal-close>EMS</p>
+						<p class="am-padding-xs express" data-am-modal-close>顺丰快递</p>
+						<p class="am-padding-xs express" data-am-modal-close>圆通快递</p>
+					</div>
+				</div>
+			</div>
+			<div class="am-g am-padding-vertical-sm" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0}">
+				<div class="am-u-sm-6">
+					优惠券
+				</div>
+				<div class="am-u-sm-6 am-text-right" id="coupon">
+					<span>选择优惠券</span>
+					<i class="am-icon-angle-right"></i>
+				</div>
+			</div>
+			<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-3">
+				<div class="am-modal-dialog am-text-left">
+					<div class="am-modal-hd">选择优惠券
+					</div>
+					<div class="am-modal-bd am-padding-bottom-0 am-margin-bottom-xs am-text-left">
+						<p class="coupon am-padding-xs " data-am-modal-close>手机客户端测试券
+							<span class="am-text-xs am-text-right">￥50.00</span>
+						</p>
+						<p class="coupon am-padding-xs " data-am-modal-close>衣家淑女姿态店铺红包
+							<span class="am-text-xs am-text-right">￥10.00</span>
+						</p>
+						<p class="coupon am-padding-xs " data-am-modal-close>App搜索专享10元
+							<span class="am-text-xs am-text-right">￥10.00</span>
+						</p>
+						<p class="coupon am-padding-xs " data-am-modal-close>窈窕一身熙纯专卖店
+							<span class="am-text-xs am-text-right">￥20.00</span>
+						</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="am-g am-padding-vertical-sm">
+				<div class="am-u-sm-3 am-padding-right-0">
+					发票抬头
+				</div>
+				<div class="am-u-sm-9 am-text-right">
+					<input class="message" type="text" placeholder="请输入发票抬头，如：个人">
+				</div>
+			</div>
+			<div class="am-g am-padding-vertical-sm">
+				<div class="am-u-sm-3 am-padding-right-0">
+					卖家留言
+				</div>
+				<div class="am-u-sm-9 am-text-right">
+					<input class="message" type="text" placeholder="选填：对本次购物的说明">
+				</div>
+			</div>
+		</div>
+		<div class="am-margin-horizontal-sm am-margin-top-sm bg-color-fff am-padding-bottom-sm am-margin-bottom-sm">
+			<div class="am-margin-horizontal-xs ">
+				<div class="am-g jy-border-bottom  am-padding-vertical-sm color-333">
+					<div class="fl am-padding-left-xs" style="padding-top: 2px;">
+						<img src="img/png/settlement/settlement-07.png" width="17" />
+					</div>
+					<div class="am-u-sm-11 am-text-middle am-padding-right-xs">
+						订单信息
+					</div>
+				</div>
+			</div>
+
+			<div class="am-g am-padding-vertical-xs">
+				<div class="am-u-sm-8 am-padding-bottom-sm" style="border-top: 1px dashed #f5f5f5;">
+					<img src="img/jpg/index/index-2-01.jpg" width="80" />
+				</div>
+				<div class="am-u-sm-4 am-text-right am-margin-top-xl">
+					共4件
+					<i class="am-icon-angle-right"></i>
+				</div>
+
+			</div>
+			<div class="am-g color-999">
+				<div class="am-u-sm-6">
+					商品小计：
+				</div>
+				<div class="am-u-sm-6 am-text-right">
+					￥385.00
+				</div>
+			</div>
+			<div class="am-g color-999">
+				<div class="am-u-sm-6">
+					优惠金额：
+				</div>
+				<div class="am-u-sm-6 am-text-right">
+					￥385.00
+				</div>
+			</div>
+			<div class="am-g color-999">
+				<div class="am-u-sm-6">
+					运费：
+				</div>
+				<div class="am-u-sm-6 am-text-right">
+					￥385.00
+				</div>
+			</div>
+			<div class="am-g am-margin-top-sm">
+				<div class="am-u-sm-7 color-990100 am-padding-top-xs">
+					应付款：￥385.00
+				</div>
+				<div class="am-u-sm-5 am-text-right  am-text-center">
+					<div class="bg-color-990100 color-fff am-padding-vertical-xs">
+						提交订单
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".pay").click(function() {
+				$("#pay span").text($(this).find(".jy-font-weight").text());
+
+			});
+			$(".express").click(function() {
+				$("#express span").text($(this).text());
+
+			});
+			$(".coupon").click(function() {
+				$("#coupon span").text('-'+$(this).children("span").text());
+
+			});
+		</script>
+	</body>
+
+</html>

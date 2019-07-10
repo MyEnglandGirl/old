@@ -1,0 +1,82 @@
+.question {
+	margin-top: 20px;
+}
+
+.sideMen {
+	width: 165px;
+	background: #f3f2f2;
+	border: 1px solid #ccc;
+	float: left;
+	border-bottom: 2px solid #ccc;
+	font-family: "微软雅黑";
+}
+
+h3 {
+	color: #d00000;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 1px solid #ccc;
+	height: 45px;
+	line-height: 45px;
+	text-align: left;
+	padding-left: 30px;
+	width: 135px;
+	cursor: pointer;
+}
+
+h3:hover {
+	background: #fff;
+}
+
+.sideMen ul {
+	background: rgb(247, 247, 247);
+}
+
+.sideMen ul li {
+	font-size: 12px;
+	color: 666;
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	padding-left: 32px;
+	border-bottom: 1px dashed #c9c9c9;
+}
+
+.sideMen ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.sideMen ul li a:hover {
+	color: #d00000;
+}
+
+.guidecenter_content {
+	margin-left: 20px;
+	border: 1px solid #ccc;
+	/*min-height: 800px;*/
+	background: #fff;
+	width: 991px;
+}
+.cont-list{
+	margin: 24px auto;
+	padding: 0 24px;
+}
+b{
+	font-size: 18px;
+	color: #c8a985;
+}
+.title{
+	text-align: center;
+	
+}
+p{
+	line-height: 24px;
+	text-align: left;
+}
+strong{
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+}

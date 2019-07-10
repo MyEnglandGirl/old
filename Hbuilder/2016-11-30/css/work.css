@@ -1,0 +1,72 @@
+html,body{
+	color: #666;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	
+}
+img{
+	border: none;
+	}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear:both;
+}
+.container{
+	width: 830px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.asterisk{
+	color: red;
+}
+.container>ul{
+	width: 350px;
+}
+.text-style{
+	padding: 3px 8px;
+	width: 184px;
+	height: 24px;
+	border: 1px solid #d1d1d1 ;
+}
+.container ul li,.container ol li{
+	margin: 10px 0;
+}
+.container ul li .fl,.container ol li .fl{
+	margin-top: 4px;
+}
+.text-style-long{
+	padding: 3px 8px;
+	width: 664px;
+	height: 24px;
+	border: 1px solid #d1d1d1 ;
+}
+.texrarea-style{
+	resize: none;
+	padding: 4px 8px;
+	width: 662px;
+	height: 54px;
+	max-width: 680px;
+	max-height: 60px;
+	line-height: 18px;
+}

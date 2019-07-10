@@ -1,0 +1,731 @@
+.index-head {
+	background: #000000;
+}
+
+.head-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 130px;
+	background-position: 0 -166px;
+	z-index: 5;
+}
+
+.head-nav>li {
+	float: left;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.head-nav {
+	margin-left: 230px;
+}
+
+.head-nav a {
+	width: 72px;
+	padding: 20px 36px 2px 36px;
+	color: #e1e1e1;
+	line-height: 20px;
+}
+
+.head-nav p {
+	font-size: 10px;
+	color: #575757;
+	text-align: center;
+}
+
+.sub-nav-inner {
+	display: none;
+	padding: 10px 0 20px 0;
+	position: absolute;
+	top: 77px;
+	left: 0;
+	z-index: 6;
+	width: 144px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.index-head:hover .sub-nav-inner{
+	display: block;
+}
+.sub-nav-inner li a {
+	text-align: center;
+	font-size: 14px;
+	color: #e1e1e1;
+	padding: 0;
+	margin: 5px auto;
+}
+.sub-nav-inner li a:hover{
+	color: #16c2a2;
+}
+.sub-nav-inner-bg {
+	position: absolute;
+	width: 100%;
+	height: 230px;
+	top: 80;
+	left: 0;
+	z-index: 4;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+.index-head:hover .sub-nav-inner-bg{
+	display: block;
+}
+/*-----------------大元素-----------*/
+
+.head-inner .container {
+	height: 614px;
+}
+
+.top-act-name{
+	position: absolute;
+	top: 115px;
+	left: 0;
+	z-index: 3;
+    text-shadow: 0 0 10px #000;
+    color: #00ab88;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.top-act-desc{
+	width: 500px;
+	position: absolute;
+	top: 176px;
+	left: 0;
+	z-index: 3;
+	color: #E3E3E3;
+	font-size: 14px;
+}
+.top-small-video{
+	position: absolute;
+    left: 0;
+    top: 240px;
+    
+    z-index: 2;
+}
+.btn-top-play{
+	position: absolute;
+    left: 0;
+    top: 240px;
+    width: 213px;
+    height: 120px;
+    z-index: 3;
+    background: url(http://ossweb-img.qq.com/images/lol/v1/bg-play.png) no-repeat 0 0;
+}
+.top-act-link{
+	display: block;
+    width: 155px;
+    height: 36px;
+    border: 2px solid #05ad8d;
+    text-align: center;
+    line-height: 36px;
+    background: rgba(0,0,0,0.65);
+    font-size: 14px;
+    font-weight: bold;
+    color: #1bf6cc;
+    position: absolute;
+    z-index: 3;
+    top: 386px;
+    left: 0;
+}
+.top-version{
+	color: #888787;
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	top: 466px;
+	z-index: 3;
+}
+.top-version em{
+	color: #1BF6CC;
+	margin-right: 10px;
+	font-style: normal;
+}
+.top-version-link{
+	display: inline-block;
+    padding: 0 15px;
+    height: 22px;
+    border: 2px solid #05ad8d;
+    text-align: center;
+    line-height: 22px;
+    background: #000;
+    background: rgba(0,0,0,0.65);
+    font-size: 12px;
+    color: #1bf6cc;
+}
+/*-------------------------------*/
+.top-quick{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 4;
+	background-position: 0 -472px;
+	width: 1240px;
+	height: 115px;
+}
+.top-quick-download{
+	width: 220px;
+    height: 115px;
+}
+.top-quick-link{
+	width: 112px;
+	height: 115px;
+	padding-top:15px ;
+	text-align: center;
+}
+.icon-public-style{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+.top-quick-link .name{
+	display: block;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.top-quick-link .desc{
+	display: block;
+	font-size: 12px;
+	color: #5e677f;
+	line-height: 20px;
+}
+.icon-quick-package{
+	background-position: 0px 0px;
+}
+.icon-quick-video{
+	background-position: -40px 0px;
+}
+.icon-quick-match{
+	background-position: -80px 0px;
+}
+.icon-quick-info{
+	background-position: -120px 0px;
+}
+.icon-quick-lcu{
+	background-position: -200px 0px;
+}
+.top-quick-link:hover{
+	background-position: -668px -357px;
+	background-image: url(http://ossweb-img.qq.com/images/lol/v1/public-spr.png);
+}
+.top-login{
+	padding: 16px 0 0 20px;
+}
+.top-login>div{
+	margin-left: 22px;
+}
+.top-login .clear{
+	height: 13px;
+}
+.jUserLoginP{
+	padding-top: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.top-login a{
+	display: inline-block;
+	margin-left: 3px;
+	padding-top: 3px;
+	font-size: 16px;
+	color: #0FC;
+}
+.top-login>span{
+	color: #000000;
+}
+/*-------------------------------------*/
+.head-big-video {
+	width: 1920px;
+	height: 614px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -960px;
+	/*overflow: hidden;*/
+	z-index: 1;
+}
+
+.index-con {
+	margin-top: 30px;
+}
+.banner ul li {
+	float: left;
+}
+
+.banner ul li a {
+	font-size: 14px;
+	width: 156px;
+	height: 40px;
+	color: #333;
+	background-color: rgb(239, 239, 239);
+	text-align: center;
+	line-height: 40px;
+}
+.banner ul li a:hover{
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #36AB87;
+}
+.home-news>ul li {
+	float: left;
+	overflow: hidden;
+}
+.home-news>ul li a {
+	text-align: center;
+	color: #666666;
+	font-size: 18px;
+	border-bottom: 4px solid #ebecec;
+	width: 90px;
+	height: 36px;
+	line-height: 36px;
+}
+.home-news>ul li a:hover{
+	color: #00ab88;
+	font-weight: bold;
+	border-bottom: 4px solid #00ab88;
+}
+.home-news ul li:last-child a {
+	width: 34px;
+}
+.home-news-title a {
+	font-size: 20px;
+	color: #00a684;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0;
+}
+.home-news-box {
+	font-size: 14px;
+}
+.home-news-box-title>a {
+	color: #a4a4a4;
+	background-color: rgb(235, 235, 235);
+	padding: 4px 11px;
+	border-radius: 15px;
+}
+.home-news-box-con>a {
+	color: #333;
+	padding: 4px 0 4px 4px;
+	width: 290px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.home-news-box:hover .home-news-box-con a,.home-news-box-days a{
+	color: #00a684;
+}
+.home-news-box:hover .home-news-box-days a{
+	color: #00a684;
+}
+.home-news-box {
+	margin-bottom: 6px;
+}
+
+.home-news-box-days>a {
+	color: #a4a4a4;
+	padding: 4px 11px;
+}
+.vote-tips>a {
+	color: #797979;
+	width: 380px;
+	padding: 13px 10px;
+	background-color: #E1E1E1;
+	text-align: center;
+}
+.vote-tips a:hover{
+	background-color: rgb(232, 230, 230);
+}
+.video-logo {
+	width: 40px;
+	height: 40px;
+	background-position: -40px -40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.icon-submit {
+	background-position: -567px -46px;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.index-video-con {
+	width: 800px;
+}
+.index-video-con li {
+	float: left;
+	margin: 0 20px 10px 0;
+	position: relative;
+	}
+.shadow1{
+	position: absolute;
+    left: 0;
+    top: 80px;
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: rgba(0,0,0,0.5);
+}
+.v-meat{
+	position: absolute;
+	top: 80px;
+	left: 5px;
+	width: 96%;
+	height: 20px;
+	color: #DDD;
+	z-index: 3;
+	text-align: right;
+}
+.shadow2{
+	display: none;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.3);
+}
+.icon-v{
+	display: none;
+	position: absolute;
+    left: 50%;
+    margin-left: -32.5px;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+    background: url(http://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat 0 0;
+    cursor: pointer;
+}
+.index-video-con li a:hover .shadow2{
+	display: block;
+}
+.index-video-con li a:hover .icon-v{
+	display: block;
+}
+.margin-bottom li a {
+	margin-bottom: 5px;
+}
+.index-video-con-title {
+	color: #333333;
+	font-size: 14px;
+	margin: 10px 0;
+	width: 180px;
+	overflow: hidden;
+	height: 38px;
+}
+.video-more-link {
+	width: 780px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #666666;
+	background-color: #eaeaea;
+}
+.video-more-link span {
+	color: #00AB88;
+	font-weight: bold;
+}
+.hreo-logo{
+	background-position: -160px -40px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*-----------赛事中心---------------*/
+.btn-long{
+	margin-top: 10px;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	color: #0b4c3f;
+	background-position: 0 -346px;
+}
+.index-match-text{
+	width: 580px;
+	color: #666666;
+}
+.index-match-text h1 a{
+	font-size: 26px;
+	color: #00A686;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.index-match-text b{
+	color: #00a986;
+	font-size: 36px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.index-match-text .time{
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+.index-match-text .add{
+	position: absolute;
+	top: 66px;
+	left: 0;
+}
+
+.index-match-text p{
+	position: absolute;
+	right: 0;
+	top: 46px;
+}
+.index-match-text hr{
+	margin-top:100px ;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 15px;
+}
+.index-match-text ul li{
+	float: left;
+}
+.index-match-text ul li a{
+	font-family: "微软雅黑";
+	width: 540px;
+	color: #333;
+	padding-top: 8px;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.index-match-text ul li a:hover{
+	color: #00a684;
+}
+.index-match-text ul li span{
+	display: block;
+	color: #9BA0AD;
+	padding-top: 8px;
+}
+/*-----------客服专区---------------*/
+.index-public-nav .online-other{
+	float: right;
+}
+.index-public-nav .online-other a{
+	margin: 0px 0 30px 20px;
+	font-size: 14px;
+	color: #666666;
+	border-bottom: 4px solid #ebecec;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.index-online ol{
+	margin-right: 26px;
+	margin-top: -10px;
+}
+.index-online ol li a{
+	width: 298px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 14px;
+	color: #333;
+	line-height: 28px;
+}
+/*-----------英雄/皮肤---------------*/
+.home-hreo-con {
+	width: 410px;
+	margin-left: -5px;
+}
+.home-hreo-con li {
+	float: left;
+}
+.home-hreo-con a {
+	margin: 5px 0 5px 5px;
+}
+.home-quick-con {
+	width: 410px;
+	margin-left: -8px;
+	margin-top: 12px;
+}
+.home-quick-con li {
+	float: left;
+}
+.home-quick-con li a{
+	text-align: center;
+	margin: 0px 8px 8px 0;
+	width: 94px;
+	height: 64px;
+	background-color: #FFFFFF;
+	color: #555555;
+	font-size: 14px;
+}
+.home-quick-con li a i {
+	display: block;
+	width: 40px;
+	height: 36px;
+	margin:0 auto 2px;
+}
+.icon-quick-icon {
+	background-position: -280px -40px;
+}
+.icon-quick-popularity{ background-position: -320px -40px; }
+.icon-quick-cdk{ background-position: -360px -40px; }
+.icon-quick-style{ background-position: -680px -40px; }
+.icon-quick-gameinfo{ background-position: -120px -40px; }
+.icon-quick-weibo{ background-position: -400px -40px; }
+.icon-quick-bbs{ background-position: -480px -40px; }
+.icon-quick-online{ background-position: -520px -40px; }
+.home-quick-con li a:hover{
+	color: #029f7f;
+}
+.home-quick-con li a:hover .icon-quick-icon{
+	background-position: -280px -80px;
+}
+.home-quick-con li a:hover .icon-quick-popularity{ background-position: -320px -80px; }
+.home-quick-con li a:hover .icon-quick-cdk{ background-position: -360px -80px; }
+.home-quick-con li a:hover .icon-quick-style{ background-position: -680px -80px; }
+.home-quick-con li a:hover .icon-quick-gameinfo{ background-position: -120px -80px; }
+.home-quick-con li a:hover .icon-quick-weibo{ background-position: -400px -80px; }
+.home-quick-con li a:hover .icon-quick-bbs{ background-position: -480px -80px; }
+.home-quick-con li a:hover .icon-quick-online{ background-position: -520px -80px; }
+
+/*------------活动中心--------*/
+.home-activity-con ul li{
+	/*float: left;*/
+	margin-bottom: 0px;
+	margin-left: 12px;
+}
+.home-activity-con ul li a {
+	color: #333;
+	border-radius:15px;
+	padding-left: 10px;
+	margin: 2px 0;
+	/*background-color: #E3E3E3;
+	border-radius:15px;
+	padding: 4px 10px;
+	text-align: center;*/
+}
+.home-activity-con ul li a em{
+	display: block;
+	padding: 2px 0 2px 0;
+	float: left;
+	font-style: normal;
+	width: 159px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 14px;
+	
+}
+.home-activity-con ul .end a span{
+	float: left;
+	margin-left:16px;
+	font-size: 12px;
+	background-color: #E3E3E3;
+	color: #9A9898;
+	border-radius:15px;
+	padding: 4px 10px;
+	text-align: center;
+}
+.home-activity-con ul .ongoing a span{
+	float: right;
+	margin-left:16px;
+	font-size: 12px;
+	background-color: #00A887;
+	color: #FFFFFF;
+	border-radius:15px;
+	padding: 4px 10px;
+	text-align: center;
+}
+.home-activity-con ul .end:hover a{
+	background-color: #E3E3E3;
+}
+.home-activity-con ul .ongoing:hover a{
+	background-color: #00A887;
+	color: #FFFFFF;
+}
+/*--------------底部---------------------*/
+.index-footer{
+	margin-top: 100px;
+	background-color: rgb(243,243,243);
+	padding-top: 30px;
+}
+.container .footer-weixin{
+	width: 33%;
+}
+.footspr{
+	display: block;
+	background-image: url(../img/footlogo.png);
+	background-repeat: no-repeat;
+	background-position: -264px 0;
+	width: 67px;
+	height: 67px;
+}
+.footer-weixin h3{
+	display: block;
+	margin-left: 87px;
+
+}
+.footer-weixin span{
+	display: block;
+	margin-left: 87px;
+	width: 176px;
+	color: #A5A5A5;
+	line-height: 20px;
+}
+.container .footer-normal{
+	width: 33%;
+}
+.footer-normal span{
+	display: block;
+	width: 312px;
+	color: #A5A5A5;
+	line-height: 20px;
+}
+.footer-mt-lnk{
+	padding-top:10px ;
+}
+.container .footer-mt-lnk{
+	width: 286px;
+}
+.footer-mt-lnk select{
+	width: 286px;
+	height: 40px;
+	padding-left: 10px;
+	border: 3px solid rgb(226,226,226);
+	background-color: rgb(243,243,243);
+    outline: none
+
+	/*padding-top: 30px;*/
+}
+.footer-hr{
+	border-top: 3px solid #D0D0D0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.footer-tcgame{
+	background-position: 0 0;
+	background-image: url(../img/footlogo.png);
+	background-repeat: no-repeat;
+	width: 257px;
+	height: 50px;
+	margin-top: 18px;
+}
+/*底部*/
+.footer-f{
+	line-height: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(243,243,243);
+}
+.footer-flst li a{
+	float: left;
+	color: #818181;
+}
+.footer-flst li span{
+	display: block;
+	float: left;
+	margin: 0 5px;
+}

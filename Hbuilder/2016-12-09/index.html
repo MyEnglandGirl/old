@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<link rel="icon" href="f9.ico" mce_href="" type="image/x-icon">
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				font-family: "微软雅黑";
+			}
+			
+			.face img {
+				max-width: 100%;
+			}
+			
+			.result {
+				margin-top: 20px;
+				padding: 10px 10px 0 10px;
+				border: 1px solid #CCCCCC;
+				color: #e77064;
+			}
+			
+			.result p {
+				margin-top: 0;
+				padding-left: 10px;
+				border-left: 4px solid #E77064;
+			}
+			
+			.result p b {
+				float: right;
+				cursor: pointer;
+			}
+			
+			.result p:after {
+				content: '';
+				clear: both;
+				display: block;
+			}
+			
+			.box1 {
+				width: 800px;
+				height: 800px;
+				background-color: #000;
+			}
+			
+			.box2 {
+				width: 600px;
+				height: 600px;
+				background-color: #ff0;
+			}
+			
+			.box3 {
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" name="remove" id="remove" value="移除事件" />
+		<div class="box1">
+			<div class="box2">
+				<div class="box3">
+
+				</div>
+			</div>
+		</div>
+		<div>
+			<h1><span class="" id="title">一对"CP"</span></h1>
+		</div>
+		<div class="face" id="content">
+			<img id="img" src="http://www.wanbt.cn/data/attachment/portal/201604/27/120045g1eplnbpbz4fluz0.jpeg" />
+			<p><span></span>爱朔州网2月23日消息，此前曾报道胡歌、霍建华两位男神赴北海道拍大片，这组大片将在《时尚芭莎》3月下封面大片亮相。</p>
+			<p>大片中两位男神CP雪地嬉戏基情满满。</p>
+			<p>这
+				<a href="https://www.baidu.com">高颜值</a>和大长腿，小编表示血槽已空啊……</p>
+		</div>
+		<div class="comment">
+			<input type="text" name="" id="txt" value="" />
+			<input type="button" name="" id="btn" value="评论" />
+			<div class="result" id="result">
+				<p>基情满满<b>X</b></p>
+				<p>是胡不是霍<b>X</b></p>
+				<p>撒娇的<b>X</b></p>
+				<p>要删除的评论<b>X</b></p>
+			</div>
+		</div>
+		<div class="div1" id="btn_box">
+		</div>
+		<!--<script type="text/javascript">
+			document.onmousedown = function (eve) {
+				console.log(eve.button);
+			};
+			onmousemove = function (move) {
+				console.log(move.screenX,move.screenY);
+			}
+			window.onkeydown = function(onkey){
+				console.log(onkey.keyCode);
+			}
+		</script>-->
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//事件冒泡
+			$(".box1").click(function() {
+				alert(1);
+			});
+			$(".box2").click(function() {
+				alert(2);
+			});
+			$(".box3").click(function() {
+				alert(3);
+			});
+		</script>
+	</body>
+
+</html>
